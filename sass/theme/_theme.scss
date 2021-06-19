@@ -1,0 +1,105 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+// $primary: #B5904CDC;
+$primary:#B5904C;
+// $primary-dark: #B5904C;
+// $primary-light: #B5904C71;
+$secundary:#303030;
+$secundary-dark:#000000;
+$secundary-dark-light:#100F0F;
+$secundary-light:#333033;
+$terciary:#CCCCCC;
+$terciary-light:#D9D9D9;
+// $terciary-lighter: #FFFFFF00;
+$terciary-lightest:#FFFFFF;
+
+@import url("../fonts/Montserrat.css");
+
+body {
+    font-family:'Montserrat';
+}
+
+.top-header {
+    height:1920px;
+    background-image: url("../img/background.png");
+}
+
+.overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent linear-gradient(180deg, #B5904C 0%, #B5904CDC 54%, #B5904C71 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.social-network {
+    padding-top:56px;
+    padding-right:43px;
+}
+
+.small-logo {
+    padding-top:53px;
+}
+
+.languages {
+    padding-right: 10px;
+    text-align: center;
+    font: normal normal 500 17px/20px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.large-logo {
+    position: relative;
+    padding-top: 153px;
+}
+
+.large-logo .top-right{
+    position: absolute;
+    left:36px;
+    top:263px;
+    text-align: center;
+    font: normal normal bold 70px/86px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+ }
+
+.logo-motto {
+    white-space: nowrap;
+    text-align: center;
+    font: normal normal bold 70px/86px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    z-index: 9999;
+}
+
+.menu-main {
+    color: #FFFFFF;
+    font: normal normal 500 17px/20px Montserrat;
+    text-transform: uppercase;
+    padding-top:43px;
+}
+
+.menu-main li {
+    display: inline;
+    list-style-type: none;
+}
+
+.menu-main li a {
+    color: #FFFFFF;
+}
+
+.menu-main li:not(:last-child):after {
+    content:"\00a0\00a0\00a0\00a0.\00a0\00a0\00a0\00a0";
+    font: normal normal 500 17px/20px Montserrat;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
