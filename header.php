@@ -25,94 +25,93 @@ $container = get_theme_mod( 'understrap_container_type' );
 <?php do_action( 'wp_body_open' ); ?>
 <div class="site" id="page">
 
+	<div class="top-header">
+		<div class="overlay">
+			<div class="row">
+				<div class="col-lg-4">
+
+				</div>
+
+				<div class="col-lg-4 text-center">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/small-logo.png" alt="small-logo" class="small-logo">
+				</div>
+
+				<div class="col-lg-4 text-right">
+					<div class="social-network">
+						<span class="languages">PT/EN</span>
+						<img src="<?php echo get_template_directory_uri(); ?>/img/menu_face.png" alt="face-logo">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/menu_insta.png" alt="insta-logo">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/menu_linkedin.png" alt="linkedin-logo">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/menu_twiter.png" alt="twitter-logo">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3">
+
+				</div>
+
+				<div class="col-lg-6 text-justify">
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location'  => 'primary',
+							'container'		  => 'div',
+							'container_class' => 'menu-main',
+							'items_wrap'	  => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+							'menu_id'         => 'main-menu',
+							'depth'           => 2
+						)
+					);
+					?>
+				</div>
+
+				<div class="col-lg-3 text-right">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-3">
+
+				</div>
+
+				<div class="col-lg-6 text-center">
+					<div class="large-logo">
+						<div class="top-right">PLAYING BY YOUR SIDE</div>
+						<img src="<?php echo get_template_directory_uri(); ?>/img/large-logo.png" alt="large-logo">
+					</div>
+				</div>
+
+				<div class="col-lg-3 text-right">
+				</div>
+			</div>
+		</div>
+	</div>
 	
 
 	<!-- ******************* The Navbar Area ******************* -->
 	<div id="wrapper-navbar">
 
-		<div class="top-header">
-			<div class="overlay">
-				<div class="row">
-					<div class="col-lg-4">
+		<nav id="main-nav" class="navbar navbar-expand-xl navbar-dark" aria-labelledby="main-nav-label">
 
-					</div>
+			<div class="container-fluid">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/logo-nav.png" alt="logo-nav" class="logo-nav">
 
-					<div class="col-lg-4 text-center">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/small-logo.png" alt="small-logo" class="small-logo">
-					</div>
-
-					<div class="col-lg-4 text-right">
-						<div class="social-network">
-							<span class="languages">PT/EN</span>
-							<img src="<?php echo get_template_directory_uri(); ?>/img/menu_face.png" alt="face-logo">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/menu_insta.png" alt="insta-logo">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/menu_linkedin.png" alt="linkedin-logo">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/menu_twiter.png" alt="twitter-logo">
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-3">
-
-					</div>
-
-					<div class="col-lg-6 text-justify">
-						<?php
-						wp_nav_menu(
-							array(
-								'theme_location'  => 'primary',
-								'container'		  => 'div',
-								'container_class' => 'menu-main',
-								'items_wrap'	  => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-								'menu_id'         => 'main-menu',
-								'depth'           => 2
-							)
-						);
-						?>
-					</div>
-
-					<div class="col-lg-3 text-right">
-					</div>
+				<div class="mobile-menu-dropdown">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
+					aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="">
+						<span>Menu</span>
+						<i class="fa fa-bars"></i>
+					</button>
 				</div>
 
-				<div class="row">
-					<div class="col-lg-3">
-
-					</div>
-
-					<div class="col-lg-6 text-center">
-						<div class="large-logo">
-						<div class="top-right">PLAYING BY YOUR SIDE</div>
-						<img src="<?php echo get_template_directory_uri(); ?>/img/large-logo.png" alt="large-logo">
-						</div>
-					</div>
-
-					<div class="col-lg-3 text-right">
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<nav id="main-nav" class="navbar navbar-expand-lg navbar-dark bg-primary" aria-labelledby="main-nav-label">
-
-			<div class="container">
-
-			
-
-				<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
-				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="">
-					<span class="navbar-toggler-icon"></span>
-				</button> -->
-
-				<!-- The WordPress Menu goes here -->
 				<?php
 				wp_nav_menu(
 					array(
 						'theme_location'  => 'primary',
-
 						'container_class' => 'collapse navbar-collapse',
 						'container_id'    => 'navbarNavDropdown',
-						'menu_class'      => 'navbar-nav ml-auto',
+						'menu_class'      => 'navbar-nav',
 						'fallback_cb'     => '',
 						'menu_id'         => 'main-menu',
 						'depth'           => 2,
@@ -120,7 +119,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 					)
 				);
 				?>
-			</div><!-- .container -->
+
+				<div class="social-network-nav">
+					<span class="languages">PT/EN</span>
+					<img src="<?php echo get_template_directory_uri(); ?>/img/menu_face.png" alt="face-logo">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/menu_insta.png" alt="insta-logo">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/menu_linkedin.png" alt="linkedin-logo">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/menu_twiter.png" alt="twitter-logo">
+				</div>
+
+				<!-- The WordPress Menu goes here -->
+			</div><!--  .container -->
 
 		</nav><!-- .site-navigation -->
 

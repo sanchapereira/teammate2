@@ -20,7 +20,7 @@ body {
 }
 
 .top-header {
-    height:1920px;
+    height:1080px;
     background-image: url("../img/background.png");
 }
 
@@ -102,4 +102,39 @@ body {
     font: normal normal 500 17px/20px Montserrat;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+
+#main-nav { 
+    min-height:78px;
+    background-color: $secundary;
+
+    #main-menu {
+        li {
+
+            a {
+                text-align: center;
+                font: normal normal 500 17px/20px Montserrat;
+                letter-spacing: 0px;
+                color: #FFFFFF;
+                text-transform: uppercase;
+                opacity: 1;
+            }
+            .dropdown-menu {
+                background: $secundary;
+            }
+        }
+    }
+
+    #navbarNavDropdown {
+        padding-left: 280px;
+    }
+}
+
+.logo-nav {
+    padding-top:7px;
+}
+
+.social-network-nav {
+    padding-top:7px;
+    padding-right:57px;
 }
