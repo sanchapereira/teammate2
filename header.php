@@ -28,15 +28,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="top-header">
 		<div class="overlay">
 			<div class="row">
-				<div class="col-lg-4">
-
-				</div>
+				<div class="col"></div>
 
 				<div class="col-lg-4 text-center">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/small-logo.png" alt="small-logo" class="small-logo">
 				</div>
-
-				<div class="col-lg-4 text-right">
+				<div class="col text-right">
 					<div class="social-network">
 						<span class="languages">PT/EN</span>
 						<img src="<?php echo get_template_directory_uri(); ?>/img/menu_face.png" alt="face-logo">
@@ -47,10 +44,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-3">
-
-				</div>
-
+				<div class="col"></div>
 				<div class="col-lg-6 text-justify">
 					<?php
 					wp_nav_menu(
@@ -65,25 +59,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 					);
 					?>
 				</div>
-
-				<div class="col-lg-3 text-right">
-				</div>
+				<div class="col"></div>
 			</div>
 
 			<div class="row">
-				<div class="col-lg-3">
-
-				</div>
-
+				<div class="col"></div>
 				<div class="col-lg-6 text-center">
 					<div class="large-logo">
 						<div class="top-right">PLAYING BY YOUR SIDE</div>
-						<img src="<?php echo get_template_directory_uri(); ?>/img/large-logo.png" alt="large-logo">
+						<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/large-logo.png" alt="large-logo">
 					</div>
 				</div>
-
-				<div class="col-lg-3 text-right">
-				</div>
+				<div class="col"></div>
 			</div>
 		</div>
 	</div>
@@ -95,7 +82,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<nav id="main-nav" class="navbar navbar-expand-xl navbar-dark" aria-labelledby="main-nav-label">
 
 			<div class="container-fluid">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/logo-nav.png" alt="logo-nav" class="logo-nav">
+				<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/logo-nav.png" alt="logo-nav" class="logo-nav">
 
 				<div class="mobile-menu-dropdown">
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
