@@ -36,10 +36,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="col text-right">
 					<div class="social-network">
 						<span class="languages">PT/EN</span>
-						<img src="<?php echo get_template_directory_uri(); ?>/img/menu_face.png" alt="face-logo">
+						<a href="#">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/menu_face.png" alt="face-logo">
+						</a>
+						<a href="#">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/menu_insta.png" alt="insta-logo">
+						</a>
+						<a href="#">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/menu_linkedin.png" alt="linkedin-logo">
+						</a>
+						<a href="#">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/menu_twiter.png" alt="twitter-logo">
+						</a>
 					</div>
 				</div>
 			</div>
@@ -109,10 +117,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<div class="social-network-nav">
 					<span class="languages">PT/EN</span>
-					<img src="<?php echo get_template_directory_uri(); ?>/img/menu_face.png" alt="face-logo">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/menu_insta.png" alt="insta-logo">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/menu_linkedin.png" alt="linkedin-logo">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/menu_twiter.png" alt="twitter-logo">
+					<a href="#">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/menu_face.png" alt="face-logo">
+					</a>
+					<a href="#">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/menu_insta.png" alt="insta-logo">
+					</a>
+					<a href="#">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/menu_linkedin.png" alt="linkedin-logo">
+					</a>
+					<a href="#">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/menu_twiter.png" alt="twitter-logo">
+					</a>
 				</div>
 
 				<!-- The WordPress Menu goes here -->

@@ -17,6 +17,36 @@ $terciary-lightest:#FFFFFF;
 
 body {
     font-family:'Montserrat';
+    h1 {
+        font-weight: bold;
+        font-size:75px;
+        text-transform: uppercase;
+    }
+    h2 {
+        font-weight: bold;
+        font-size:70px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    h4 {
+        font-weight: bold;
+        font-size:35px;
+        text-transform: uppercase;
+    }
+    h6 {
+        font-weight: bold;
+        font-size:18px;
+        text-transform: uppercase;
+    }
+}
+
+.page-section {
+    padding-bottom: 119px;
+}
+
+#services {
+    background: $primary;
+    color: $terciary-lightest;
 }
 
 .top-header {
@@ -37,6 +67,16 @@ body {
 .social-network {
     padding-top:56px;
     padding-right:43px;
+    a { 
+        text-decoration: none;
+        .low-opacity {
+            opacity: 0.3;
+        }
+        
+        .low-opacity:hover {
+            opacity:1;
+        } 
+    }
 }
 
 .small-logo {
@@ -129,6 +169,17 @@ body {
 .social-network-nav {
     padding-top:7px;
     padding-right:57px;
+
+    a { 
+        text-decoration: none;
+        .low-opacity {
+            opacity: 0.3;
+        }
+        
+        .low-opacity:hover {
+            opacity:1;
+        } 
+    }
 }
 
 #who-are-we-header { 
@@ -185,4 +236,49 @@ ul#who-are-we {
 
 #index-wrapper {
     padding-top:143px;
+}
+
+.social-media-founder {
+    margin-top:26px;
+    a { 
+        text-decoration: none;
+        .low-opacity {
+            opacity: 0.3;
+        }
+        
+        .low-opacity:hover {
+            opacity:1;
+        } 
+    }
+}
+
+.service-symbol-frame {
+    text-align: center;
+    display: inline-block;
+    min-width: 165px;
+}
+
+.service-symbol-text {
+    text-align: center;
+    font: normal normal 500 18px/22px Montserrat;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 34px;
+    word-break: break-word;
+    min-height: 44px;
+}
+
+.service-icons {
+    margin-top:34px;
+}
+
+.services-info {
+    text-align: center;
+    font: normal normal 600 22px/27px Montserrat;
+    color: #FFFFFF;
+    margin-top: 64px;
+}
+
+.title-holder {
+    padding-top: 92px;
 }
