@@ -13,10 +13,143 @@ $terciary-light:#D9D9D9;
 // $terciary-lighter: #FFFFFF00;
 $terciary-lightest:#FFFFFF;
 
-@import url("../fonts/Montserrat.css");
+@media (max-width: 575px) { 
+    body {
+        h1 {
+            font-weight: bold;
+            font-size:25px;
+            text-transform: uppercase;
+        }
+        h2 {
+            font-weight: bold;
+            font-size:20px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        h4 {
+            font-weight: bold;
+            font-size:14px;
+            text-transform: uppercase;
+        }
+        h5 {
+            font-weight: bold;
+            font-size:10px;
+            text-transform: uppercase;
+        }
+        h6 {
+            font-weight: bold;
+            font-size:8px;
+            text-transform: uppercase;
+        }
+    }
+    .menu-main {
+        color: #FFFFFF;
+        font: normal normal 500 17px/20px Montserrat;
+        text-transform: uppercase;
+        padding-top:43px;
+        li {
+            display: inline;
+            list-style-type: none;
+            a {
+                color: #FFFFFF;
+            }
+        }
+    }
+}
 
-body {
-    font-family:'Montserrat';
+@media (min-width: 576px) and (max-width: 767px) {
+    h1 {
+        font-weight: bold;
+        font-size:35px;
+        text-transform: uppercase;
+    }
+    h2 {
+        font-weight: bold;
+        font-size:25px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    h4 {
+        font-weight: bold;
+        font-size:18px;
+        text-transform: uppercase;
+    }
+    h5 {
+        font-weight: bold;
+        font-size:12px;
+        text-transform: uppercase;
+    }
+    h6 {
+        font-weight: bold;
+        font-size:10px;
+        text-transform: uppercase;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) { 
+    h1 {
+        font-weight: bold;
+        font-size:50px;
+        text-transform: uppercase;
+    }
+    h2 {
+        font-weight: bold;
+        font-size:45px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    h4 {
+        font-weight: bold;
+        font-size:26px;
+        text-transform: uppercase;
+    }
+    h5 {
+        font-weight: bold;
+        font-size:18px;
+        text-transform: uppercase;
+    }
+    h6 {
+        font-weight: bold;
+        font-size:14px;
+        text-transform: uppercase;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) { 
+    h1 {
+        font-weight: bold;
+        font-size:65px;
+        text-transform: uppercase;
+    }
+    h2 {
+        font-weight: bold;
+        font-size:60px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    h4 {
+        font-weight: bold;
+        font-size:30px;
+        text-transform: uppercase;
+    }
+    h5 {
+        font-weight: bold;
+        font-size:22px;
+        text-transform: uppercase;
+    }
+    h6 {
+        font-weight: bold;
+        font-size:16px;
+        text-transform: uppercase;
+    }
+}
+
+// Medium devices (tablets, 768px and up) { ... }
+
+// Large devices (desktops, 992px and up) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
     h1 {
         font-weight: bold;
         font-size:75px;
@@ -33,11 +166,23 @@ body {
         font-size:35px;
         text-transform: uppercase;
     }
+    h5 {
+        font-weight: bold;
+        font-size:26px;
+        text-transform: uppercase;
+    }
     h6 {
         font-weight: bold;
         font-size:18px;
         text-transform: uppercase;
     }
+}
+
+
+@import url("../fonts/Montserrat.css");
+
+body {
+    font-family:'Montserrat';
 }
 
 .page-section {
@@ -50,18 +195,12 @@ body {
 }
 
 .top-header {
-    height:1080px;
     background-image: url("../img/background.png");
 }
 
 .overlay {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
     height: 100%;
     background: transparent linear-gradient(180deg, #B5904C 0%, #B5904CDC 54%, #B5904C71 100%) 0% 0% no-repeat padding-box;
-    opacity: 1;
 }
 
 .social-network {
@@ -92,19 +231,8 @@ body {
 }
 
 .large-logo {
-    position: relative;
     padding-top: 153px;
 }
-
-.large-logo .top-right{
-    position: absolute;
-    left:36px;
-    top:263px;
-    text-align: center;
-    font: normal normal bold 70px/86px Montserrat;
-    color: #FFFFFF;
-    text-transform: uppercase;
- }
 
 .logo-motto {
     white-space: nowrap;
@@ -120,22 +248,17 @@ body {
     font: normal normal 500 17px/20px Montserrat;
     text-transform: uppercase;
     padding-top:43px;
-}
-
-.menu-main li {
-    display: inline;
-    list-style-type: none;
-}
-
-.menu-main li a {
-    color: #FFFFFF;
+    li {
+        display: inline;
+        list-style-type: none;
+        a {
+            color: #FFFFFF;
+        }
+    }
 }
 
 .menu-main li:not(:last-child):after {
     content:"\00a0\00a0\00a0\00a0.\00a0\00a0\00a0\00a0";
-    font: normal normal 500 17px/20px Montserrat;
-    text-transform: uppercase;
-    color: #FFFFFF;
 }
 
 #main-nav { 
@@ -255,7 +378,6 @@ ul#who-are-we {
 .service-symbol-frame {
     text-align: center;
     display: inline-block;
-    min-width: 165px;
 }
 
 .service-symbol-text {
@@ -281,4 +403,109 @@ ul#who-are-we {
 
 .title-holder {
     padding-top: 92px;
+}
+
+.player {
+    display: inline-flex;
+    max-width: 18rem;
+    .player-card {
+        background: $secundary;
+        height: 80px;
+        padding:9px;
+        .player-name {
+            margin-block-start: 0;
+            margin-block-end: 0;
+            color: $primary;
+            text-align: left;
+            font-weight: bold;
+            font-size:26px;
+            text-transform: uppercase;
+        }
+        .player-position {
+            margin-block-start: 0;
+            margin-block-end: 0;
+            color: $terciary-lightest;
+            text-align: left;
+            font-weight: bold;
+            font-size:18px;
+            text-transform: uppercase;
+        }
+    }
+    .player-card-placeholder {
+        background: $secundary;
+        height: 80px;
+        padding:20px;
+        .player-name {
+            margin-block-start: 0;
+            margin-block-end: 0;
+            color: $primary;
+            text-align: left;
+            font-weight: bold;
+            font-size:26px;
+            text-transform: uppercase;
+            a {
+                color: $primary;
+            }
+            a:hover {
+                text-decoration: none;
+            }
+        }
+        .player-position {
+            margin-block-start: 0;
+            margin-block-end: 0;
+            color: $terciary-lightest;
+            text-align: left;
+            font-weight: bold;
+            font-size:18px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+#news {
+    background: $secundary;
+    color: $primary;
+}
+
+#wrapper-footer {
+    background: $secundary;
+    color: $primary;
+    .contact-info {
+        text-align: center;
+        font: normal normal bold 25px/30px Montserrat;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+
+        .lowercase {
+            text-transform: lowercase ;
+        }
+    }
+    .fixed-top {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: $zindex-fixed;
+      }
+    .contact-form-holder {
+        input, textarea {
+            border-radius: 22px;
+            margin-bottom: 16px;
+            font-size: 20px;
+            background: $terciary-lightest;
+            border: none;
+            outline: 0;
+            &[type="submit"] {
+                border-radius: 22px;
+                display: inline-block;
+                background: $primary;
+                color: $terciary-lightest;
+                width:149px;
+                text-transform: uppercase;
+                font-size: 15px;
+            }
+        }
+
+    }
 }

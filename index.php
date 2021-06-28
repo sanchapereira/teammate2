@@ -73,7 +73,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</p>
 						</div>
 						<div class="col-lg-3">
-							<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/founder.png" alt="founder-picture">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/founder.png" alt="founder-picture">
 							<div class="social-media-founder">
 								<a href="#"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="face-logo"></a>
 								<a href="#"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="insta-logo"></a>
@@ -87,27 +87,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="tab-pane fade" id="teammate" role="tabpanel" aria-labelledby="teammate-tab">
 					<div class="row">
 						<div class="col"></div>
-						<div class="col-lg-5">
-							<span id="founder-name">Teammate</span>
-							<p class="founder-title">Cenas</p>
+						<div class="col-lg-9">
+							<span id="founder-name">The team you will never leave</span>
 							<p class="founder-text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu metus at sem tempor accumsan a in turpis. Vivamus nec purus ut tellus fermentum fringilla. Pellentesque nec pellentesque ex. Nulla vestibulum finibus pharetra. Nunc pretium efficitur lacus, ut semper mauris consectetur sed. Integer consectetur vitae dolor ut interdum. Integer sit amet rhoncus dolor.
+							Nós só queremos uma coisa: que jogues sem te preocupares com mais nada. Que dediques todo o teu esforço ao que mais gostas de fazer. O resto nós tratamos.
 							</p>
 							<p class="founder-text">
-							Proin risus sem, egestas ut sagittis ac, elementum eu risus. Nunc sed aliquet nisl. Donec et tempor orci. Nam at elementum nisi. Curabitur id eros tellus. Pellentesque massa felis, fringilla non consequat eget, facilisis non velit. Nam et diam purus.						
+							Enquanto estás em campo, nós tomamos conta de todo o processo fora das quatro linhas e estamos sempre à procura das melhores oportunidades para ti. Por isso, mantemos contacto com os maiores clubes da Europa e com as principais marcas desportivas.
 							</p>
 							<p class="founder-text">
-							Vivamus id commodo mauris. Morbi condimentum lorem tristique condimentum varius. Suspendisse nec nunc vehicula nunc tristique interdum sit amet eu nulla. Maecenas sagittis augue in arcu gravida rhoncus. Aliquam maximus turpis eu metus ornare aliquet. Praesent vehicula, augue at efficitur congue, ligula urna laoreet nibh, vitae posuere lorem lectus ut nisl. Donec turpis ipsum, pulvinar sit amet leo ut, auctor tempus sapien. Mauris tortor odio, fringilla sed bibendum ut, sodales auctor justo. Aliquam sit amet libero bibendum, laoreet mi iaculis, ornare lacus. Nullam non semper nibh. Fusce leo orci, aliquet id magna nec, iaculis congue sapien. Sed nec venenatis magna, vel pretium velit. Vestibulum fringilla aliquet commodo. Integer sed eleifend neque.						
+							Mas um verdadeiro TeamMate não está presente apenas durante os 90 minutos. Estamos ao teu lado antes da profissionalização e depois de pendurares as chuteiras. Somos aquele TeamMate que torce sempre por ti e faz tudo para que brilhes em qualquer parte do mundo. Somos a equipa que nunca vais querer deixar! #BeOurMate
 							</p>
-						</div>
-						<div class="col-lg-3">
-							<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/founder.png" alt="founder-picture">
-							<div class="social-media-founder">
-								<a href="#"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="face-logo"></a>
-								<a href="#"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="insta-logo"></a>
-								<a href="#"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/linkedin.png" alt="linkedin-logo"></a>
-								<a href="#"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twiter.png" alt="twitter-logo"></a>
-							</div>
 						</div>
 						<div class="col"></div>
 					</div>	
@@ -130,7 +120,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</p>
 						</div>
 						<div class="col-lg-3">
-							<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/founder.png" alt="founder-picture">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/founder.png" alt="founder-picture">
 							<div class="social-media-founder">
 								<a href="#"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="face-logo"></a>
 								<a href="#"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="insta-logo"></a>
@@ -161,7 +151,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								<div class="service-symbol-text">
 									Representaçao
 								</div>
-								<img class="service-symbol" src="<?php echo get_template_directory_uri(); ?>/img/rep.svg" alt="rep"></a>
+								<img src="<?php echo get_template_directory_uri(); ?>/img/rep.svg" alt="rep"></a>
 							</div>
 						</div>
 						<div class="col-lg-2">
@@ -169,7 +159,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								<div class="service-symbol-text">
 									Intermediaçao
 								</div>
-								<img class="service-symbol" src="<?php echo get_template_directory_uri(); ?>/img/intermed.svg" alt="intermed"></a>
+								<img src="<?php echo get_template_directory_uri(); ?>/img/intermed.svg" alt="intermed"></a>
 							</div>	
 						</div>
 						<div class="col-lg-2">
@@ -178,7 +168,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								Assessoria de Comunicaçao
 							</div>
 							<div class="service-symbol-frame">
-								<img class="service-symbol" src="<?php echo get_template_directory_uri(); ?>/img/comm.svg" alt="comm"></a>
+								<img src="<?php echo get_template_directory_uri(); ?>/img/comm.svg" alt="comm"></a>
 							</div>	
 						</div>
 						<div class="col-lg-2">
@@ -186,7 +176,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								Marcas
 							</div>
 							<div class="service-symbol-frame">
-								<img class="service-symbol" src="<?php echo get_template_directory_uri(); ?>/img/brand.svg" alt="brands"></a>
+								<img src="<?php echo get_template_directory_uri(); ?>/img/brand.svg" alt="brands"></a>
 							</div>	
 
 						</div>
@@ -195,7 +185,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								Eventos Desportivos
 							</div>
 							<div class="service-symbol-frame">
-								<img class="service-symbol" src="<?php echo get_template_directory_uri(); ?>/img/event.svg" alt="events"></a>
+								<img src="<?php echo get_template_directory_uri(); ?>/img/event.svg" alt="events"></a>
 							</div>	
 						</div>
 						<div class="col"></div>
@@ -208,7 +198,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								Assessoria Juridica
 							</div>
 							<div class="service-symbol-frame">
-								<img class="service-symbol" src="<?php echo get_template_directory_uri(); ?>/img/juri.svg" alt="juri"></a>
+								<img src="<?php echo get_template_directory_uri(); ?>/img/juri.svg" alt="juri"></a>
 							</div>	
 						</div>
 						<div class="col-lg-2">
@@ -216,7 +206,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								Player Performance
 							</div>
 							<div class="service-symbol-frame">
-								<img class="service-symbol" src="<?php echo get_template_directory_uri(); ?>/img/performance.svg" alt="performance"></a>
+								<img src="<?php echo get_template_directory_uri(); ?>/img/performance.svg" alt="performance"></a>
 							</div>	
 						</div>
 						<div class="col-lg-2">
@@ -224,7 +214,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								Personal Trainer
 							</div>
 							<div class="service-symbol-frame">
-								<img class="service-symbol" src="<?php echo get_template_directory_uri(); ?>/img/pt.svg" alt="pt"></a>
+								<img src="<?php echo get_template_directory_uri(); ?>/img/pt.svg" alt="pt"></a>
 							</div>	
 						</div>
 						<div class="col-lg-2">
@@ -232,7 +222,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								Nutriçao
 							</div>
 							<div class="service-symbol-frame">
-								<img class="service-symbol" src="<?php echo get_template_directory_uri(); ?>/img/nutri.svg" alt="nutri"></a>
+								<img src="<?php echo get_template_directory_uri(); ?>/img/nutri.svg" alt="nutri"></a>
 							</div>	
 						</div>
 						<div class="col-lg-2">
@@ -240,7 +230,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								Mental Coaching
 							</div>
 							<div class="service-symbol-frame">
-								<img class="service-symbol" src="<?php echo get_template_directory_uri(); ?>/img/mental.svg" alt="mental"></a>
+								<img src="<?php echo get_template_directory_uri(); ?>/img/mental.svg" alt="mental"></a>
 							</div>	
 						</div>
 						<div class="col"></div>
@@ -260,11 +250,165 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div>
 		</div> <!-- .container-fluid -->
 	</div> <!-- #services -->
+
+	<div id="players" class="page-section">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col"></div>
+				<div class="col-lg-9">
+					<div class="title-holder">
+						<h2>Jogadoras</h2>
+					</div>
+					<ul class="nav d-flex justify-content-center" id="who-are-we" role="tablist">
+						<li>
+							<button class="active" id="all-tab" data-toggle="tab" data-target="#all" type="button" role="tab" aria-controls="founder" aria-selected="true">Todas</button>
+						</li>
+						<li>
+							<button id="gk-tab" data-toggle="tab" data-target="#gk" type="button" role="tab" aria-controls="gk" aria-selected="false">Guarda-Redes</button>
+						</li>
+						<li>
+							<button id="def-tab" data-toggle="tab" data-target="#def" type="button" role="tab" aria-controls="def" aria-selected="false">Defesa</button>
+						</li>
+						<li>
+							<button id="med-tab" data-toggle="tab" data-target="#med" type="button" role="tab" aria-controls="med" aria-selected="false">Medio</button>
+						</li>
+						<li>
+							<button id="fw-tab" data-toggle="tab" data-target="#fw" type="button" role="tab" aria-controls="fw" aria-selected="false">Avançado</button>
+						</li>
+						<li>
+							<button id="coach-tab" data-toggle="tab" data-target="#coach" type="button" role="tab" aria-controls="coach" aria-selected="false">Treinador</button>
+						</li>
+					</ul>
+				</div>
+				<div class="col"></div>
+			</div>
+
+			<div class="container-fluid tab-content" id="myTabContent">
+				<div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+					<div class="row">
+						<div class="col"></div>
+						<div class="col-lg-9 text-center">
+							<div class="card player m-3">
+								<img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/fonte.png" alt="Card image cap">
+								<div class="card-body player-card">
+									<p class="player-name">Fontemanha</p>
+									<p class="player-position">Defesa</p>
+								</div>
+							</div>
+							<div class="card player m-3">
+								<img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/fonte.png" alt="Card image cap">
+								<div class="card-body player-card">
+									<p class="player-name">Fontemanha</p>
+									<p class="player-position">Defesa</p>
+								</div>
+							</div>
+							<div class="card player m-3">
+								<img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/fonte.png" alt="Card image cap">
+								<div class="card-body player-card">
+									<p class="player-name">Fontemanha</p>
+									<p class="player-position">Defesa</p>
+								</div>
+							</div>
+							<div class="card player m-3">
+								<img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/fonte.png" alt="Card image cap">
+								<div class="card-body player-card">
+									<p class="player-name">Fontemanha</p>
+									<p class="player-position">Defesa</p>
+								</div>
+							</div>
+							<div class="card player m-3">
+								<img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/fonte.png" alt="Card image cap">
+								<div class="card-body player-card">
+									<p class="player-name">Fontemanha</p>
+									<p class="player-position">Defesa</p>
+								</div>
+							</div>
+							<div class="card player m-3">
+								<img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/fonte.png" alt="Card image cap">
+								<div class="card-body player-card">
+									<p class="player-name">Fontemanha</p>
+									<p class="player-position">Defesa</p>
+								</div>
+							</div>
+							<div class="card player m-3">
+								<img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/fonte.png" alt="Card image cap">
+								<div class="card-body player-card">
+									<p class="player-name">Fontemanha</p>
+									<p class="player-position">Defesa</p>
+								</div>
+							</div>
+							<div class="card player m-3">
+								<img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/fonte.png" alt="Card image cap">
+								<div class="card-body player-card-placeholder">
+									<p class="player-name"><a href="#contact">BE OUR MATE&nbsp;&nbsp;&nbsp;></a></p>
+								</div>
+							</div>
+						</div>
+						<div class="col"></div>
+					</div>	
+				</div>	
+				<div class="tab-pane fade" id="gk" role="tabpanel" aria-labelledby="gk-tab">
+					<div class="row">
+						<div class="col"></div>
+						<div class="col-lg-9">gk
+						</div>
+						<div class="col"></div>
+					</div>	
+				</div>	
+				<div class="tab-pane fade" id="def" role="tabpanel" aria-labelledby="def-tab">
+					<div class="row">
+						<div class="col"></div>
+						<div class="col-lg-9">def
+						</div>
+						<div class="col"></div>
+					</div>	
+				</div>	
+				<div class="tab-pane fade" id="med" role="tabpanel" aria-labelledby="med-tab">
+					<div class="row">
+						<div class="col"></div>
+						<div class="col-lg-9">med
+						</div>
+						<div class="col"></div>
+					</div>	
+				</div>	
+				<div class="tab-pane fade" id="fw" role="tabpanel" aria-labelledby="fw-tab">
+					<div class="row">
+						<div class="col"></div>
+						<div class="col-lg-9">fw
+						</div>
+						<div class="col"></div>
+					</div>	
+				</div>	
+				<div class="tab-pane fade" id="coach" role="tabpanel" aria-labelledby="coach-tab">
+					<div class="row">
+						<div class="col"></div>
+						<div class="col-lg-9">coach
+						</div>
+						<div class="col"></div>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div> <!-- #players -->
+
+	<div id="news" class="page-section">
+		<div class="container-fluid">
+			<div class="title-holder">
+				<h2>Noticias</h2>
+			</div>
+
+			<div class="row">
+				<div class="col"></div>
+				<div class="col-lg-8 text-center">
+
+				</div>
+				<div class="col"></div>
+			</div>
+		</div> <!-- .container-fluid -->
+	</div>
 	
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
-
-		
-
+	
 		<div class="row">
 
 			<!-- Do the left sidebar check and opens the primary div -->

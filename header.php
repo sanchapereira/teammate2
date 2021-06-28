@@ -73,9 +73,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="row">
 				<div class="col"></div>
 				<div class="col-lg-6 text-center">
-					<div class="large-logo">
-						<div class="top-right">PLAYING BY YOUR SIDE</div>
-						<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/large-logo.png" alt="large-logo">
+					<div class="pt-xl-7">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/main-logo.png" alt="large-logo">
 					</div>
 				</div>
 				<div class="col"></div>
@@ -85,12 +84,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 	
 
 	<!-- ******************* The Navbar Area ******************* -->
-	<div id="wrapper-navbar">
+	<div id="wrapper-navbar" class="sticky-top">
 
 		<nav id="main-nav" class="navbar navbar-expand-xl navbar-dark" aria-labelledby="main-nav-label">
 
 			<div class="container-fluid">
-				<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/logo-nav.png" alt="logo-nav" class="logo-nav">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/logo-nav.png" alt="logo-nav" class="logo-nav">
 
 				<div class="mobile-menu-dropdown">
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
@@ -136,4 +135,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		</nav><!-- .site-navigation -->
 
+		<div class="alert alert-dismissible invisible" role="alert">
+		<strong>Holy guacamole!</strong> You should check in on some of those fields below.
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		</div>
 	</div><!-- #wrapper-navbar end -->

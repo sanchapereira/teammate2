@@ -17,27 +17,20 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="wrapper" id="wrapper-footer">
 
-	<div class="<?php echo esc_attr( $container ); ?>">
+	<div class="footer-text">
+		<div class="title-holder">
+			<h2>Contactos</h2>
+		</div>
 
-		<div class="row">
-
-			<div class="col-md-12">
-
-				<footer class="site-footer" id="colophon">
-
-					<div class="site-info">
-
-						<?php understrap_site_info(); ?>
-
-					</div><!-- .site-info -->
-
-				</footer><!-- #colophon -->
-
-			</div><!--col end -->
-
-		</div><!-- row end -->
-
-	</div><!-- container end -->
+		<div class="contact-info text-center">
+			<p>+351 914 423 660</p>
+			<p class="lowercase">info@teammatefootball.pt</p>
+			<p>Lisboa, Portugal</p>
+		</div>
+		<div class="contact-form-holder">
+			<?php echo do_shortcode('[contact-form-7 id="14" title="Contact form 1"]'); ?>
+		</div>
+	</div>
 
 </div><!-- wrapper end -->
 
