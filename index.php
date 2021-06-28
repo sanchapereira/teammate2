@@ -405,45 +405,67 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="col"></div>
 			</div>
 		</div> <!-- .container-fluid -->
+	</div> <!-- #news -->
+
+	<div id="partners" class="page-section">
+			<div class="title-holder">
+				<h2>Parceiros</h2>
+			</div>
+
+			<div class="container text-center mt-6">
+			<div class="row mx-auto my-auto">
+			<div id="carouselExampleControls" class="carousel slide w-100" data-ride="carousel">
+				<div class="carousel-inner" role="listbox">
+					<div class="carousel-item active">
+						<div class="col-lg-2">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/partners/adidas.png" alt="adidas">
+						</div>			
+					</div>
+					<div class="carousel-item">
+						<div class="col-lg-2">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/partners/nb.png" alt="adidas">
+						</div>						
+					</div>
+					<div class="carousel-item">
+						<div class="col-lg-2">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/partners/joma.png" alt="adidas">
+						</div>						
+					</div>
+					<div class="carousel-item">
+						<div class="col-lg-2">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/partners/proscout.png" alt="adidas">
+						</div>						
+					</div>
+					<div class="carousel-item">
+						<div class="col-lg-2">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/partners/gearpro.png" alt="adidas">
+						</div>						
+					</div>
+					<div class="carousel-item">
+						<div class="col-lg-2">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/partners/sp.png" alt="adidas">
+						</div>						
+					</div>
+					<div class="carousel-item">
+						<div class="col-lg-2">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/partners/zumub.png" alt="adidas">
+						</div>						
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			</div>
+			</div>
 	</div>
 	
-	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 	
-		<div class="row">
-
-			<!-- Do the left sidebar check and opens the primary div -->
-			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
-
-			<main class="site-main" id="main">
-				<?php
-				if ( have_posts() ) {
-					// Start the Loop.
-					while ( have_posts() ) {
-						the_post();
-
-						/*
-						 * Include the Post-Format-specific template for the content.
-						 * If you want to override this in a child theme, then include a file
-						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-						 */
-						get_template_part( 'loop-templates/content', get_post_format() );
-					}
-				} else {
-					get_template_part( 'loop-templates/content', 'none' );
-				}
-				?>
-
-			</main><!-- #main -->
-
-			<!-- The pagination component -->
-			<?php understrap_pagination(); ?>
-
-			<!-- Do the right sidebar check -->
-			<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
-
-		</div><!-- .row -->
-
-	</div><!-- #content -->
 
 </div><!-- #index-wrapper -->
 
