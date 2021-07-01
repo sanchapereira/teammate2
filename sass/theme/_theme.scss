@@ -26,6 +26,12 @@ $terciary-lightest:#FFFFFF;
             text-transform: uppercase;
             text-align: center;
         }
+        h3 {
+            font-weight: bold;
+            font-size:18px;
+            text-transform: uppercase;
+            text-align: center;
+        }
         h4 {
             font-weight: bold;
             font-size:14px;
@@ -69,6 +75,12 @@ $terciary-lightest:#FFFFFF;
         text-transform: uppercase;
         text-align: center;
     }
+    h3 {
+        font-weight: bold;
+        font-size:20px;
+        text-transform: uppercase;
+        text-align: center;
+    }
     h4 {
         font-weight: bold;
         font-size:18px;
@@ -98,6 +110,12 @@ $terciary-lightest:#FFFFFF;
         text-transform: uppercase;
         text-align: center;
     }
+    h3 {
+        font-weight: bold;
+        font-size:30px;
+        text-transform: uppercase;
+        text-align: center;
+    }
     h4 {
         font-weight: bold;
         font-size:26px;
@@ -124,6 +142,12 @@ $terciary-lightest:#FFFFFF;
     h2 {
         font-weight: bold;
         font-size:60px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    h3 {
+        font-weight: bold;
+        font-size:45px;
         text-transform: uppercase;
         text-align: center;
     }
@@ -161,6 +185,12 @@ $terciary-lightest:#FFFFFF;
         text-transform: uppercase;
         text-align: center;
     }
+    h3 {
+        font-weight: bold;
+        font-size:55px;
+        text-transform: uppercase;
+        text-align: center;
+    }
     h4 {
         font-weight: bold;
         font-size:35px;
@@ -195,11 +225,15 @@ body {
 }
 
 .top-header {
+    background-size: cover;
+    width: 100vw; 
+    min-height: 100vh;
     background-image: url("../img/background.png");
 }
 
 .overlay {
-    height: 100%;
+    width: 100vw; 
+    min-height: 100vh;
     background: transparent linear-gradient(180deg, #B5904C 0%, #B5904CDC 54%, #B5904C71 100%) 0% 0% no-repeat padding-box;
 }
 

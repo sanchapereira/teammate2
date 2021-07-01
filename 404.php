@@ -8,8 +8,6 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-get_header();
-
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
@@ -87,4 +85,3 @@ $container = get_theme_mod( 'understrap_container_type' );
 </div><!-- #error-404-wrapper -->
 
 <?php
-get_footer();

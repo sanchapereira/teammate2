@@ -257,7 +257,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="col"></div>
 				<div class="col-lg-9">
 					<div class="title-holder">
-						<h2>Jogadoras</h2>
+						<h2>Teammates</h2>
 					</div>
 					<ul class="nav d-flex justify-content-center" id="who-are-we" role="tablist">
 						<li>
@@ -267,16 +267,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<button id="gk-tab" data-toggle="tab" data-target="#gk" type="button" role="tab" aria-controls="gk" aria-selected="false">Guarda-Redes</button>
 						</li>
 						<li>
-							<button id="def-tab" data-toggle="tab" data-target="#def" type="button" role="tab" aria-controls="def" aria-selected="false">Defesa</button>
+							<button id="def-tab" data-toggle="tab" data-target="#def" type="button" role="tab" aria-controls="def" aria-selected="false">Defesas</button>
 						</li>
 						<li>
-							<button id="med-tab" data-toggle="tab" data-target="#med" type="button" role="tab" aria-controls="med" aria-selected="false">Medio</button>
+							<button id="med-tab" data-toggle="tab" data-target="#med" type="button" role="tab" aria-controls="med" aria-selected="false">Medios</button>
 						</li>
 						<li>
-							<button id="fw-tab" data-toggle="tab" data-target="#fw" type="button" role="tab" aria-controls="fw" aria-selected="false">Avançado</button>
+							<button id="fw-tab" data-toggle="tab" data-target="#fw" type="button" role="tab" aria-controls="fw" aria-selected="false">Avançadas</button>
 						</li>
 						<li>
-							<button id="coach-tab" data-toggle="tab" data-target="#coach" type="button" role="tab" aria-controls="coach" aria-selected="false">Treinador</button>
+							<button id="coach-tab" data-toggle="tab" data-target="#coach" type="button" role="tab" aria-controls="coach" aria-selected="false">Treinadores</button>
 						</li>
 					</ul>
 				</div>
