@@ -23,31 +23,27 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <body class="front-page" <?php understrap_body_attributes(); ?>>
 <?php do_action( 'wp_body_open' ); ?>
-    <div class="top-header">    
-		 <div class="overlay">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 pt-xl-7 pt-lg-6 pt-5">
-                        <h3 style="color:white">The Team you'll never want to leave is coming</h3>
-                    </div>
-                </div>
+    <div class="container">
+    <div class="row text-center">
+        <div class="col-xs-12">
+            <h3 style="color:white">The Team you'll never want to leave is coming</h3>
+        </div>
+    </div>
 
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <div class="">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/large-logo.png" alt="large-logo">
-                        </div>
-                    </div>
-                </div>
-            <div class="row">
-				<div class="col-lg-12 text-center">
-					<div class="">
-                        <h5 style="color:white;text-transform:lowercase">info@teammatefootball.pt</h5>
-                        <h5 style="color:white">Lisboa, Portugal</h5>
-					</div>
-				</div>
-			</div>
-        </div> 
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <div class="">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/large-logo.png" alt="large-logo">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col-lg-12 text-center">
+        <div class="">
+            <h5 style="color:white;text-transform:lowercase">info@teammatefootball.pt</h5>
+            <h5 style="color:white">Lisboa, Portugal</h5>
+        </div>
+    </div>
     </div>
 
 </body>
