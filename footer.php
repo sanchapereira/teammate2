@@ -27,6 +27,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<p class="lowercase">info@teammatefootball.pt</p>
 			<p>Lisboa, Portugal</p>
 		</div>
+		<h5 class="contact-form-title text-center pt-5 pb-1">The Team you will never want to leave</h5>
 		<div class="contact-form-holder">
 			<?php echo do_shortcode('[contact-form-7 id="14" title="Contact form 1"]'); ?>
 		</div>

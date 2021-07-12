@@ -125,10 +125,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<p class="team-description">&nbsp;</p>
 								</div>
 								<div class="social-media-team">
-									<a href="#"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="face-logo"></a>
-									<a href="#"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="insta-logo"></a>
-									<a href="#"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/linkedin.png" alt="linkedin-logo"></a>
-									<a href="#"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twiter.png" alt="twitter-logo"></a>
+									<a href="https://www.facebook.com/raquel.sampaio1989" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="face-logo"></a>
+									<a href="https://www.instagram.com/raqueltsampaio" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="insta-logo"></a>
+									<a href="https://www.linkedin.com/in/raqueltsampaio" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/linkedin.png" alt="linkedin-logo"></a>
+									<a href="https://twitter.com/raqueltsampaio" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twiter.png" alt="twitter-logo"></a>
 								</div>
 							</div>
 							<div class="card team m-3">
@@ -140,9 +140,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 								</div>
 								<div class="social-media-team">
 									<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="face-logo">
-									<a href="https://www.instagram.com/falconndesign"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="insta-logo"></a>
-									<a href="https://www.linkedin.com/in/andré-ferreira-design"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/linkedin.png" alt="linkedin-logo"></a>
-									<a href="https://twitter.com/falconndesign"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twiter.png" alt="twitter-logo"></a>
+									<a href="https://www.instagram.com/falconndesign" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="insta-logo"></a>
+									<a href="https://www.linkedin.com/in/andré-ferreira-design" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/linkedin.png" alt="linkedin-logo"></a>
+									<a href="https://twitter.com/falconndesign" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twiter.png" alt="twitter-logo"></a>
 								</div>
 							</div>
 							<div class="card team m-3">
@@ -152,10 +152,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<p class="team-description">Marketing & Communications</p>
 								</div>
 								<div class="social-media-team">
-									<a href="https://www.facebook.com/catia.silva.1426"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="face-logo"></a>
-									<a href="https://www.instagram.com/catiasgs"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="insta-logo"></a>
-									<a href="https://www.linkedin.com/in/catia-silva"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/linkedin.png" alt="linkedin-logo"></a>
-									<a href="https://twitter.com/catiasgs"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twiter.png" alt="twitter-logo"></a>
+									<a href="https://www.facebook.com/catia.silva.1426" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="face-logo"></a>
+									<a href="https://www.instagram.com/catiasgs" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="insta-logo"></a>
+									<a href="https://www.linkedin.com/in/catia-silva" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/linkedin.png" alt="linkedin-logo"></a>
+									<a href="https://twitter.com/catiasgs" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twiter.png" alt="twitter-logo"></a>
 								</div>
 							</div>
 						</div>
@@ -269,6 +269,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div> <!-- .container-fluid -->
 	</div> <!-- #services -->
 
+	<div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe src="https://player.vimeo.com/video/474648492" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div id="players" class="page-section">
 		<div class="container-fluid">
 			<div class="row">
@@ -314,7 +326,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 										<p class="player-stats">172 CM</p>
 										<p class="player-stats">65 KG</p>
 										<p class="player-stats">Pé Esquerdo</p>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
+										<button class="play-button" type="button" data-toggle="modal" data-target="#exampleModal">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
+										</button>
+										<div class="social-media-player mx-2 mt-5">
+											<a href="https://www.facebook.com/InesPereiraGR" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
+											<a href="https://www.instagram.com/inespereira.12" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
+											<a href="https://twitter.com/inespereiraaaaa" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
+										</div>
 										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
 									</div>
 								</div>
@@ -336,8 +356,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 										<p class="player-stats">170 CM</p>
 										<p class="player-stats">62 KG</p>
 										<p class="player-stats">Pé Direito</p>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
+										<button class="play-button" type="button" data-toggle="modal" data-target="#exampleModal">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
+										</button>
+										<div class="social-media-player mx-2 mt-5">
+											<a href="https://www.facebook.com/InesPereiraGR" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
+											<a href="https://www.instagram.com/inespereira.12" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
+											<a href="https://twitter.com/inespereiraaaaa" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
+										</div>										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
 									</div>
 								</div>
 								<div class="card-player-photo">
@@ -358,8 +385,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 										<p class="player-stats">173 CM</p>
 										<p class="player-stats">65 KG</p>
 										<p class="player-stats">Pe Direito</p>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
+										<button class="play-button" type="button" data-toggle="modal" data-target="#exampleModal">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
+										</button>
+										<div class="social-media-player mx-2 mt-5">
+											<a href="https://www.facebook.com/InesPereiraGR" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
+											<a href="https://www.instagram.com/inespereira.12" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
+											<a href="https://twitter.com/inespereiraaaaa" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
+										</div>										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
 									</div>
 								</div>
 								<div class="card-player-photo">
@@ -378,8 +412,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 										<p class="player-stats">169 CM</p>
 										<p class="player-stats">63 KG</p>
 										<p class="player-stats">Pe Direito</p>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
+										<button class="play-button" type="button" data-toggle="modal" data-target="#exampleModal">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
+										</button>
+										<div class="social-media-player mx-2 mt-5">
+											<a href="https://www.facebook.com/InesPereiraGR" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
+											<a href="https://www.instagram.com/inespereira.12" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
+											<a href="https://twitter.com/inespereiraaaaa" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
+										</div>										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
 									</div>
 								</div>
 								<div class="card-player-photo">
@@ -398,8 +439,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 										<p class="player-stats">165 CM</p>
 										<p class="player-stats">60 KG</p>
 										<p class="player-stats">Pe Direito</p>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
+										<button class="play-button" type="button" data-toggle="modal" data-target="#exampleModal">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
+										</button>
+										<div class="social-media-player mx-2 mt-5">
+											<a href="https://www.facebook.com/InesPereiraGR" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
+											<a href="https://www.instagram.com/inespereira.12" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
+											<a href="https://twitter.com/inespereiraaaaa" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
+										</div>										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
 									</div>
 								</div>
 								<div class="card-player-photo">
@@ -418,8 +466,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 										<p class="player-stats">160 CM</p>
 										<p class="player-stats">52 KG</p>
 										<p class="player-stats">Pe Esquerdo</p>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
+										<button class="play-button" type="button" data-toggle="modal" data-target="#exampleModal">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
+										</button>
+										<div class="social-media-player mx-2 mt-5">
+											<a href="https://www.facebook.com/InesPereiraGR" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
+											<a href="https://www.instagram.com/inespereira.12" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
+											<a href="https://twitter.com/inespereiraaaaa" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
+										</div>										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
 									</div>
 								</div>
 								<div class="card-player-photo">
@@ -438,7 +493,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 										<p class="player-stats">160 CM</p>
 										<p class="player-stats">53 KG</p>
 										<p class="player-stats">Pe Esquerdo</p>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
+										<button class="play-button" type="button" data-toggle="modal" data-target="#exampleModal">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
+										</button>
+										<div class="social-media-player mx-2 mt-5">
+											<a href="https://www.facebook.com/InesPereiraGR" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
+											<a href="https://www.instagram.com/inespereira.12" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
+											<a href="https://twitter.com/inespereiraaaaa" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
+										</div>
 										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
 									</div>
 								</div>
@@ -458,8 +521,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 										<p class="player-stats">160 CM</p>
 										<p class="player-stats">51 KG</p>
 										<p class="player-stats">Pe Direito</p>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
+
+										<button class="play-button" type="button" data-toggle="modal" data-target="#exampleModal">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
+										</button>
+										<div class="social-media-player mx-2 mt-5">
+											<a href="https://www.facebook.com/InesPereiraGR" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
+											<a href="https://www.instagram.com/inespereira.12" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
+											<a href="https://twitter.com/inespereiraaaaa" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
+										</div>										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
 									</div>
 								</div>
 								<div class="card-player-photo">
@@ -479,8 +550,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 										<p class="player-stats">165 CM</p>
 										<p class="player-stats">57 KG</p>
 										<p class="player-stats">Pe Esquerdo</p>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
+
+										<button class="play-button" type="button" data-toggle="modal" data-target="#exampleModal">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
+										</button>
+										<div class="social-media-player mx-2 mt-5">
+											<a href="https://www.facebook.com/InesPereiraGR" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
+											<a href="https://www.instagram.com/inespereira.12" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
+											<a href="https://twitter.com/inespereiraaaaa" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
+										</div>										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
 									</div>
 								</div>
 								<div class="card-player-photo">
@@ -500,8 +579,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 										<p class="player-stats">170 CM</p>
 										<p class="player-stats">60 KG</p>
 										<p class="player-stats">Pe Direito</p>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
+
+										<button class="play-button" type="button" data-toggle="modal" data-target="#exampleModal">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
+										</button>
+										<div class="social-media-player mx-2 mt-5">
+											<a href="https://www.facebook.com/InesPereiraGR" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
+											<a href="https://www.instagram.com/inespereira.12" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
+											<a href="https://twitter.com/inespereiraaaaa" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
+										</div>										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
 									</div>
 								</div>
 								<div class="card-player-photo">
@@ -521,8 +608,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 										<p class="player-stats">155 CM</p>
 										<p class="player-stats">50 KG</p>
 										<p class="player-stats">Pe Direito</p>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
+
+										<button class="play-button" type="button" data-toggle="modal" data-target="#exampleModal">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
+										</button>
+										<div class="social-media-player mx-2 mt-5">
+											<a href="https://www.facebook.com/InesPereiraGR" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
+											<a href="https://www.instagram.com/inespereira.12" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
+											<a href="https://twitter.com/inespereiraaaaa" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
+										</div>										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
 									</div>
 								</div>
 								<div class="card-player-photo">
@@ -542,8 +637,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 										<p class="player-stats">168 CM</p>
 										<p class="player-stats">60 KG</p>
 										<p class="player-stats">Pe Direito</p>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
+
+										<button class="play-button" type="button" data-toggle="modal" data-target="#exampleModal">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
+										</button>
+										<div class="social-media-player mx-2 mt-5">
+											<a href="https://www.facebook.com/InesPereiraGR" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
+											<a href="https://www.instagram.com/inespereira.12" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
+											<a href="https://twitter.com/inespereiraaaaa" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
+										</div>										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
 									</div>
 								</div>
 								<div class="card-player-photo">
@@ -563,8 +666,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 										<p class="player-stats">163 CM</p>
 										<p class="player-stats">50 KG</p>
 										<p class="player-stats">Pe Direito</p>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
+
+										<button class="play-button" type="button" data-toggle="modal" data-target="#exampleModal">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
+										</button>
+										<div class="social-media-player mx-2 mt-5">
+											<a href="https://www.facebook.com/InesPereiraGR" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
+											<a href="https://www.instagram.com/inespereira.12" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
+											<a href="https://twitter.com/inespereiraaaaa" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
+										</div>										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
 									</div>
 								</div>
 								<div class="card-player-photo">
@@ -584,8 +695,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 										<p class="player-stats">174 CM</p>
 										<p class="player-stats">56 KG</p>
 										<p class="player-stats">Pe Direito</p>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
+
+										<button class="play-button" type="button" data-toggle="modal" data-target="#exampleModal">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
+										</button>
+										<div class="social-media-player mx-2 mt-5">
+											<a href="https://www.facebook.com/InesPereiraGR" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
+											<a href="https://www.instagram.com/inespereira.12" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
+											<a href="https://twitter.com/inespereiraaaaa" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
+										</div>										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
 									</div>
 								</div>
 								<div class="card-player-photo">
@@ -605,8 +724,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 										<p class="player-stats">158 CM</p>
 										<p class="player-stats">51 KG</p>
 										<p class="player-stats">Pe Direito</p>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
+
+										<button class="play-button" type="button" data-toggle="modal" data-target="#exampleModal">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
+										</button>
+										<div class="social-media-player mx-2 mt-5">
+											<a href="https://www.facebook.com/InesPereiraGR" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
+											<a href="https://www.instagram.com/inespereira.12" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
+											<a href="https://twitter.com/inespereiraaaaa" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
+										</div>										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
 									</div>
 								</div>
 								<div class="card-player-photo">
@@ -626,8 +753,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 										<p class="player-stats">172 CM</p>
 										<p class="player-stats">53 KG</p>
 										<p class="player-stats">Pe Direito</p>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
+
+										<button class="play-button" type="button" data-toggle="modal" data-target="#exampleModal">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
+										</button>
+										<div class="social-media-player mx-2 mt-5">
+											<a href="https://www.facebook.com/InesPereiraGR" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
+											<a href="https://www.instagram.com/inespereira.12" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
+											<a href="https://twitter.com/inespereiraaaaa" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
+										</div>										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
 									</div>
 								</div>
 								<div class="card-player-photo">
@@ -647,8 +782,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 										<p class="player-stats">163 CM</p>
 										<p class="player-stats">57 KG</p>
 										<p class="player-stats">Pe Direito</p>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
+
+										<button class="play-button" type="button" data-toggle="modal" data-target="#exampleModal">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
+										</button>
+										<div class="social-media-player mx-2 mt-5">
+											<a href="https://www.facebook.com/InesPereiraGR" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
+											<a href="https://www.instagram.com/inespereira.12" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
+											<a href="https://twitter.com/inespereiraaaaa" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
+										</div>										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
 									</div>
 								</div>
 								<div class="card-player-photo">
@@ -668,7 +811,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 										<p class="player-stats">159 CM</p>
 										<p class="player-stats">52 KG</p>
 										<p class="player-stats">Pe Direito</p>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
+
+										<button class="play-button" type="button" data-toggle="modal" data-target="#exampleModal">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
+										</button>
+
+										<div class="social-media-player mx-2 mt-5">
+											<a href="https://www.facebook.com/luana.barata.10" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
+											<a href="https://www.instagram.com/_luanabarata21_" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
+											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo">
+										</div>										
 										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
 									</div>
 								</div>
@@ -689,8 +842,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 										<p class="player-stats">160 CM</p>
 										<p class="player-stats">55 KG</p>
 										<p class="player-stats">Pe Esquerdo</p>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
+
+										<button class="play-button" type="button" data-toggle="modal" data-target="#exampleModal">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
+										</button> 
+										<div class="social-media-player mx-2 mt-5">
+											<a href="https://www.facebook.com/Clarinhaa10" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
+											<a href="https://www.instagram.com/claarinha_10" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
+											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
+										</div>										
+										<a href="<?php echo get_template_directory_uri(); ?>/cvs/CV_Clarinha.pdf" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download"></a>
 									</div>
 								</div>
 								<div class="card-player-photo">
@@ -710,8 +872,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 										<p class="player-stats">156 CM</p>
 										<p class="player-stats">42 KG</p>
 										<p class="player-stats">Pe Esquerdo</p>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
+
+										<button class="play-button" type="button" data-toggle="modal" data-target="#exampleModal">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
+										</button>
+										<div class="social-media-player mx-2 mt-5">
+											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo">
+											<a href="https://www.instagram.com/mafalda.11" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
+											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo">
+										</div>										
+										<a href="<?php echo get_template_directory_uri(); ?>/cvs/CV_MafaldaMariano.pdf" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download"></a>
 									</div>
 								</div>
 								<div class="card-player-photo">
@@ -731,8 +902,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 										<p class="player-stats">155 CM</p>
 										<p class="player-stats">41 KG</p>
 										<p class="player-stats">Pe Direito</p>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download">
+
+										<button class="play-button" type="button" data-toggle="modal" data-target="#exampleModal">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
+										</button>
+										<div class="social-media-player mx-2 mt-5">
+											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo">
+											<a href="https://www.instagram.com/mariagarciaferreira_02" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
+											<a href="https://twitter.com/mariagf0299" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
+										</div>										
+										<a href="<?php echo get_template_directory_uri(); ?>/cvs/CV_MariaFerreira.pdf" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download"></a>
 									</div>
 								</div>
 								<div class="card-player-photo">
@@ -749,7 +929,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<div class="card-body player-card-info">
 										<p class="player-name">Mariana Cabral</p>
 										<p class="player-position">Treinadora</p>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
+										
+										<button class="play-button" type="button" data-toggle="modal" data-target="#exampleModal">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
+										</button>
+										<div class="social-media-player mx-2 mt-5">
+											<a href="#" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
+											<a href="https://www.instagram.com/marianammvcabral" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<a href="https://www.linkedin.com/in/marianamcabral" targer="_blank"><img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo"></a>
+											<a href="https://twitter.com/marianacabral" targer="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
+										</div>										
 										<a href="<?php echo get_template_directory_uri(); ?>/cvs/CV_RuteCosta.pdf" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download"></a>
 									</div>
 								</div>

@@ -229,6 +229,7 @@ body {
     width: 100vw; 
     min-height: 100vh;
     background-image: url("../img/background.png");
+    background-position: center;
 }
 
 .overlay {
@@ -542,6 +543,29 @@ ul#who-are-we {
     }
 }
 
+.social-media-player {
+    display: inline-block;
+    img {
+        max-width: 28px;
+        max-height: 28px;
+    }
+    .low-opacity-fixed {
+        opacity:0.3;
+    } 
+    .low-opacity {
+        opacity:0.3;
+    }
+    .low-opacity:hover {
+        opacity:1;
+    } 
+}
+
+.play-button {
+    background: none;
+	border: none;
+	padding: 0;
+}
+
 #news {
     background: $secundary;
     background-image: url("../img/logo-news.png") no-repeat;
@@ -553,13 +577,17 @@ ul#who-are-we {
     color: $primary;
     .contact-info {
         text-align: center;
-        font: normal normal bold 25px/30px Montserrat;
+        font: normal normal 600 25px/30px Montserrat;
         letter-spacing: 0px;
         color: #FFFFFF;
         text-transform: uppercase;
 
         .lowercase {
             text-transform: lowercase ;
+        }
+        p {
+            margin-block-start:0;
+            margin-block-end:0;
         }
     }
     .fixed-top {
@@ -588,6 +616,10 @@ ul#who-are-we {
             }
         }
 
+    }
+    h5 {
+        color:$terciary-lightest;
+        font-weight: 600;
     }
 }
 
@@ -668,4 +700,9 @@ ul#who-are-we {
 .carousel-inner .carousel-item-right,
 .carousel-inner .carousel-item-left{ 
     transform: translateX(0);
+}
+
+.modal-content {
+    background-color:initial;
+    border:none;
 }

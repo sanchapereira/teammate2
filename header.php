@@ -51,7 +51,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			<!-- <div class="row">
 				<div class="col"></div>
 				<div class="col-lg-6 text-justify">
 					<?php
@@ -68,7 +68,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					?>
 				</div>
 				<div class="col"></div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 	
