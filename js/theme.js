@@ -7091,6 +7091,13 @@ jQuery(function ($) {
       next.children(':first-child').clone().appendTo($(this));
     }
   });
+  $('.card.player').hover(function () {
+    $(this).children('.card-player-photo').addClass("invisible");
+    $(this).children('.card-player-info').removeClass("invisible");
+  }, function () {
+    $(this).find('.card-player-photo').removeClass("invisible");
+    $(this).find('.card-player-info').addClass("invisible");
+  });
 });
 document.addEventListener('wpcf7invalid', function (event) {
   alert('yo');

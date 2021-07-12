@@ -69,16 +69,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 				<div class="col"></div>
 			</div>
-
-			<div class="row">
-				<div class="col"></div>
-				<div class="col-lg-6 text-center">
-					<div class="pt-xl-7">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/main-logo.png" alt="large-logo">
-					</div>
-				</div>
-				<div class="col"></div>
-			</div>
 		</div>
 	</div>
 	
@@ -134,11 +124,4 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div><!--  .container -->
 
 		</nav><!-- .site-navigation -->
-
-		<div class="alert alert-warning alert-dismissible show" role="alert">
-		<strong>Holy guacamole!</strong> You should check in on some of those fields below.
-		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-		</button>
-		</div>
 	</div><!-- #wrapper-navbar end -->
