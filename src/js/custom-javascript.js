@@ -19,18 +19,37 @@ jQuery(function($) {
         }
     });
 
-    // $('.card.player:not(.placeholder)').hover(function() {
-    //     $(this).children('.card-player-photo').addClass("invisible");
-    //     $(this).children('.card-player-info').removeClass("invisible");
-    // }, function() {
-    //     $(this).find('.card-player-photo').removeClass("invisible");
-    //     $(this).find('.card-player-info').addClass("invisible");
-    // });
+    $('.card.player:not(.placeholder)').hover(function() {
+        $(this).children('.card-player-photo').addClass("invisible");
+        $(this).children('.card-player-info').removeClass("invisible");
+    }, function() {
+        $(this).find('.card-player-photo').removeClass("invisible");
+        $(this).find('.card-player-info').addClass("invisible");
+    });
 
     $('.service-symbol-frame').hover(function() {
         $('#services-info-text').html($(this).attr('data-text'));
     }, function() {
     });
+
+    $('button.players-nav-buttons').on('click', function (e) {
+        $('button.players-nav-buttons').removeClass('active');
+        $(this).addClass('active');
+
+        $('.card.player').hide();
+        $('.card.player.' + $(this).attr('data-position')).show();
+    });
+
+    $('#highlightsModal').on('show.bs.modal', function (e) {
+        $('#player-video-frame').attr('src', $(e.relatedTarget).attr('data-media'));
+    });
+
+    $('#highlightsModal').on('hide.bs.modal', function (e) {
+        // $("#player-video-frame")[0].contentWindow.postMessage('{"method":"pause"}', '*');
+        // $("#player-video-frame")[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+        $('#player-video-frame').attr('src', '');
+    });
+
 });
 
 

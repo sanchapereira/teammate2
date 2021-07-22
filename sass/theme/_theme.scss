@@ -367,7 +367,6 @@ ul#who-are-we {
 
 #myTabContent {
     margin-top:88px;
-    margin: 278
 }
 
 #founder-name {
@@ -389,7 +388,7 @@ ul#who-are-we {
 }
 
 #index-wrapper {
-    padding-top:143px;
+    padding:0;
 }
 
 .social-media-founder {
@@ -626,13 +625,41 @@ ul#who-are-we {
     }
 }
 
+.custom-nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    li {
+        button {
+            text-align: center;
+            font: normal normal 600 25px/30px Montserrat;
+            color: #B5904C;
+            text-transform: uppercase;
+            display:inline-block;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+            padding: 8px 0px 4px;
+            background: none;
+        }
+        button.active {
+            border-bottom:2px solid #B5904C;
+        }
+    }
+    li:not(:last-child) {
+        margin-right:87px;
+    }
+}
+
 .card-player-flags {
     position:absolute;
     top:20px;
     left:0;
-    height:100%;
     width:100%;
-    z-index:9999;
+    z-index:1010;
 }
 
 .card-player-info {
@@ -650,7 +677,7 @@ ul#who-are-we {
             color: $primary;
             text-align: left;
             font-weight: bold;
-            font-size:23px;
+            font-size:20px;
             text-transform: uppercase;
         }
         .player-position {
