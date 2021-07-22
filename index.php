@@ -339,7 +339,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="card-player-flags">
 								<div class="row">
 									<div class="col">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/teammates/scp.svg" alt="club-logo">
+										<img class="country-flag" src="<?php echo get_template_directory_uri(); ?>/img/teammates/pt.svg" alt="club-logo">
 									</div>
 									<div class="col"></div>
 									<div class="col">
@@ -382,7 +382,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="card-player-flags">
 								<div class="row">
 									<div class="col">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/teammates/fama.svg" alt="club-logo">
+										<img class="country-flag" src="<?php echo get_template_directory_uri(); ?>/img/teammates/pt.svg" alt="club-logo">
 									</div>
 									<div class="col"></div>
 									<div class="col">
@@ -428,7 +428,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="card-player-flags">
 								<div class="row">
 									<div class="col">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/teammates/fama.svg" alt="club-logo">
+										<img class="country-flag" src="<?php echo get_template_directory_uri(); ?>/img/teammates/pt.svg" alt="club-logo">
 									</div>
 									<div class="col"></div>
 									<div class="col">
@@ -472,7 +472,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="card-player-flags">
 								<div class="row">
 									<div class="col">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/teammates/scp.svg" alt="club-logo">
+										<img class="country-flag" src="<?php echo get_template_directory_uri(); ?>/img/teammates/pt.svg" alt="club-logo">
 									</div>
 									<div class="col"></div>
 									<div class="col">
@@ -517,7 +517,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="card-player-flags">
 								<div class="row">
 									<div class="col">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/teammates/scp.svg" alt="club-logo">
+										<img class="country-flag" src="<?php echo get_template_directory_uri(); ?>/img/teammates/pt.svg" alt="club-logo">
 									</div>
 									<div class="col"></div>
 									<div class="col">
@@ -561,7 +561,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="card-player-flags">
 								<div class="row">
 									<div class="col">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/teammates/scp.svg" alt="club-logo">
+										<img class="country-flag" src="<?php echo get_template_directory_uri(); ?>/img/teammates/pt.svg" alt="club-logo">
 									</div>
 									<div class="col"></div>
 									<div class="col">
@@ -607,7 +607,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="card-player-flags">
 								<div class="row">
 									<div class="col">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/teammates/pt.svg" alt="club-logo">
+										<img class="country-flag" src="<?php echo get_template_directory_uri(); ?>/img/teammates/pt.svg" alt="club-logo">
 									</div>
 									<div class="col"></div>
 									<div class="col">
@@ -698,7 +698,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="card-player-flags">
 								<div class="row">
 									<div class="col">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/teammates/scp.svg" alt="club-logo">
+										<img class="country-flag" src="<?php echo get_template_directory_uri(); ?>/img/teammates/pt.svg" alt="club-logo">
 									</div>
 									<div class="col"></div>
 									<div class="col">
@@ -743,7 +743,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="card-player-flags">
 								<div class="row">
 									<div class="col">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/teammates/braga.svg" alt="club-logo">
+										<img class="country-flag" src="<?php echo get_template_directory_uri(); ?>/img/teammates/pt.svg" alt="club-logo">
 									</div>
 									<div class="col"></div>
 									<div class="col">
@@ -787,7 +787,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="card-player-flags">
 								<div class="row">
 									<div class="col">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/teammates/scp.svg" alt="club-logo">
+										<img class="country-flag" src="<?php echo get_template_directory_uri(); ?>/img/teammates/pt.svg" alt="club-logo">
 									</div>
 									<div class="col"></div>
 									<div class="col">
@@ -831,7 +831,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="card-player-flags">
 								<div class="row">
 									<div class="col">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/teammates/slb.svg" alt="club-logo">
+										<img class="country-flag" src="<?php echo get_template_directory_uri(); ?>/img/teammates/brazil.svg" alt="club-logo">
 									</div>
 									<div class="col"></div>
 									<div class="col">
@@ -875,7 +875,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="card-player-flags">
 								<div class="row">
 									<div class="col">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/teammates/scp.svg" alt="club-logo">
+										<img class="country-flag" src="<?php echo get_template_directory_uri(); ?>/img/teammates/pt.svg" alt="club-logo">
 									</div>
 									<div class="col"></div>
 									<div class="col">
@@ -919,7 +919,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="card-player-flags">
 								<div class="row">
 									<div class="col">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/teammates/scp.svg" alt="club-logo">
+										<img class="country-flag" src="<?php echo get_template_directory_uri(); ?>/img/teammates/pt.svg" alt="club-logo">
 									</div>
 									<div class="col"></div>
 									<div class="col">
@@ -963,7 +963,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="card-player-flags">
 								<div class="row">
 									<div class="col">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/teammates/scp.svg" alt="club-logo">
+										<img class="country-flag" src="<?php echo get_template_directory_uri(); ?>/img/teammates/pt.svg" alt="club-logo">
 									</div>
 									<div class="col"></div>
 									<div class="col">
@@ -1007,7 +1007,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="card-player-flags">
 								<div class="row">
 									<div class="col">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/teammates/slb.svg" alt="club-logo">
+										<img class="country-flag" src="<?php echo get_template_directory_uri(); ?>/img/teammates/pt.svg" alt="club-logo">
 									</div>
 									<div class="col"></div>
 									<div class="col">
@@ -1051,7 +1051,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="card-player-flags">
 								<div class="row">
 									<div class="col">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/teammates/scp.svg" alt="club-logo">
+										<img class="country-flag" src="<?php echo get_template_directory_uri(); ?>/img/teammates/pt.svg" alt="club-logo">
 									</div>
 									<div class="col"></div>
 									<div class="col">
@@ -1095,7 +1095,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="card-player-flags">
 								<div class="row">
 									<div class="col">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/teammates/scp.svg" alt="club-logo">
+										<img class="country-flag" src="<?php echo get_template_directory_uri(); ?>/img/teammates/pt.svg" alt="club-logo">
 									</div>
 									<div class="col"></div>
 									<div class="col">
@@ -1139,7 +1139,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="card-player-flags">
 								<div class="row">
 									<div class="col">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/teammates/heerenveen.svg" alt="club-logo">
+										<img class="country-flag" src="<?php echo get_template_directory_uri(); ?>/img/teammates/pt.svg" alt="club-logo">
 									</div>
 									<div class="col"></div>
 									<div class="col">
@@ -1184,7 +1184,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="card-player-flags">
 								<div class="row">
 									<div class="col">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/teammates/scp.svg" alt="club-logo">
+										<img class="country-flag" src="<?php echo get_template_directory_uri(); ?>/img/teammates/pt.svg" alt="club-logo">
 									</div>
 									<div class="col"></div>
 									<div class="col">
@@ -1228,11 +1228,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="card-player-flags">
 								<div class="row">
 									<div class="col">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/teammates/fama2.svg" alt="club-logo">
+										<img class="country-flag" src="<?php echo get_template_directory_uri(); ?>/img/teammates/pt.svg" alt="club-logo">
 									</div>
 									<div class="col"></div>
 									<div class="col">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/teammates/fama2.svg" alt="club-logo">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/teammates/aland.png" alt="club-logo">
 									</div>
 								</div>
 							</div>
@@ -1271,11 +1271,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="card-player-flags">
 								<div class="row">
 									<div class="col">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/teammates/fama2.svg" alt="club-logo">
+										<img class="country-flag" src="<?php echo get_template_directory_uri(); ?>/img/teammates/swiss.svg" alt="club-logo">
 									</div>
 									<div class="col"></div>
 									<div class="col">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/teammates/fama2.svg" alt="club-logo">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/teammates/zurich.svg" alt="club-logo">
 									</div>
 								</div>
 							</div>
@@ -1315,7 +1315,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="card-player-flags">
 								<div class="row">
 									<div class="col">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/teammates/scp.svg" alt="club-logo">
+										<img class="country-flag" src="<?php echo get_template_directory_uri(); ?>/img/teammates/pt.svg" alt="club-logo">
 									</div>
 									<div class="col"></div>
 									<div class="col">
@@ -1400,6 +1400,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 		</div> <!-- .container-fluid -->
 	</div> <!-- #news -->
+
+	<div id="newsletter" class="pt-5 pb-4">
+		<div class="contact-form-holder">
+			<?php echo do_shortcode('[mc4wp_form id="26"]'); ?>
+		</div>
+	</div>
 
 	<div id="partners" class="page-section">
 			<div class="title-holder">
