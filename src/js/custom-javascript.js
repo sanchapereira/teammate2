@@ -19,12 +19,17 @@ jQuery(function($) {
         }
     });
 
-    $('.card.player').hover(function() {
-        $(this).children('.card-player-photo').addClass("invisible");
-        $(this).children('.card-player-info').removeClass("invisible");
+    // $('.card.player:not(.placeholder)').hover(function() {
+    //     $(this).children('.card-player-photo').addClass("invisible");
+    //     $(this).children('.card-player-info').removeClass("invisible");
+    // }, function() {
+    //     $(this).find('.card-player-photo').removeClass("invisible");
+    //     $(this).find('.card-player-info').addClass("invisible");
+    // });
+
+    $('.service-symbol-frame').hover(function() {
+        $('#services-info-text').html($(this).attr('data-text'));
     }, function() {
-        $(this).find('.card-player-photo').removeClass("invisible");
-        $(this).find('.card-player-info').addClass("invisible");
     });
 });
 
