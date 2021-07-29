@@ -23,8 +23,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <body <?php body_class(); ?> <?php understrap_body_attributes(); ?>>
 <?php do_action( 'wp_body_open' ); ?>
+
 <div class="site" id="page">
 
+	<div id="targetElement"></div>
 	<div class="top-header">
 		<div class="row">
 			<div class="col"></div>
@@ -71,7 +73,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="row">
 
 			<div class="col"></div>
-			<div class="col-lg-6 text-center">
+			<div class="col-lg-6 text-center mt-lg-5 mt-sm-3">
 				<img src="<?php echo get_template_directory_uri(); ?>/img/background.png" alt="background-logo">
 			</div>
 			<div class="col"></div>
@@ -130,3 +132,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		</nav><!-- .site-navigation -->
 	</div><!-- #wrapper-navbar end -->
+
+
+<div data-scrolld="page">
+	fae
+</div>
