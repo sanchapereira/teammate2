@@ -1478,45 +1478,58 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<h2>Parceiros</h2>
 			</div>
 
-			<div class="container text-center mt-6">
-			<div class="row mx-auto my-auto">
-			<div id="carouselExampleControls" class="carousel slide w-100" data-ride="carousel">
-				<div class="carousel-inner" role="listbox">
-					<div class="carousel-item active">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/partners/adidas.png" alt="adidas">		
-					</div>
-					<div class="carousel-item">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/partners/nb.png" alt="adidas">					
-					</div>
-					<div class="carousel-item">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/partners/joma.png" alt="adidas">				
-					</div>
-					<div class="carousel-item">
-						<div class="col-lg-2">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/partners/proscout.png" alt="adidas">
-						</div>						
-					</div>
-					<div class="carousel-item">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/partners/gearpro.png" alt="adidas">					
-					</div>
-					<div class="carousel-item">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/partners/sp.png" alt="adidas">				
-					</div>
-					<div class="carousel-item">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/partners/zumub.png" alt="adidas">
-					</div>
+			<div class="row">
+				<div class="col text-center">
+					<img id="prev-arrow" class="slick-prev" src="<?php echo get_template_directory_uri(); ?>/img/partners/arrow_left.png" alt="prev">
 				</div>
-				<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
+				<div class="col-lg-8">
+					<div class="slider">
+						<div>
+							<div class="slider-image-container">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/partners/adidas.png" alt="adidas">	
+							</div>
+						</div>
+						<div>
+							<div class="slider-image-container">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/partners/nb.png" alt="adidas">					
+							</div>
+						</div>
+						<div>
+							<div class="slider-image-container">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/partners/joma.png" alt="adidas">				
+							</div>
+						</div>
+						<div>
+							<div class="slider-image-container">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/partners/proscout.png" alt="adidas">			
+							</div>
+						</div>
+						<div>
+							<div class="slider-image-container">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/partners/gearxpro.png" alt="adidas">					
+							</div>
+						</div>
+						<div>
+							<div class="slider-image-container">
+								<img style="width:104px;height:103px;"  src="<?php echo get_template_directory_uri(); ?>/img/partners/sp.png" alt="adidas">				
+							</div>
+						</div>
+						<div>
+							<div class="slider-image-container">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/partners/zumub.png" alt="adidas">
+							</div>
+						</div>
+						<div>
+							<img src="<?php echo get_template_directory_uri(); ?>/img/partners/sports-embassy.png" alt="adidas">
+						</div>
+					</div>
+
+				</div>
+				<div class="col text-center">
+					<img id="next-arrow" class="slick-next" src="<?php echo get_template_directory_uri(); ?>/img/partners/arrow_right.png" alt="next">	
+				</div>
 			</div>
-			</div>
-			</div>
+
 	</div>
 	
 	

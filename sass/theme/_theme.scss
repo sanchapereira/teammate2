@@ -781,6 +781,38 @@ ul#who-are-we {
     color: $primary;
 }
 
+.material-scrolltop {
+    left:40px;
+    bottom:31px;
+    border-radius:0;
+    z-index:1030;
+    background: $secundary-light;
+}
+
+.material-scrolltop:hover {
+    background-color: $secundary-light;
+}
+
+.material-scrolltop::before {
+    background-color: $secundary-light;
+}
+
+.material-scrolltop.reveal {
+    width:55px;
+    height:55px;
+}
+
+.slick-slide {
+    img {
+        width:100%;
+    }
+}
+
+.slider-image-container {
+    max-width:120px;
+    max-height:120px;
+}
+
 .carousel-item {
     img {
         height:75px;

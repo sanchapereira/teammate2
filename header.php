@@ -134,6 +134,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 	</div><!-- #wrapper-navbar end -->
 
 
-<div data-scrolld="page">
-	fae
-</div>
+<button class="material-scrolltop" type="button">
+	<img src="<?php echo get_template_directory_uri(); ?>/img/backup.png" alt="backup">
+</button>
