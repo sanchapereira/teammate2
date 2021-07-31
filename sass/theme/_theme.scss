@@ -53,13 +53,96 @@ $terciary-lightest:#FFFFFF;
         font: normal normal 500 17px/20px Montserrat;
         text-transform: uppercase;
         padding-top:43px;
-        li {
-            display: inline;
-            list-style-type: none;
-            a {
-                color: #FFFFFF;
+        ul {
+            padding-inline-start:0px;
+            li {
+                display: inline;
+                list-style-type: none;
+                a {
+                    color: #FFFFFF;
+                }
             }
         }
+        
+    }
+
+    #main-menu-container {
+        display:none;
+    }
+
+    #header-social-network {
+        display:none;
+    }
+
+    ul#who-are-we-nav {
+        margin-top:37px;
+        li {
+            button {
+                text-align: center;
+                font: normal normal 600 15px/30px Montserrat;
+                color: #B5904C;
+                text-transform: uppercase;
+                display:inline-block;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: none;
+                padding: 8px 0px 4px;
+                background: none;
+            }
+            button.active {
+                border-bottom:2px solid #B5904C;
+            }
+        }
+        li:not(:last-child) {
+            margin-right:17px;
+        }
+    }
+
+    .custom-nav {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        li {
+            button {
+                text-align: center;
+                font: normal normal 600 15px/30px Montserrat;
+                color: #B5904C;
+                text-transform: uppercase;
+                display:inline-block;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: none;
+                padding: 8px 0px 4px;
+                background: none;
+            }
+            button.active {
+                border-bottom:2px solid #B5904C;
+            }
+        }
+        li:not(:last-child) {
+            margin-right:10px;
+        }
+    }
+
+    .service-symbol-text {
+        display:none;
+    }
+
+    .services-info {
+        text-align: center;
+        font: normal normal 600 16px/27px Montserrat;
+        color: #FFFFFF;
+    }
+
+    .material-scrolltop {
+        display:none;
+    }
+    .slider {
+        max-width: 400px;
     }
 }
 
@@ -96,6 +179,82 @@ $terciary-lightest:#FFFFFF;
         font-size:10px;
         text-transform: uppercase;
     }
+
+    #main-menu-container {
+        display:none;
+    }
+
+    #header-social-network {
+        display:none;
+    }
+
+    ul#who-are-we-nav {
+        margin-top:37px;
+        li {
+            button {
+                text-align: center;
+                font: normal normal 600 25px/30px Montserrat;
+                color: #B5904C;
+                text-transform: uppercase;
+                display:inline-block;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: none;
+                padding: 8px 0px 4px;
+                background: none;
+            }
+            button.active {
+                border-bottom:2px solid #B5904C;
+            }
+        }
+        li:not(:last-child) {
+            margin-right:87px;
+        }
+    }
+
+    .custom-nav {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        li {
+            button {
+                text-align: center;
+                font: normal normal 600 25px/30px Montserrat;
+                color: #B5904C;
+                text-transform: uppercase;
+                display:inline-block;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: none;
+                padding: 8px 0px 4px;
+                background: none;
+            }
+            button.active {
+                border-bottom:2px solid #B5904C;
+            }
+        }
+        li:not(:last-child) {
+            margin-right:87px;
+        }
+    }
+
+    .services-symbol-text {
+        display:none;
+    }
+
+    .services-info {
+        text-align: center;
+        font: normal normal 600 22px/27px Montserrat;
+        color: #FFFFFF;
+    }
+
+    .slider {
+        max-width: 500px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) { 
@@ -130,6 +289,74 @@ $terciary-lightest:#FFFFFF;
         font-weight: bold;
         font-size:14px;
         text-transform: uppercase;
+    }
+
+    #main-menu-container {
+        display:none;
+    }
+
+    ul#who-are-we-nav {
+        margin-top:37px;
+        li {
+            button {
+                text-align: center;
+                font: normal normal 600 25px/30px Montserrat;
+                color: #B5904C;
+                text-transform: uppercase;
+                display:inline-block;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: none;
+                padding: 8px 0px 4px;
+                background: none;
+            }
+            button.active {
+                border-bottom:2px solid #B5904C;
+            }
+        }
+        li:not(:last-child) {
+            margin-right:87px;
+        }
+    }
+
+    .custom-nav {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        li {
+            button {
+                text-align: center;
+                font: normal normal 600 25px/30px Montserrat;
+                color: #B5904C;
+                text-transform: uppercase;
+                display:inline-block;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: none;
+                padding: 8px 0px 4px;
+                background: none;
+            }
+            button.active {
+                border-bottom:2px solid #B5904C;
+            }
+        }
+        li:not(:last-child) {
+            margin-right:87px;
+        }
+    }
+
+    #services-info-title {
+        display:none;
+    }
+
+    .services-info {
+        text-align: center;
+        font: normal normal 600 22px/27px Montserrat;
+        color: #FFFFFF;
     }
 }
 
@@ -166,6 +393,70 @@ $terciary-lightest:#FFFFFF;
         font-size:16px;
         text-transform: uppercase;
     }
+
+    ul#who-are-we-nav {
+        margin-top:37px;
+        li {
+            button {
+                text-align: center;
+                font: normal normal 600 25px/30px Montserrat;
+                color: #B5904C;
+                text-transform: uppercase;
+                display:inline-block;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: none;
+                padding: 8px 0px 4px;
+                background: none;
+            }
+            button.active {
+                border-bottom:2px solid #B5904C;
+            }
+        }
+        li:not(:last-child) {
+            margin-right:87px;
+        }
+    }
+
+    .custom-nav {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        li {
+            button {
+                text-align: center;
+                font: normal normal 600 25px/30px Montserrat;
+                color: #B5904C;
+                text-transform: uppercase;
+                display:inline-block;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: none;
+                padding: 8px 0px 4px;
+                background: none;
+            }
+            button.active {
+                border-bottom:2px solid #B5904C;
+            }
+        }
+        li:not(:last-child) {
+            margin-right:87px;
+        }
+    }
+
+    #services-info-title {
+        display:none;
+    }
+
+    .services-info {
+        text-align: center;
+        font: normal normal 600 22px/27px Montserrat;
+        color: #FFFFFF;
+    }
 }
 
 // Medium devices (tablets, 768px and up) { ... }
@@ -176,35 +467,99 @@ $terciary-lightest:#FFFFFF;
 @media (min-width: 1200px) { 
     h1 {
         font-weight: bold;
-        font-size:75px;
+        font-size:70px;
         text-transform: uppercase;
     }
     h2 {
         font-weight: bold;
-        font-size:70px;
+        font-size:65px;
         text-transform: uppercase;
         text-align: center;
     }
     h3 {
         font-weight: bold;
-        font-size:55px;
+        font-size:50px;
         text-transform: uppercase;
         text-align: center;
     }
     h4 {
         font-weight: bold;
-        font-size:35px;
+        font-size:30px;
         text-transform: uppercase;
     }
     h5 {
         font-weight: bold;
-        font-size:25px;
+        font-size:20px;
         text-transform: uppercase;
     }
     h6 {
         font-weight: bold;
-        font-size:18px;
+        font-size:15px;
         text-transform: uppercase;
+    }
+
+    ul#who-are-we-nav {
+        margin-top:37px;
+        li {
+            button {
+                text-align: center;
+                font: normal normal 600 25px/30px Montserrat;
+                color: #B5904C;
+                text-transform: uppercase;
+                display:inline-block;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: none;
+                padding: 8px 0px 4px;
+                background: none;
+            }
+            button.active {
+                border-bottom:2px solid #B5904C;
+            }
+        }
+        li:not(:last-child) {
+            margin-right:87px;
+        }
+    }
+
+    .custom-nav {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        li {
+            button {
+                text-align: center;
+                font: normal normal 600 25px/30px Montserrat;
+                color: #B5904C;
+                text-transform: uppercase;
+                display:inline-block;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: none;
+                padding: 8px 0px 4px;
+                background: none;
+            }
+            button.active {
+                border-bottom:2px solid #B5904C;
+            }
+        }
+        li:not(:last-child) {
+            margin-right:87px;
+        }
+    }
+
+    #services-info-title {
+        display:none;
+    }
+
+    .services-info {
+        text-align: center;
+        font: normal normal 600 22px/27px Montserrat;
+        color: #FFFFFF;
     }
 }
 
@@ -213,6 +568,11 @@ $terciary-lightest:#FFFFFF;
 
 body {
     font-family:'Montserrat';
+}
+
+.navbar-toggler {
+    border:0;
+    border-radius: 0;
 }
 
 .page-section {
@@ -256,6 +616,7 @@ body {
     font: normal normal 500 17px/20px Montserrat;
     color: #FFFFFF;
     text-transform: uppercase;
+    display: none;
 }
 
 .large-logo {
@@ -276,11 +637,14 @@ body {
     font: normal normal 500 17px/20px Montserrat;
     text-transform: uppercase;
     padding-top:43px;
-    li {
-        display: inline;
-        list-style-type: none;
-        a {
-            color: #FFFFFF;
+    ul {
+        padding-inline-start:0px;
+        li {
+            display: inline;
+            list-style-type: none;
+            a {
+                color: #FFFFFF;
+            }
         }
     }
 }
@@ -289,37 +653,38 @@ body {
     content:"\00a0\00a0\00a0\00a0.\00a0\00a0\00a0\00a0";
 }
 
+.navbar-menu li:not(:last-child):after {
+    content:"\00a0\00a0\00a0\00a0.\00a0\00a0\00a0\00a0";
+    color:$terciary-lightest;
+}
+
 #main-nav { 
-    min-height:78px;
     background-color: $secundary;
-
-    #main-menu {
-        li {
-
-            a {
-                text-align: center;
-                font: normal normal 500 17px/20px Montserrat;
-                color: #FFFFFF;
-                text-transform: uppercase;
-            }
-            .dropdown-menu {
-                background: $secundary;
+    .navbar-menu {
+        ul {
+            margin-bottom: 0;
+            padding-inline-start:0px;
+            li {
+                display: inline;
+                list-style-type: none;
+                a {
+                    text-align: center;
+                    font: normal normal 500 17px/20px Montserrat;
+                    color: #FFFFFF;
+                    text-transform: uppercase;
+                }
+                a:hover {
+                    text-decoration: none;
+                }
+                .dropdown-menu {
+                    background: $secundary;
+                }
             }
         }
     }
-
-    #navbarNavDropdown {
-        padding-left: 280px;
-    }
-}
-
-.logo-nav {
-    padding-top:7px;
 }
 
 .social-network-nav {
-    padding-top:7px;
-    padding-right:57px;
 
     a { 
         text-decoration: none;
@@ -330,38 +695,6 @@ body {
         .low-opacity:hover {
             opacity:1;
         } 
-    }
-}
-
-#who-are-we-header { 
-    text-align: center;
-    font: normal normal bold 70px/86px Montserrat;
-    color: #303030;
-    text-transform: uppercase;
-}
-
-ul#who-are-we {
-    margin-top:37px;
-    li {
-        button {
-            text-align: center;
-            font: normal normal 600 25px/30px Montserrat;
-            color: #B5904C;
-            text-transform: uppercase;
-            display:inline-block;
-            border-top: none;
-            border-left: none;
-            border-right: none;
-            border-bottom: none;
-            padding: 8px 0px 4px;
-            background: none;
-        }
-        button.active {
-            border-bottom:2px solid #B5904C;
-        }
-    }
-    li:not(:last-child) {
-        margin-right:87px;
     }
 }
 
@@ -383,7 +716,7 @@ ul#who-are-we {
 
 .founder-text {
     text-align: left;
-    font: normal normal medium 20px/24px Montserrat;
+    font: normal normal normal 20px/24px Montserrat;
     color: #303030;
 }
 
@@ -405,6 +738,11 @@ ul#who-are-we {
     }
 }
 
+.service {
+    display:flex;
+    flex-direction: column;
+}
+
 .service-symbol-border {
     border: 2px solid $primary;
     border-radius: 82px;
@@ -417,9 +755,6 @@ ul#who-are-we {
 
 .service-symbol-frame {
     text-align: center;
-    img {
-        margin:10px;
-    }
 }
 
 .service-symbol-text {
@@ -431,23 +766,22 @@ ul#who-are-we {
 }
 
 .service-icons {
-    margin-top:34px;
-}
-
-.services-info {
-    text-align: center;
-    font: normal normal 600 22px/27px Montserrat;
-    color: #FFFFFF;
-    margin-top: 32px;
+    margin:34px auto 0;
+    max-width: 1200px;
 }
 
 .title-holder {
     padding-top: 92px;
 }
 
+.team-row {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .team {
-    max-width: 18rem;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     border: none;
     .team-photo {
         max-height:236px;
@@ -460,7 +794,7 @@ ul#who-are-we {
             color: $secundary;
             text-align: center;
             font-weight: 600;
-            font-size:24px;
+            font-size:19px;
             text-transform: uppercase;
         }
         .team-description {
@@ -469,7 +803,7 @@ ul#who-are-we {
             color: $primary;
             text-align: center;
             font-weight: 600;
-            font-size:18px;
+            font-size:17px;
             text-transform: uppercase;
         }
     }
@@ -502,7 +836,7 @@ ul#who-are-we {
             color: $primary;
             text-align: left;
             font-weight: 600;
-            font-size:22px;
+            font-size:21px;
             text-transform: uppercase;
         }
         .player-position {
@@ -524,7 +858,7 @@ ul#who-are-we {
             color: $primary;
             text-align: left;
             font-weight: bold;
-            font-size:22px;
+            font-size:21px;
             text-transform: uppercase;
             a {
                 color: $primary;
@@ -579,7 +913,7 @@ ul#who-are-we {
     color: $primary;
     .contact-info {
         text-align: center;
-        font: normal normal 600 25px/30px Montserrat;
+        font: normal normal 600 22px/30px Montserrat;
         letter-spacing: 0px;
         color: #FFFFFF;
         text-transform: uppercase;
@@ -594,6 +928,7 @@ ul#who-are-we {
     }
     .contact-form-holder {
         input, textarea {
+            vertical-align: middle;
             border-radius: 22px;
             margin-bottom: 16px;
             font-size: 20px;
@@ -615,36 +950,17 @@ ul#who-are-we {
     h5 {
         color:$terciary-lightest;
         font-weight: 600;
+        font-size: 25px;
     }
 }
 
-.custom-nav {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-    li {
-        button {
-            text-align: center;
-            font: normal normal 600 25px/30px Montserrat;
-            color: #B5904C;
-            text-transform: uppercase;
-            display:inline-block;
-            border-top: none;
-            border-left: none;
-            border-right: none;
-            border-bottom: none;
-            padding: 8px 0px 4px;
-            background: none;
-        }
-        button.active {
-            border-bottom:2px solid #B5904C;
-        }
-    }
-    li:not(:last-child) {
-        margin-right:87px;
-    }
+.row-players {
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+.country-flag {
+    margin-top:10px;
 }
 
 .card-player-flags {
@@ -662,6 +978,7 @@ ul#who-are-we {
     height:100%;
     width:100%;
     .player-card-info {
+        padding:1rem;
         height:100%;
         background: $secundary;
         color: $primary;
@@ -691,14 +1008,10 @@ ul#who-are-we {
     }
 }
 
-.country-flag {
-    margin-top:10px;
-}
-
 #newsletter {
     background-color: $primary;
     text-align: center;
-    font: normal normal 600 25px/30px Montserrat;
+    font: normal normal 600 20px/30px Montserrat;
     letter-spacing: 0px;
     color: #FFFFFF;
     text-transform: uppercase;
@@ -712,7 +1025,7 @@ ul#who-are-we {
     }
     .contact-form-holder {
         input, textarea {
-            width:482px;
+            width:100%;
             border-radius: 22px;
             border: none;
             font-size:15px;
@@ -729,9 +1042,6 @@ ul#who-are-we {
             }
         }
 
-    }
-    .subscribe {
-        margin-right:15px;
     }
     .terms-conditions {
         font: normal normal 600 14px/18px Montserrat;
@@ -808,52 +1118,37 @@ ul#who-are-we {
     }
 }
 
-.slider-image-container {
-    max-width:120px;
-    max-height:120px;
-}
-
-.carousel-item {
-    img {
-        height:75px;
-        width:150px;
-    }
-}
-
-@media (max-width: 992px) {
-    .carousel-inner .carousel-item > div {
-        display: none;
-    }
-    .carousel-inner .carousel-item > div:first-child {
-        display: block;
-    }
-}
-
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-    display: flex;
-    justify-content: center;
-}
-
-@media (min-width: 992px) {
-    .carousel-inner .carousel-item-right.active,
-    .carousel-inner .carousel-item-next {
-      transform: translateX(16.6%);
-    }
-    
-    .carousel-inner .carousel-item-left.active, 
-    .carousel-inner .carousel-item-prev {
-      transform: translateX(-16.6%);
-    }
-}
-
-.carousel-inner .carousel-item-right,
-.carousel-inner .carousel-item-left{ 
-    transform: translateX(0);
-}
-
 .modal-content {
     background-color:initial;
     border:none;
+}
+
+.post-header-holder {
+    background: black;
+    height:400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.post-category {
+    img {
+        width:65px;
+        height:65px;
+        display:inline-block;
+    }
+    h5 {
+        display:inline-block;
+        margin-bottom:0;
+        vertical-align: middle;
+    }
+}
+
+main {
+    .card {
+        display:inline-block;
+        border:0;
+        border-radius:0;
+        height: 334px;
+        max-width: 534px;
+    }
 }

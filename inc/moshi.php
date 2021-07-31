@@ -14,9 +14,12 @@ function the_post_summary($length = 128, $string = "") {
     echo $content;
 }
 
-// function moshi_enqueue_scripts() {
-//     wp_enqueue_style( 'scroll-top-css', get_stylesheet_directory_uri(  ) . '/css/material-scrolltop.css');
-//     wp_enqueue_script( 'scroll-top-js', get_template_directory_uri(  ) . '/js/material-scrolltop.js', array(), '1.0.0', true);
-// }
-
-// add_action( 'wp_enqueue_scripts', 'moshi_enqueue_scripts' );
+function get_category_image($categories) {
+    if (in_array(0, $categories)) {
+        echo get_template_directory_uri() . "/img/news/news-big.png";
+    } elseif (in_array(1, $categories)) {
+        echo get_template_directory_uri() . "/img/news/transfer-big.png";
+    } elseif (in_array(2, $categories)) {
+        echo get_template_directory_uri() . "/img/news/partners-big.png";
+    }
+}

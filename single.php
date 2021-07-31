@@ -9,8 +9,20 @@
 defined( 'ABSPATH' ) || exit;
 
 get_header();
+get_header('navbar');
+
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
+
+<div class="post-header-holder"
+	<?php if ( has_post_thumbnail( ) ) { ?>
+		style="background-image:url(<?php echo get_the_post_thumbnail_url( ); ?>);" <?php } ?> >
+</div>
+
+<div class="post-category text-center">
+	<img class="mr-1" src="<?php echo get_template_directory_uri(); ?>/img/news/transfers-big.png" alt="insta-logo">
+	<h5 class="ml-1"><?php echo get_the_category( )[0]->cat_name; ?></h5>
+</div>
 
 <div class="wrapper" id="single-wrapper">
 
@@ -19,7 +31,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="row">
 
 			<!-- Do the left sidebar check -->
-			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
 
 			<main class="site-main" id="main">
 
@@ -27,19 +38,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 				while ( have_posts() ) {
 					the_post();
 					get_template_part( 'loop-templates/content', 'single' );
-					understrap_post_nav();
-
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) {
-						comments_template();
-					}
+					get_post_gallery_images( );
 				}
 				?>
 
 			</main><!-- #main -->
 
 			<!-- Do the right sidebar check -->
-			<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
 
 		</div><!-- .row -->
 
@@ -47,5 +52,4 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 </div><!-- #single-wrapper -->
 
-<?php
-get_footer();
+<?php wp_footer(); ?>

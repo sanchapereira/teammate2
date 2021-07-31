@@ -14,7 +14,8 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-get_header();
+get_header('front');
+get_header('navbar');
 
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
@@ -27,13 +28,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<div id="who-are-we" class="page-section">
 		<div class="container-fluid">
+			<div class="title-holder">
+				<h2>Quem Somos</h2>
+			</div>
 			<div class="row">
 				<div class="col"></div>
-				<div class="col-lg-6">
-					<div class="title-holder">
-						<h2>Quem Somos</h2>
-					</div>
-					<ul class="nav d-flex justify-content-center" id="who-are-we" role="tablist">
+				<div class="col-lg-10">
+					<ul class="nav justify-content-center" id="who-are-we-nav" role="tablist">
 						<li>
 							<button class="active" id="founder-tab" data-toggle="tab" data-target="#founder" type="button" role="tab" aria-controls="founder" aria-selected="true">Fundadora</button>
 						</li>
@@ -48,11 +49,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="col"></div>
 			</div>
 
-			<div class="container-fluid tab-content" id="myTabContent">
+			<div class="container-fluid tab-content mt-5 mt-xl-6">
 				<div class="tab-pane fade show active" id="founder" role="tabpanel" aria-labelledby="founder-tab">
 					<div class="row">
 						<div class="col"></div>
-						<div class="col-lg-5">
+						<div class="col-xl-5">
 							<h1>Raquel Sampaio</h1>
 							<h4>Fundadora</h4>
 							<p class="founder-text">
@@ -75,7 +76,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<p class="founder-text">
 							Por último, ser agente, fez-me perceber a importância de ter um <b>Teammate</b> sempre ao nosso lado e que nos ajude a fazer as escolhas certas, rumo ao sucesso. Foi aquilo que eu nunca tive, mas que quero que tu tenhas!							</p>
 						</div>
-						<div class="col-lg-4 text-center">
+						<div class="col-xl-4 text-center">
 							<img class="founder" src="<?php echo get_template_directory_uri(); ?>/img/team/raquel-sampaio-big.png" alt="founder-picture">
 							<div class="social-media-founder">
 								<a href="https://www.facebook.com/raquel.sampaio1989" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="face-logo"></a>
@@ -91,7 +92,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<h2>The team you will never leave</h2>
 					<div class="row">
 						<div class="col"></div>
-						<div class="col-lg-5 text-center">
+						<div class="col-lg-6 text-center">
 							<p>
 							Nós só queremos uma coisa: que jogues sem te preocupares com mais nada. Que dediques todo o teu esforço ao que mais gostas de fazer. O resto nós tratamos.							
 							</p>
@@ -116,118 +117,127 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 				
 				<div class="tab-pane fade" id="team" role="tabpanel" aria-labelledby="team-tab">
-					<div class="row">
-						<div class="col"></div>
-						<div class="col-lg-9 text-center">
-							<div class="card team m-3">
+					<div class="row team-row">
+						<div class="card team col-lg-3 col-md-4 col-sm-6 col-12 my-3 text-center">
+							<div class="team-photo-container">
 								<img class="card-img-top team-photo" src="<?php echo get_template_directory_uri(); ?>/img/team/raquel-sampaio-small.png" alt="raquel">
-								<div class="card-body team-card">
-									<p class="team-name">Raquel Sampaio</p>
-									<p class="team-description">Fundadora</p>
-									<p class="team-description">&nbsp;</p>
-								</div>
-								<div class="social-media-team">
-									<a href="https://www.facebook.com/raquel.sampaio1989" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="face-logo"></a>
-									<a href="https://www.instagram.com/raqueltsampaio" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="insta-logo"></a>
-									<a href="https://www.linkedin.com/in/raqueltsampaio" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/linkedin.png" alt="linkedin-logo"></a>
-									<a href="https://twitter.com/raqueltsampaio" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twiter.png" alt="twitter-logo"></a>
-								</div>
 							</div>
-							<div class="card team m-3">
-								<img class="card-img-top team-photo" src="<?php echo get_template_directory_uri(); ?>/img/team/catia-silva.jpg" alt="catia">
-								<div class="card-body team-card">
-									<p class="team-name">Cátia Silva</p>
-									<p class="team-description">Marketing & Comunicação</p>
-								</div>
-								<div class="social-media-team">
-									<a href="https://www.facebook.com/catia.silva.1426" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="face-logo"></a>
-									<a href="https://www.instagram.com/catiasgs" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="insta-logo"></a>
-									<a href="https://www.linkedin.com/in/catia-silva" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/linkedin.png" alt="linkedin-logo"></a>
-									<a href="https://twitter.com/catiasgs" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twiter.png" alt="twitter-logo"></a>
-								</div>
+							<div class="card-body team-card">
+								<p class="team-name">Raquel Sampaio</p>
+								<p class="team-description">Fundadora & Intermediária</p>
 							</div>
-							<div class="card team m-3">
-								<img class="card-img-top team-photo" src="<?php echo get_template_directory_uri(); ?>/img/team/francisco-silva.png" alt="catia">
-								<div class="card-body team-card">
-									<p class="team-name">Francisco Gomes da Silva</p>
-									<p class="team-description">Analista</p>
-								</div>
-								<div class="social-media-team">
-									<a href="https://www.facebook.com/fgsilva93" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="face-logo"></a>
-									<a href="https://www.instagram.com/fgsilva1993" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="insta-logo"></a>
-									<a href="https://www.linkedin.com/in/fgsilva1993" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/linkedin.png" alt="linkedin-logo"></a>
-									<a href="https://twitter.com/fgsilva1993" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twiter.png" alt="twitter-logo"></a>
-								</div>
-							</div>
-							<div class="card team m-3">
-								<img class="card-img-top team-photo" src="<?php echo get_template_directory_uri(); ?>/img/team/ana-ramires.png" alt="catia">
-								<div class="card-body team-card">
-									<p class="team-name">Ana Bispo Ramires</p>
-									<p class="team-description">Psicóloga do Desporto & Performance</p>
-								</div>
-								<div class="social-media-team">
-									<a href="https://www.facebook.com/anabisporamires.psicologia.performance" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="face-logo"></a>
-									<a href="https://www.instagram.com/ana_b_ramires_psicologia" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="insta-logo"></a>
-									<a href="https://www.linkedin.com/in/ana-bispo-ramires-76b9988" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/linkedin.png" alt="linkedin-logo"></a>
-									<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/twiter.png" alt="twitter-logo">
-								</div>
-							</div>
-							<div class="card team m-3">
-								<img class="card-img-top team-photo" src="<?php echo get_template_directory_uri(); ?>/img/team/claudia-minderico.png" alt="catia">
-								<div class="card-body team-card">
-									<p class="team-name">Cláudia Minderico</p>
-									<p class="team-description">Nutricionista</p>
-								</div>
-								<div class="social-media-team">
-									<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="face-logo">
-									<a href="https://www.instagram.com/gapp_performance" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="insta-logo"></a>
-									<a href="https://www.linkedin.com/in/claudia-minderico-90501a97" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/linkedin.png" alt="linkedin-logo"></a>
-									<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/twiter.png" alt="twitter-logo">
-								</div>
-							</div>
-							<div class="card team m-3">
-								<img class="card-img-top team-photo" src="<?php echo get_template_directory_uri(); ?>/img/team/andre-ferreira.jpg" alt="andre">
-								<div class="card-body team-card">
-									<p class="team-name">André Ferreira</p>
-									<p class="team-description">Designer</p>
-									<p class="team-description">&nbsp;</p>
-								</div>
-								<div class="social-media-team">
-									<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="face-logo">
-									<a href="https://www.instagram.com/falconndesign" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="insta-logo"></a>
-									<a href="https://www.linkedin.com/in/andré-ferreira-design" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/linkedin.png" alt="linkedin-logo"></a>
-									<a href="https://twitter.com/falconndesign" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twiter.png" alt="twitter-logo"></a>
-								</div>
-							</div>
-							<div class="card team m-3">
-								<img class="card-img-top team-photo" src="<?php echo get_template_directory_uri(); ?>/img/team/bruno-novo.png" alt="catia">
-								<div class="card-body team-card">
-									<p class="team-name">Bruno Novo</p>
-									<p class="team-description">Personal Trainer</p>
-									<p class="team-description">&nbsp;</p>
-								</div>
-								<div class="social-media-team">
-									<a href="https://www.facebook.com/bruno.novo.18" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="face-logo"></a>
-									<a href="https://www.instagram.com/coach_brunonovo" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="insta-logo"></a>
-									<a href="https://www.linkedin.com/in/bruno-novo-775652135" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/linkedin.png" alt="linkedin-logo"></a>
-									<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/twiter.png" alt="twitter-logo">
-								</div>
-							</div>
-							<div class="card team m-3">
-								<img class="card-img-top team-photo" src="<?php echo get_template_directory_uri(); ?>/img/team/ines-caetano.png" alt="catia">
-								<div class="card-body team-card">
-									<p class="team-name">Inês Alves Caetano</p>
-									<p class="team-description">Consultora Transição de Carreira</p>
-								</div>
-								<div class="social-media-team">
-									<a href="https://www.facebook.com/SportsEmbassy1" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="face-logo"></a>
-									<a href="https://www.instagram.com/sportsembassy_se" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="insta-logo"></a>
-									<a href="https://www.linkedin.com/in/inesalvescaetano" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/linkedin.png" alt="linkedin-logo"></a>
-									<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/twiter.png" alt="twitter-logo">
-								</div>
+							<div class="social-media-team">
+								<a href="https://www.facebook.com/raquel.sampaio1989" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="face-logo"></a>
+								<a href="https://www.instagram.com/raqueltsampaio" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="insta-logo"></a>
+								<a href="https://www.linkedin.com/in/raqueltsampaio" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/linkedin.png" alt="linkedin-logo"></a>
+								<a href="https://twitter.com/raqueltsampaio" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twiter.png" alt="twitter-logo"></a>
 							</div>
 						</div>
-						<div class="col"></div>
+						<div class="card team col-lg-3 col-md-4 col-sm-6 col-12 my-3 text-center">
+							<div class="team-photo-container">
+								<img class="card-img-top team-photo" src="<?php echo get_template_directory_uri(); ?>/img/team/catia-silva.jpg" alt="catia">
+							</div>
+							<div class="card-body team-card">
+								<p class="team-name">Cátia Silva</p>
+								<p class="team-description">Marketing & Comunicação</p>
+							</div>
+							<div class="social-media-team">
+								<a href="https://www.facebook.com/catia.silva.1426" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="face-logo"></a>
+								<a href="https://www.instagram.com/catiasgs" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="insta-logo"></a>
+								<a href="https://www.linkedin.com/in/catia-silva" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/linkedin.png" alt="linkedin-logo"></a>
+								<a href="https://twitter.com/catiasgs" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twiter.png" alt="twitter-logo"></a>
+							</div>
+						</div>
+						<div class="card team col-lg-3 col-md-4 col-sm-6 col-12 my-3 text-center">
+							<div class="team-photo-container">
+								<img class="card-img-top team-photo" src="<?php echo get_template_directory_uri(); ?>/img/team/andre-ferreira.jpg" alt="andre">
+							</div>
+							<div class="card-body team-card">
+								<p class="team-name">André Ferreira</p>
+								<p class="team-description">Designer</p>
+							</div>
+							<div class="social-media-team">
+								<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="face-logo">
+								<a href="https://www.instagram.com/falconndesign" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="insta-logo"></a>
+								<a href="https://www.linkedin.com/in/andré-ferreira-design" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/linkedin.png" alt="linkedin-logo"></a>
+								<a href="https://twitter.com/falconndesign" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twiter.png" alt="twitter-logo"></a>
+							</div>
+						</div>
+						<div class="card team col-lg-3 col-md-4 col-sm-6 col-12 my-3 text-center">
+							<div class="team-photo-container">
+								<img class="card-img-top team-photo" src="<?php echo get_template_directory_uri(); ?>/img/team/francisco-silva.png" alt="catia">
+							</div>
+							<div class="card-body team-card">
+								<p class="team-name">Francisco Gomes da Silva</p>
+								<p class="team-description">Analista</p>
+							</div>
+							<div class="social-media-team">
+								<a href="https://www.facebook.com/fgsilva93" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="face-logo"></a>
+								<a href="https://www.instagram.com/fgsilva1993" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="insta-logo"></a>
+								<a href="https://www.linkedin.com/in/fgsilva1993" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/linkedin.png" alt="linkedin-logo"></a>
+								<a href="https://twitter.com/fgsilva1993" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twiter.png" alt="twitter-logo"></a>
+							</div>
+						</div>
+						<div class="card team col-lg-3 col-md-4 col-sm-6 col-12 my-3 text-center">
+							<div class="team-photo-container">
+								<img class="card-img-top team-photo" src="<?php echo get_template_directory_uri(); ?>/img/team/ana-ramires.png" alt="catia">
+							</div>
+							<div class="card-body team-card">
+								<p class="team-name">Ana Bispo Ramires</p>
+								<p class="team-description">Psicóloga do Desporto & Performance</p>
+							</div>
+							<div class="social-media-team">
+								<a href="https://www.facebook.com/anabisporamires.psicologia.performance" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="face-logo"></a>
+								<a href="https://www.instagram.com/ana_b_ramires_psicologia" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="insta-logo"></a>
+								<a href="https://www.linkedin.com/in/ana-bispo-ramires-76b9988" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/linkedin.png" alt="linkedin-logo"></a>
+								<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/twiter.png" alt="twitter-logo">
+							</div>
+						</div>
+						<div class="card team col-lg-3 col-md-4 col-sm-6 col-12 my-3 text-center">
+							<div class="team-photo-container">
+								<img class="card-img-top team-photo" src="<?php echo get_template_directory_uri(); ?>/img/team/claudia-minderico.png" alt="catia">
+							</div>
+							<div class="card-body team-card">
+								<p class="team-name">Cláudia Minderico</p>
+								<p class="team-description">Nutricionista</p>
+							</div>
+							<div class="social-media-team">
+								<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="face-logo">
+								<a href="https://www.instagram.com/gapp_performance" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="insta-logo"></a>
+								<a href="https://www.linkedin.com/in/claudia-minderico-90501a97" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/linkedin.png" alt="linkedin-logo"></a>
+								<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/twiter.png" alt="twitter-logo">
+							</div>
+						</div>
+						<div class="card team col-lg-3 col-md-4 col-sm-6 col-12 my-3 text-center">
+							<div class="team-photo-container">
+								<img class="card-img-top team-photo" src="<?php echo get_template_directory_uri(); ?>/img/team/bruno-novo.png" alt="catia">
+							</div>
+							<div class="card-body team-card">
+								<p class="team-name">Bruno Novo</p>
+								<p class="team-description">Personal Trainer</p>
+							</div>
+							<div class="social-media-team">
+								<a href="https://www.facebook.com/bruno.novo.18" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="face-logo"></a>
+								<a href="https://www.instagram.com/coach_brunonovo" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="insta-logo"></a>
+								<a href="https://www.linkedin.com/in/bruno-novo-775652135" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/linkedin.png" alt="linkedin-logo"></a>
+								<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/twiter.png" alt="twitter-logo">
+							</div>
+						</div>
+						<div class="card team col-lg-3 col-md-4 col-sm-6 col-12 my-3 text-center">
+							<div class="team-photo-container">
+								<img class="card-img-top team-photo" src="<?php echo get_template_directory_uri(); ?>/img/team/ines-caetano.png" alt="catia">
+							</div>
+							<div class="card-body team-card">
+								<p class="team-name">Inês Alves Caetano</p>
+								<p class="team-description">Consultora Transição de Carreira</p>
+							</div>
+							<div class="social-media-team">
+								<a href="https://www.facebook.com/SportsEmbassy1" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="face-logo"></a>
+								<a href="https://www.instagram.com/sportsembassy_se" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="insta-logo"></a>
+								<a href="https://www.linkedin.com/in/inesalvescaetano" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/linkedin.png" alt="linkedin-logo"></a>
+								<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/twiter.png" alt="twitter-logo">
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -240,8 +250,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<h2>Serviços</h2>
 			</div>
 			<div class="row row-cols-5 service-icons">
-				<div class="col">
-					<div class="service-symbol-frame" data-text="Estamos sempre à procura das melhores oportunidades de carreira para ti. Gerimos todos os aspectos relacionados com a tua atividade profissional, tratando de toda a negociação de contratos, transferências e apoio no teu dia-a-dia.">
+				<div class="service my-2">
+					<div class="service-symbol-frame" data-title="Representação" data-text="Estamos sempre à procura das melhores oportunidades de carreira para ti. Gerimos todos os aspectos relacionados com a tua atividade profissional, tratando de toda a negociação de contratos, transferências e apoio no teu dia-a-dia.">
 						<div class="service-symbol-border">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/rep.svg" alt="rep">
 						</div>
@@ -250,8 +260,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</div>
 					</div>
 				</div>
-				<div class="col">
-					<div class="service-symbol-frame" data-text="Somos o teu intermediário, salvaguardando os teus interesses em todos os momentos. Adicionalmente, trabalhamos com agentes, clubes ou sociedades desportivas que pretendam recorrer aos nossos serviços para a conclusão de negócios.">
+				<div class="service my-2">
+					<div class="service-symbol-frame" data-title="Intermediação" data-text="Somos o teu intermediário, salvaguardando os teus interesses em todos os momentos. Adicionalmente, trabalhamos com agentes, clubes ou sociedades desportivas que pretendam recorrer aos nossos serviços para a conclusão de negócios.">
 						<div class="service-symbol-border">	
 							<img src="<?php echo get_template_directory_uri(); ?>/img/intermed.svg" alt="intermed">
 						</div>
@@ -260,18 +270,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</div>
 					</div>	
 				</div>
-				<div class="col">
-					<div class="service-symbol-frame" data-text="A tua imagem é a nossa imagem. Trabalhamos contigo de forma a promover a tua imagem e a boa utilização de todas as tuas plataformas de social media. Preparamos-te, também, para momentos de maior exposição e relacionamento com a comunicação social, como entrevistas, eventos, campanhas, palestras, etc.">
-						<div class="service-symbol-border">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/comm.svg" alt="comm">
-						</div>			
-						<div class="service-symbol-text">
-							Assessoria de Comunicação
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="service-symbol-frame" data-text="Estamos próximos de grandes marcas do mercado, o que nos permite encontrar e negociar boas oportunidades de parcerias para ti e dar-te visibilidade.">
+				<div class="service my-2">
+					<div class="service-symbol-frame" data-title="Marcas" data-text="Estamos próximos de grandes marcas do mercado, o que nos permite encontrar e negociar boas oportunidades de parcerias para ti e dar-te visibilidade.">
 						<div class="service-symbol-border">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/brand.svg" alt="brands">
 						</div>
@@ -280,18 +280,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</div>
 					</div>	
 				</div>
-				<div class="col">
-					<div class="service-symbol-frame" data-text="Também somos o <b>TEAMMATE</b> das equipas de futebol profissional e das seleções nacionais. Organizamos pré-temporadas, torneios, jogos amigáveis e estágios, trabalhando lado a lado com os melhores hotéis e infra-estruturas desportivas, em qualquer parte do mundo.">
+				<div class="service my-2">
+					<div class="service-symbol-frame" data-title="Assessoria de Comunicação" data-text="A tua imagem é a nossa imagem. Trabalhamos contigo de forma a promover a tua imagem e a boa utilização de todas as tuas plataformas de social media. Preparamos-te, também, para momentos de maior exposição e relacionamento com a comunicação social, como entrevistas, eventos, campanhas, palestras, etc.">
 						<div class="service-symbol-border">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/event.svg" alt="events">
-						</div>
+							<img src="<?php echo get_template_directory_uri(); ?>/img/comm.svg" alt="comm">
+						</div>			
 						<div class="service-symbol-text">
-							Eventos Desportivos
+							Assessoria de Comunicação
 						</div>
-					</div>	
+					</div>
 				</div>
-				<div class="col">
-					<div class="service-symbol-frame" data-text="Para te representarmos da melhor forma, somos acompanhados e assessorados por juristas e advogados especializados em matérias laborais e desportivas que nos ajudam a desenvolver a nossa actividade, de forma a serem salvaguardados todos os teus interesses - legais e desportivos.">
+				<div class="service my-2">
+					<div class="service-symbol-frame" data-title="Assessoria Jurídica" data-text="Para te representarmos da melhor forma, somos acompanhados e assessorados por juristas e advogados especializados em matérias laborais e desportivas que nos ajudam a desenvolver a nossa actividade, de forma a serem salvaguardados todos os teus interesses - legais e desportivos.">
 						<div class="service-symbol-border">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/juri.svg" alt="juri">
 						</div>
@@ -300,8 +300,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</div>
 					</div>	
 				</div>
-				<div class="col">
-					<div class="service-symbol-frame" data-text="Como um bom <b>TEAMMATE</b>, acompanhamos-te em todos os jogos. Analisamos o teu rendimento em cada partida, tendo sempre em mente o teu crescimento táctico e técnico. Todas as semanas reunimo-nos contigo para que possas melhorar a tua performance jogo após jogo.">
+				<div class="service my-2">
+					<div class="service-symbol-frame" data-title="Análise de Rendimento" data-text="Como um bom <b>TEAMMATE</b>, acompanhamos-te em todos os jogos. Analisamos o teu rendimento em cada partida, tendo sempre em mente o teu crescimento táctico e técnico. Todas as semanas reunimo-nos contigo para que possas melhorar a tua performance jogo após jogo.">
 						<div class="service-symbol-border">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/performance.svg" alt="performance">
 						</div>
@@ -310,28 +310,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</div>	
 					</div>
 				</div>
-				<div class="col">
-					<div class="service-symbol-frame" data-text="Se precisares de treinos individuais e personalizados, nós tratamos disso. Fazemos um acompanhamento próximo e monitorizamos a tua performance física, tendo sempre em conta as tuas necessidades e objetivos.">
-						<div class="service-symbol-border">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/pt.svg" alt="pt">
-						</div>						
-						<div class="service-symbol-text">
-							Personal Trainer
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="service-symbol-frame" data-text="A alimentação é o teu treino invisível. Ela ajuda-te a chegar à tua máxima capacidade de desenvolvimento físico e é essencial na tua recuperação, evitando lesões e garantindo o teu rápido regresso às quatro linhas (o chamado ‘return to play’). Nesse sentido, elaboramos um plano nutricional à medida dos teus objetivos.">
-						<div class="service-symbol-border">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/nutri.svg" alt="nutri">
-						</div>
-						<div class="service-symbol-text">
-							Nutrição
-						</div>	
-					</div>
-				</div>
-				<div class="col">
-					<div class="service-symbol-frame" data-text="Como manter a concentração durante os 90 minutos? Como lidar com os adversários? Para estares ao mais alto nível, uma boa preparação técnica e tática não chega. Existem outras disciplinas que contribuem para a tua evolução enquanto atleta. A Psicologia é uma delas. É essencial preparares a tua mente, com um treino mental personalizado tendo em conta a tua posição em campo e os teus objetivos.">
+				<div class="service my-2">
+					<div class="service-symbol-frame" data-title="Psicologia do Desporto & Performance" data-text="Como manter a concentração durante os 90 minutos? Como lidar com os adversários? Para estares ao mais alto nível, uma boa preparação técnica e tática não chega. Existem outras disciplinas que contribuem para a tua evolução enquanto atleta. A Psicologia é uma delas. É essencial preparares a tua mente, com um treino mental personalizado tendo em conta a tua posição em campo e os teus objetivos.">
 						<div class="service-symbol-border">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/mental.svg" alt="psico">
 						</div>
@@ -340,8 +320,39 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</div>
 					</div>
 				</div>
+				<div class="service my-2">
+					<div class="service-symbol-frame" data-title="Nutrição" data-text="A alimentação é o teu treino invisível. Ela ajuda-te a chegar à tua máxima capacidade de desenvolvimento físico e é essencial na tua recuperação, evitando lesões e garantindo o teu rápido regresso às quatro linhas (o chamado ‘return to play’). Nesse sentido, elaboramos um plano nutricional à medida dos teus objetivos.">
+						<div class="service-symbol-border">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/nutri.svg" alt="nutri">
+						</div>
+						<div class="service-symbol-text">
+							Nutrição
+						</div>	
+					</div>
+				</div>
+				<div class="service my-2">
+					<div class="service-symbol-frame" data-title="Personal Trainer" data-text="Se precisares de treinos individuais e personalizados, nós tratamos disso. Fazemos um acompanhamento próximo e monitorizamos a tua performance física, tendo sempre em conta as tuas necessidades e objetivos.">
+						<div class="service-symbol-border">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/pt.svg" alt="pt">
+						</div>						
+						<div class="service-symbol-text">
+							Personal Trainer
+						</div>
+					</div>
+				</div>
+				<div class="service my-2">
+					<div class="service-symbol-frame" data-title="Eventos Desportivos" data-text="Também somos o <b>TEAMMATE</b> das equipas de futebol profissional e das seleções nacionais. Organizamos pré-temporadas, torneios, jogos amigáveis e estágios, trabalhando lado a lado com os melhores hotéis e infra-estruturas desportivas, em qualquer parte do mundo.">
+						<div class="service-symbol-border">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/event.svg" alt="events">
+						</div>
+						<div class="service-symbol-text">
+							Eventos Desportivos
+						</div>
+					</div>	
+				</div>
 			</div>
-			<div class="row">
+			<h2 id="services-info-title" class="mt-5">Representação</h2>
+			<div class="row mt-4 mt-lg-5">
 				<div class="col"></div>
 				<div class="col-lg-7">
 					<div id="services-info-text" class="services-info">
@@ -367,13 +378,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<div id="players" class="page-section">
 		<div class="container-fluid">
+			<div class="title-holder">
+				<h2>Teammates</h2>
+			</div>
 			<div class="row">
-				<div class="col"></div>
-				<div class="col-lg-9">
-					<div class="title-holder">
-						<h2>Teammates</h2>
-					</div>
-					<ul class="custom-nav d-flex justify-content-center mt-3 mb-5">
+				<div class="col-12">
+					<ul class="custom-nav justify-content-center mt-3 mb-3 mb-md-5">
 						<li>
 							<button class="players-nav-buttons active" data-position="all" type="button">Todas</button>
 						</li>
@@ -394,7 +404,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</li>
 					</ul>
 				</div>
-				<div class="col"></div>
 			</div>
 
 			<div class="container-fluid">
@@ -426,10 +435,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
 										</button>
 										<div class="social-media-player mx-2">
-											<a href="https://www.facebook.com/InesPereiraGR" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
-											<a href="https://www.instagram.com/inespereira.12" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<a href="https://www.facebook.com/InesPereiraGR" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
+											<a href="https://www.instagram.com/inespereira.12" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
-											<a href="https://twitter.com/inespereiraaaaa" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
+											<a href="https://twitter.com/inespereiraaaaa" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
 										</div>
 										<a href="<?php echo get_template_directory_uri(); ?>/cvs/CV_InesPereira.pdf" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download"></a>
 									</div>
@@ -471,8 +480,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
 										</button>
 										<div class="social-media-player mx-2">
-											<a href="https://www.facebook.com/rutecostaofficial" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
-											<a href="https://www.instagram.com/rute_.costa" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<a href="https://www.facebook.com/rutecostaofficial" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
+											<a href="https://www.instagram.com/rute_.costa" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo">
 										</div>										
@@ -516,8 +525,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 										</button>
 
 										<div class="social-media-player mx-2">
-											<a href="https://www.facebook.com/AgataaFilipaa" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
-											<a href="https://www.instagram.com/agatafilipa16" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<a href="https://www.facebook.com/AgataaFilipaa" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
+											<a href="https://www.instagram.com/agatafilipa16" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo">
 										</div>										
@@ -561,9 +570,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 										<div class="social-media-player mx-2">
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo">
-											<a href="https://www.instagram.com/aliciafcorreia" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<a href="https://www.instagram.com/aliciafcorreia" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
-											<a href="https://twitter.com/AliciaCorreia6" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
+											<a href="https://twitter.com/AliciaCorreia6" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
 										</div>
 										<a href="<?php echo get_template_directory_uri(); ?>/cvs/CV_AliciaCorreia.pdf" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download"></a>
 									</div>
@@ -606,9 +615,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 										<div class="social-media-player mx-2">
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo">
-											<a href="https://www.instagram.com/brun6l" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<a href="https://www.instagram.com/brun6l" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
-											<a href="https://twitter.com/brun6l" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
+											<a href="https://twitter.com/brun6l" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
 										</div>										
 										<a href="<?php echo get_template_directory_uri(); ?>/cvs/CV_BrunaCosta.pdf" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download"></a>
 									</div>	
@@ -650,7 +659,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 										</button>
 										<div class="social-media-player mx-2">
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo">
-											<a href="https://www.instagram.com/brunaramos_26" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<a href="https://www.instagram.com/brunaramos_26" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo">
 										</div>										
@@ -696,7 +705,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 										</button>
 										<div class="social-media-player mx-2">
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo">
-											<a href="https://instagram.com/car.pimenta_3" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<a href="https://instagram.com/car.pimenta_3" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo">
 										</div>										
@@ -718,7 +727,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="card-player-flags">
 								<div class="row">
 									<div class="col">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/teammates/scp.svg" alt="club-logo">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/teammates/pt.svg" alt="club-logo">
 									</div>
 									<div class="col"></div>
 									<div class="col">
@@ -742,9 +751,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 										<div class="social-media-player mx-2">
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo">
-											<a href="https://www.instagram.com/marianapintorosa" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<a href="https://www.instagram.com/marianapintorosa" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
-											<a href="https://twitter.com/mariana_rosa7" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
+											<a href="https://twitter.com/mariana_rosa7" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
 										</div>										
 										<a href="<?php echo get_template_directory_uri(); ?>/cvs/CV_MarianaRosa.pdf" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download"></a>
 									</div>
@@ -787,8 +796,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 										</button>
 
 										<div class="social-media-player mx-2">
-											<a href="https://www.facebook.com/MonicaM24" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
-											<a href="https://www.instagram.com/monica_mendes2" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<a href="https://www.facebook.com/MonicaM24" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
+											<a href="https://www.instagram.com/monica_mendes2" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo">
 										</div>										
@@ -832,7 +841,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 										</button>
 										<div class="social-media-player mx-2">
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo">
-											<a href="https://www.instagram.com/sofiasilva1878" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<a href="https://www.instagram.com/sofiasilva1878" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo">
 										</div>										
@@ -876,9 +885,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 										</button>
 										<div class="social-media-player mx-2">
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo">
-											<a href="https://www.instagram.com/b.lopes915" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<a href="https://www.instagram.com/b.lopes915" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
-											<a href="https://twitter.com/BarbaraLopes915" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
+											<a href="https://twitter.com/BarbaraLopes915" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
 										</div>										
 										<a href="<?php echo get_template_directory_uri(); ?>/cvs/CV_BarbaraLopes.pdf" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download"></a>
 									</div>
@@ -919,8 +928,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
 										</button> 
 										<div class="social-media-player mx-2">
-											<a href="https://www.facebook.com/Clarinhaa10" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
-											<a href="https://www.instagram.com/claarinha_10" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<a href="https://www.facebook.com/Clarinhaa10" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
+											<a href="https://www.instagram.com/claarinha_10" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
 										</div>										
@@ -963,10 +972,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
 										</button>
 										<div class="social-media-player mx-2">
-											<a href="https://www.facebook.com/13fatimapinto" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
-											<a href="https://www.instagram.com/fatimapinto13" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<a href="https://www.facebook.com/13fatimapinto" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
+											<a href="https://www.instagram.com/fatimapinto13" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
-											<a href="https://twitter.com/13fatimapinto" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
+											<a href="https://twitter.com/13fatimapinto" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
 										</div>										
 										<a href="<?php echo get_template_directory_uri(); ?>/cvs/CV_FatimaPinto.pdf" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download"></a>
 									</div>
@@ -1008,9 +1017,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 										</button>
 										<div class="social-media-player mx-2">
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo">
-											<a href="https://www.instagram.com/joaninhamr" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<a href="https://www.instagram.com/joaninhamr" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
-											<a href="https://twitter.com/joaninhamr11" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
+											<a href="https://twitter.com/joaninhamr11" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
 										</div>										
 										<a href="<?php echo get_template_directory_uri(); ?>/cvs/CV_JoanaMartins.pdf" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download"></a>
 									</div>
@@ -1051,8 +1060,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 										</button>
 
 										<div class="social-media-player mx-2">
-											<a href="https://www.facebook.com/luana.barata.10" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
-											<a href="https://www.instagram.com/_luanabarata21_" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<a href="https://www.facebook.com/luana.barata.10" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
+											<a href="https://www.instagram.com/_luanabarata21_" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo">
 										</div>										
@@ -1096,7 +1105,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 										</button>
 										<div class="social-media-player mx-2">
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo">
-											<a href="https://www.instagram.com/mafalda.11" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<a href="https://www.instagram.com/mafalda.11" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo">
 										</div>										
@@ -1140,7 +1149,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 										</button>
 										<div class="social-media-player mx-2">
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo">
-											<a href="https://www.instagram.com/margarida50" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<a href="https://www.instagram.com/margarida50" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo">
 										</div>										
@@ -1184,9 +1193,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 										</button>
 										<div class="social-media-player mx-2">
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo">
-											<a href="https://www.instagram.com/vera_cid11" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<a href="https://www.instagram.com/vera_cid11" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
-											<a href="https://twitter.com/veraaaa_cid11" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
+											<a href="https://twitter.com/veraaaa_cid11" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
 										</div>										
 										<a href="<?php echo get_template_directory_uri(); ?>/cvs/CV_VeraCid.pdf" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download"></a>
 									</div>
@@ -1227,10 +1236,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
 										</button>
 										<div class="social-media-player mx-2">
-											<a href="https://www.facebook.com/FranciscaCardoso13" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
-											<a href="https://www.instagram.com/chicardoso" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<a href="https://www.facebook.com/FranciscaCardoso13" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
+											<a href="https://www.instagram.com/chicardoso" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
 											<a href="https://www.linkedin.com/in/francisca-cardoso-5a7367107"><img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo"></a>
-											<a href="https://twitter.com/Chicaardoso" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
+											<a href="https://twitter.com/Chicaardoso" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
 										</div>											
 										<a href="<?php echo get_template_directory_uri(); ?>/cvs/CV_FranciscaCardoso.pdf" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download"></a>
 									</div>
@@ -1273,9 +1282,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 										</button>
 										<div class="social-media-player mx-2">
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo">
-											<a href="https://www.instagram.com/mariagarciaferreira_02" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<a href="https://www.instagram.com/mariagarciaferreira_02" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
-											<a href="https://twitter.com/mariagf0299" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
+											<a href="https://twitter.com/mariagf0299" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
 										</div>										
 										<a href="<?php echo get_template_directory_uri(); ?>/cvs/CV_MariaFerreira.pdf" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download"></a>
 									</div>
@@ -1316,7 +1325,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 										</button>
 										<div class="social-media-player mx-2">
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo">
-											<a href="https://www.instagram.com/jaleca_oficial" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<a href="https://www.instagram.com/jaleca_oficial" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo">
 										</div>										
@@ -1359,8 +1368,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
 										</button>
 										<div class="social-media-player mx-2">
-											<a href="https://www.facebook.com/lydia.andrade.9" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
-											<a href="https://www.instagram.com/lydiaandrade23" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<a href="https://www.facebook.com/lydia.andrade.9" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
+											<a href="https://www.instagram.com/lydiaandrade23" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo">
 											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo">
 										</div>										
@@ -1394,16 +1403,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<p class="player-name">Mariana Cabral</p>
 									<p class="player-position">Treinadora</p>
 									<p class="player-stats">27.08.1987</p>
+									<p class="player-stats">&nbsp;</p>
+									<p class="player-stats">&nbsp;</p>
+									<p class="player-stats">&nbsp;</p>
 									
 									<div class="player-card-info-footer mt-4">
 										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
 										</button>
 										<div class="social-media-player mx-2">
-											<a href="https://www.facebook.com/marianammvc" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
-											<a href="https://www.instagram.com/marianammvcabral" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
-											<a href="https://www.linkedin.com/in/marianamcabral" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo"></a>
-											<a href="https://twitter.com/marianacabral" target="_blank"><img class="low-opacity" src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
+											<a href="https://www.facebook.com/marianammvc" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook-gold.png" alt="face-logo"></a>
+											<a href="https://www.instagram.com/marianammvcabral" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram-gold.png" alt="insta-logo"></a>
+											<a href="https://www.linkedin.com/in/marianamcabral" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/linkedin-gold.png" alt="linkedin-logo"></a>
+											<a href="https://twitter.com/marianacabral" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter-gold.png" alt="twitter-logo"></a>
 										</div>										
 										<a href="<?php echo get_template_directory_uri(); ?>/cvs/CV_MarianaCabral.pdf" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/download_pdf.png" alt="download"></a>
 									</div>
@@ -1421,7 +1433,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="card-player-photo">
 								<img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/teammates/BeOurMate.png" alt="Card image cap">
 								<div class="card-body player-card-placeholder">
-									<p class="player-name"><a href="#contact">BE OUR MATE&nbsp;&nbsp;&nbsp;></a></p>
+									<p class="player-name"><a href="#wrapper-footer">BE OUR MATE&nbsp;&nbsp;&nbsp;></a></p>
 								</div>
 							</div>
 						</div>
@@ -1435,29 +1447,30 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div id="news" class="page-section">
 		<div class="container-fluid">
 			<div class="title-holder">
-				<h2>Noticias</h2>
+				<h2>Notícias</h2>
 			</div>
 
 			<div class="row">
 				<div class="col"></div>
 				<div class="col-lg-8 text-center">
+					<h2>Brevemente</h2>
 					<main class="site-main" id="main">
 						<?php
-						if ( have_posts() ) {
-							// Start the Loop.
-							while ( have_posts() ) {
-								the_post();
+						// if ( have_posts() ) {
+						// 	// Start the Loop.
+						// 	while ( have_posts() ) {
+						// 		the_post();
 
-								/*
-								* Include the Post-Format-specific template for the content.
-								* If you want to override this in a child theme, then include a file
-								* called content-___.php (where ___ is the Post Format name) and that will be used instead.
-								*/
-								get_template_part( 'loop-templates/content', get_post_format() );
-							}
-						} else {
-							get_template_part( 'loop-templates/content', 'none' );
-						}
+						// 		/*
+						// 		* Include the Post-Format-specific template for the content.
+						// 		* If you want to override this in a child theme, then include a file
+						// 		* called content-___.php (where ___ is the Post Format name) and that will be used instead.
+						// 		*/
+						// 		get_template_part( 'loop-templates/content', get_post_format() );
+						// 	}
+						// } else {
+						// 	get_template_part( 'loop-templates/content', 'none' );
+						// }
 						?>
 
 					</main>
@@ -1469,7 +1482,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<div id="newsletter" class="pt-5 pb-4">
 		<div class="contact-form-holder">
-			<?php echo do_shortcode('[mc4wp_form id="26"]'); ?>
+			<div class="container-fluid">
+				<?php echo do_shortcode('[mc4wp_form id="26"]'); ?>
+			</div>
 		</div>
 	</div>
 
@@ -1478,54 +1493,66 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<h2>Parceiros</h2>
 			</div>
 
-			<div class="row">
-				<div class="col text-center">
+			<div class="row mt-lg-5 mt-sm-4">
+				<div class="col text-center pt-4 pt-md-5 pt-lg-4 pt-xl-4">
 					<img id="prev-arrow" class="slick-prev" src="<?php echo get_template_directory_uri(); ?>/img/partners/arrow_left.png" alt="prev">
 				</div>
-				<div class="col-lg-8">
+				<div class="col-8">
 					<div class="slider">
 						<div>
 							<div class="slider-image-container">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/partners/adidas.png" alt="adidas">	
+								<img src="<?php echo get_template_directory_uri(); ?>/img/partners/adidas.jpg" alt="adidas">	
 							</div>
 						</div>
 						<div>
 							<div class="slider-image-container">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/partners/nb.png" alt="adidas">					
+								<img src="<?php echo get_template_directory_uri(); ?>/img/partners/nb.jpg" alt="nb">					
 							</div>
 						</div>
 						<div>
 							<div class="slider-image-container">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/partners/joma.png" alt="adidas">				
+								<img src="<?php echo get_template_directory_uri(); ?>/img/partners/joma.jpg" alt="joma">				
 							</div>
 						</div>
 						<div>
 							<div class="slider-image-container">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/partners/proscout.png" alt="adidas">			
+								<img src="<?php echo get_template_directory_uri(); ?>/img/partners/proscout.jpg" alt="proscout">			
 							</div>
 						</div>
 						<div>
 							<div class="slider-image-container">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/partners/gearxpro.png" alt="adidas">					
+								<img src="<?php echo get_template_directory_uri(); ?>/img/partners/gearpro.jpg" alt="gearpro">					
 							</div>
 						</div>
 						<div>
 							<div class="slider-image-container">
-								<img style="width:104px;height:103px;"  src="<?php echo get_template_directory_uri(); ?>/img/partners/sp.png" alt="adidas">				
+								<img src="<?php echo get_template_directory_uri(); ?>/img/partners/sp.jpg" alt="sp">				
 							</div>
 						</div>
 						<div>
 							<div class="slider-image-container">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/partners/zumub.png" alt="adidas">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/partners/zumub.jpg" alt="zumub">
 							</div>
 						</div>
 						<div>
-							<img src="<?php echo get_template_directory_uri(); ?>/img/partners/sports-embassy.png" alt="adidas">
+							<div class="slider-image-container">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/partners/sports-embassy.jpg" alt="adidas">
+							</div>
+						</div>
+						<div>
+							<div class="slider-image-container">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/partners/umbro.jpg" alt="umbro">
+							</div>
+						</div>
+						<div>
+							<div class="slider-image-container">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/partners/gapp.jpg" alt="gapp">
+							</div>
 						</div>
 					</div>
 
 				</div>
-				<div class="col text-center">
+				<div class="col text-center pt-4 pt-md-5 pt-lg-4 pt-xl-4">
 					<img id="next-arrow" class="slick-next" src="<?php echo get_template_directory_uri(); ?>/img/partners/arrow_right.png" alt="next">	
 				</div>
 			</div>

@@ -1,34 +1,18 @@
 // Add your JS customizations here
 
 jQuery(function($) {
-    // $('.carousel .carousel-item').each(function(){
-    //     var minPerSlide = 3;
-    //     var next = $(this).next();
-    //     if (!next.length) {
-    //     next = $(this).siblings(':first');
-    //     }
-    //     next.children(':first-child').clone().appendTo($(this));
-        
-    //     for (var i=0;i<minPerSlide;i++) {
-    //         next=next.next();
-    //         if (!next.length) {
-    //             next = $(this).siblings(':first');
-    //         }
-        
-    //         next.children(':first-child').clone().appendTo($(this));
-    //     }
-    // });
 
     $('.card.player:not(.placeholder)').hover(function() {
-        $(this).children('.card-player-photo').addClass("invisible");
-        $(this).children('.card-player-info').removeClass("invisible");
+        $(this).children('.card-player-photo').addClass('invisible');
+        $(this).children('.card-player-info').removeClass('invisible');
     }, function() {
-        $(this).find('.card-player-photo').removeClass("invisible");
-        $(this).find('.card-player-info').addClass("invisible");
+        $(this).find('.card-player-photo').removeClass('invisible');
+        $(this).find('.card-player-info').addClass('invisible');
     });
 
-    $('.service-symbol-frame').hover(function() {
-        $('#services-info-text').html($(this).attr('data-text'));
+    $('.service-symbol-border').hover(function() {
+        $('#services-info-text').html($(this).parent('.service-symbol-frame').attr('data-text'));
+        $('#services-info-title').html($(this).parent('.service-symbol-frame').attr('data-title'));
     }, function() {
     });
 
@@ -45,9 +29,7 @@ jQuery(function($) {
     });
 
     $('#highlightsModal').on('hide.bs.modal', function (e) {
-        // $("#player-video-frame")[0].contentWindow.postMessage('{"method":"pause"}', '*');
-        // $("#player-video-frame")[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-        $('#player-video-frame').attr('src', '');
+       $('#player-video-frame').attr('src', '');
     });
 
     $('body').materialScrollTop();
@@ -60,29 +42,25 @@ jQuery(function($) {
         slidesToScroll: 1,
         prevArrow:'#prev-arrow',
         nextArrow:'#next-arrow',
+        swipe:true,
         responsive: [
             {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: true
-            }
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3
+                }
             },
             {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-            }
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 3
+                }
             },
             {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2
+                }
             }
             // You can unslick at a given breakpoint now by adding:
             // settings: "unslick"
@@ -92,17 +70,15 @@ jQuery(function($) {
 
 });
 
-
-
-  document.addEventListener( 'wpcf7invalid', function( event ) {
-    alert('yo');
-}, false );
-document.addEventListener( 'wpcf7spam', function( event ) {
-    alert('yo');
-}, false );
-document.addEventListener( 'wpcf7mailfailed', function( event ) {
-    alert('yo');
-}, false );
-document.addEventListener( 'wpcf7mailsent', function( event ) {
-    alert('yo');
-}, false );
+//   document.addEventListener( 'wpcf7invalid', function( event ) {
+//     alert('yo');
+// }, false );
+// document.addEventListener( 'wpcf7spam', function( event ) {
+//     alert('yo');
+// }, false );
+// document.addEventListener( 'wpcf7mailfailed', function( event ) {
+//     alert('yo');
+// }, false );
+// document.addEventListener( 'wpcf7mailsent', function( event ) {
+//     alert('yo');
+// }, false );
