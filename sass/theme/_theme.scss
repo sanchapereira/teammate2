@@ -165,6 +165,10 @@ $terciary-lightest:#FFFFFF;
         width:30px;
         height:30px;
     }
+
+    .logo-nav-big {
+        display:none;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -295,6 +299,10 @@ $terciary-lightest:#FFFFFF;
     .whatsapp-logo {
         margin-top:20px;
     }
+
+    .logo-nav-small {
+        display:none;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) { 
@@ -417,6 +425,10 @@ $terciary-lightest:#FFFFFF;
     .whatsapp-logo {
         margin-top:20px;
     }
+
+    .logo-nav-small {
+        display:none;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) { 
@@ -534,6 +546,10 @@ $terciary-lightest:#FFFFFF;
     
     .whatsapp-logo {
         margin-top:20px;
+    }
+
+    .logo-nav-small {
+        display:none;
     }
 }
 
@@ -658,6 +674,15 @@ $terciary-lightest:#FFFFFF;
     .whatsapp-logo {
         margin-top:20px;
     }
+
+    #navbarNavDropdown li:not(:last-child):after {
+        content:"\00a0\00a0\00a0\00a0.\00a0\00a0\00a0\00a0";
+        color:$terciary-lightest;
+    }
+
+    .logo-nav-small {
+        display:none;
+    }
 }
 
 
@@ -665,6 +690,11 @@ $terciary-lightest:#FFFFFF;
 
 body {
     font-family:'Montserrat';
+}
+
+.logo-nav-small {
+    width:60px;
+    height:60px;
 }
 
 .navbar-toggler {
@@ -750,14 +780,9 @@ body {
     content:"\00a0\00a0\00a0\00a0.\00a0\00a0\00a0\00a0";
 }
 
-.navbar-menu li:not(:last-child):after {
-    content:"\00a0\00a0\00a0\00a0.\00a0\00a0\00a0\00a0";
-    color:$terciary-lightest;
-}
-
 #main-nav { 
     background-color: $secundary;
-    .navbar-menu {
+    #navbarNavDropdown {
         ul {
             margin-bottom: 0;
             padding-inline-start:0px;

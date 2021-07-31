@@ -19,19 +19,20 @@ $container = get_theme_mod( 'understrap_container_type' );
 <!-- ******************* The Navbar Area ******************* -->
 <div id="wrapper-navbar" class="sticky-top">
 
-	<nav id="main-nav" class="navbar navbar-expand-lg navbar-dark" aria-labelledby="main-nav-label">
-
-		<div class="row">
-
+	<nav id="main-nav" class="navbar navbar-expand-xl navbar-dark" aria-labelledby="main-nav-label">
+			<a class="navbar-brand" href="#">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/logo-nav.png" alt="logo-nav-big" class="logo-nav-big">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/teste.png" alt="logo-nav-small" class="logo-nav-small">
+			</a>
 			<div class="mobile-menu-dropdown">
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
 				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="">
 					<i class="fa fa-bars"></i>
 				</button>
 			</div>
+			<div class="collapse navbar-collapse"></div>
 			<div id="navbarNavDropdown" class="collapse navbar-collapse">
-				<div class="navbar-menu">
-					<ul id="menu-navbar" class="text-center">
+					<ul id="menu-navbar" class="navbar-nav text-center">
 						<li class="menu-item">
 							<a href="#who-are-we">Quem Somos</a>
 						</li>
@@ -51,7 +52,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<a href="#wrapper-footer">Contactos</a>
 						</li>
 					</ul>
-				</div>
 			</div>
 
 			<div class="social-network-nav">
@@ -68,11 +68,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<img src="<?php echo get_template_directory_uri(); ?>/img/menu_twiter.png" alt="twitter-logo">
 				</a>
 			</div>
-
-			<img style="height:60px;width:60px;" src="<?php echo get_template_directory_uri(); ?>/img/teste.png" alt="logo-nav" class="logo-nav">
-
 			<!-- The WordPress Menu goes here -->
-		</div><!--  .container -->
 
 	</nav><!-- .site-navigation -->
 </div><!-- #wrapper-navbar end -->
