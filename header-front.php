@@ -16,7 +16,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <div class="site" id="page">
-
+	<a href="https://wa.me/+351914423660" class="float" target="_blank">
+		<img class="whatsapp-logo" src="<?php echo get_template_directory_uri(); ?>/img/whatsapp.png" />
+	</a>
 	<div id="targetElement"></div>
 	<div class="top-header">
 		<div class="row">
@@ -25,7 +27,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col-4 text-center">
 				<img src="<?php echo get_template_directory_uri(); ?>/img/small-logo.png" alt="small-logo" class="small-logo">
 			</div>
-			
+
 			<div class="col-4 text-right">
 				<div id="header-social-network" class="social-network">
 					<span class="languages">PT/EN</span>

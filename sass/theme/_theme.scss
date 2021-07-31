@@ -144,6 +144,27 @@ $terciary-lightest:#FFFFFF;
     .slider {
         max-width: 400px;
     }
+
+    .float{
+        position:fixed;
+        width:70px;
+        height:45px;
+        bottom:40px;
+        right:0px;
+        background-color:#303030;
+        color:green;
+        border-radius: 50px 0px 0px 50px;
+        text-align:center;
+        font-size:30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index:1030;
+    }
+    
+    .whatsapp-logo {
+        margin-top:-5px;
+        width:30px;
+        height:30px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -255,6 +276,25 @@ $terciary-lightest:#FFFFFF;
     .slider {
         max-width: 500px;
     }
+
+    .float{
+        position:fixed;
+        width:105px;
+        height:89px;
+        bottom:40px;
+        right:0px;
+        background-color:#303030;
+        color:green;
+        border-radius: 50px 0px 0px 50px;
+        text-align:center;
+        font-size:30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index:1030;
+    }
+    
+    .whatsapp-logo {
+        margin-top:20px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) { 
@@ -358,6 +398,25 @@ $terciary-lightest:#FFFFFF;
         font: normal normal 600 22px/27px Montserrat;
         color: #FFFFFF;
     }
+
+    .float{
+        position:fixed;
+        width:105px;
+        height:89px;
+        bottom:40px;
+        right:0px;
+        background-color:#303030;
+        color:green;
+        border-radius: 50px 0px 0px 50px;
+        text-align:center;
+        font-size:30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index:1030;
+    }
+    
+    .whatsapp-logo {
+        margin-top:20px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) { 
@@ -456,6 +515,25 @@ $terciary-lightest:#FFFFFF;
         text-align: center;
         font: normal normal 600 22px/27px Montserrat;
         color: #FFFFFF;
+    }
+
+    .float{
+        position:fixed;
+        width:105px;
+        height:89px;
+        bottom:40px;
+        right:0px;
+        background-color:#303030;
+        color:green;
+        border-radius: 50px 0px 0px 50px;
+        text-align:center;
+        font-size:30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index:1030;
+    }
+    
+    .whatsapp-logo {
+        margin-top:20px;
     }
 }
 
@@ -560,6 +638,25 @@ $terciary-lightest:#FFFFFF;
         text-align: center;
         font: normal normal 600 22px/27px Montserrat;
         color: #FFFFFF;
+    }
+
+    .float{
+        position:fixed;
+        width:105px;
+        height:89px;
+        bottom:40px;
+        right:0px;
+        background-color:#303030;
+        color:green;
+        border-radius: 50px 0px 0px 50px;
+        text-align:center;
+        font-size:30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index:1030;
+    }
+    
+    .whatsapp-logo {
+        margin-top:20px;
     }
 }
 
