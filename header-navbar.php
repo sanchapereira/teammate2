@@ -20,38 +20,33 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div id="wrapper-navbar" class="sticky-top">
 
 	<nav id="main-nav" class="navbar navbar-expand-xl navbar-dark" aria-labelledby="main-nav-label">
-			<a class="navbar-brand" href="#">
+			<a href="#">
 				<img src="<?php echo get_template_directory_uri(); ?>/img/logo-nav.png" alt="logo-nav-big" class="logo-nav-big">
 				<img src="<?php echo get_template_directory_uri(); ?>/img/teste.png" alt="logo-nav-small" class="logo-nav-small">
 			</a>
-			<div class="mobile-menu-dropdown">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
-				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="">
-					<i class="fa fa-bars"></i>
-				</button>
-			</div>
 			<div class="collapse navbar-collapse"></div>
+
 			<div id="navbarNavDropdown" class="collapse navbar-collapse">
-					<ul id="menu-navbar" class="navbar-nav text-center">
-						<li class="menu-item">
-							<a href="#who-are-we">Quem Somos</a>
-						</li>
-						<li class="menu-item">
-							<a href="#services">Serviços</a>
-						</li>
-						<li class="menu-item">
-							<a href="#players">Teammates</a>
-						</li>
-						<li class="menu-item">
-							<a href="#news">Notícias</a>
-						</li>
-						<li class="menu-item">
-							<a href="#partners">Parceiros</a>
-						</li>
-						<li class="menu-item">
-							<a href="#wrapper-footer">Contactos</a>
-						</li>
-					</ul>
+				<ul id="menu-navbar" class="navbar-nav text-center">
+					<li class="menu-item">
+						<a href="#who-are-we">Quem Somos</a>
+					</li>
+					<li class="menu-item">
+						<a href="#services">Serviços</a>
+					</li>
+					<li class="menu-item">
+						<a href="#players">Teammates</a>
+					</li>
+					<li class="menu-item">
+						<a href="#news">Notícias</a>
+					</li>
+					<li class="menu-item">
+						<a href="#partners">Parceiros</a>
+					</li>
+					<li class="menu-item">
+						<a href="#wrapper-footer">Contactos</a>
+					</li>
+				</ul>
 			</div>
 
 			<div class="social-network-nav">
@@ -67,6 +62,43 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<a href="https://twitter.com/teammatefootbal" target="_blank">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/menu_twiter.png" alt="twitter-logo">
 				</a>
+			</div>
+
+			<div class="mobile-menu-dropdown">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
+				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="">
+					<i class="fa fa-bars"></i>
+				</button>
+			</div>
+
+			<div class="mobile-menu-dropdown-non-xl">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown-non-xl" 
+				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="">
+					<i class="fa fa-bars"></i>
+				</button>
+			</div>
+
+			<div id="navbarNavDropdown-non-xl" class="collapse navbar-collapse">
+				<ul id="menu-navbar" class="navbar-nav text-center">
+					<li class="menu-item">
+						<a href="#who-are-we">Quem Somos</a>
+					</li>
+					<li class="menu-item">
+						<a href="#services">Serviços</a>
+					</li>
+					<li class="menu-item">
+						<a href="#players">Teammates</a>
+					</li>
+					<li class="menu-item">
+						<a href="#news">Notícias</a>
+					</li>
+					<li class="menu-item">
+						<a href="#partners">Parceiros</a>
+					</li>
+					<li class="menu-item">
+						<a href="#wrapper-footer">Contactos</a>
+					</li>
+				</ul>
 			</div>
 			<!-- The WordPress Menu goes here -->
 

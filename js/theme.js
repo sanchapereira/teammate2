@@ -7124,6 +7124,9 @@ jQuery(function ($) {
     // instead of a settings object
     ]
   });
+  $('#navbarNavDropdown li').on('click', function (e) {
+    $('#navbarNavDropdown').collapse('hide');
+  });
 }); //   document.addEventListener( 'wpcf7invalid', function( event ) {
 //     alert('yo');
 // }, false );

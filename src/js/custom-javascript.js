@@ -68,6 +68,9 @@ jQuery(function($) {
         ]
     });
 
+    $('#navbarNavDropdown li').on('click', function(e) {
+        $('#navbarNavDropdown').collapse('hide');
+    });
 });
 
 //   document.addEventListener( 'wpcf7invalid', function( event ) {

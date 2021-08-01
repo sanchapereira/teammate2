@@ -75,7 +75,6 @@ $terciary-lightest:#FFFFFF;
     }
 
     ul#who-are-we-nav {
-        margin-top:37px;
         li {
             button {
                 text-align: center;
@@ -156,7 +155,6 @@ $terciary-lightest:#FFFFFF;
         border-radius: 50px 0px 0px 50px;
         text-align:center;
         font-size:30px;
-        box-shadow: 2px 2px 3px #999;
         z-index:1030;
     }
     
@@ -167,6 +165,19 @@ $terciary-lightest:#FFFFFF;
     }
 
     .logo-nav-big {
+        display:none;
+    }
+
+    .founder-name {
+        text-align: left;
+        font-size: 30px;
+    }
+
+    .navbarNavDropdown { 
+        display:none;
+    }
+    
+    .mobile-menu-dropdown {
         display:none;
     }
 }
@@ -214,7 +225,6 @@ $terciary-lightest:#FFFFFF;
     }
 
     ul#who-are-we-nav {
-        margin-top:37px;
         li {
             button {
                 text-align: center;
@@ -283,8 +293,8 @@ $terciary-lightest:#FFFFFF;
 
     .float{
         position:fixed;
-        width:105px;
-        height:89px;
+        width:70px;
+        height:55px;
         bottom:40px;
         right:0px;
         background-color:#303030;
@@ -292,15 +302,24 @@ $terciary-lightest:#FFFFFF;
         border-radius: 50px 0px 0px 50px;
         text-align:center;
         font-size:30px;
-        box-shadow: 2px 2px 3px #999;
         z-index:1030;
     }
     
     .whatsapp-logo {
-        margin-top:20px;
+        margin-top:6px;
+        width:30px;
+        height:30px;
     }
 
-    .logo-nav-small {
+    .logo-nav-big {
+        display:none;
+    }
+
+    .navbarNavDropdown { 
+        display:none;
+    }
+    
+    .mobile-menu-dropdown {
         display:none;
     }
 }
@@ -344,7 +363,6 @@ $terciary-lightest:#FFFFFF;
     }
 
     ul#who-are-we-nav {
-        margin-top:37px;
         li {
             button {
                 text-align: center;
@@ -409,8 +427,8 @@ $terciary-lightest:#FFFFFF;
 
     .float{
         position:fixed;
-        width:105px;
-        height:89px;
+        width:70px;
+        height:55px;
         bottom:40px;
         right:0px;
         background-color:#303030;
@@ -418,15 +436,24 @@ $terciary-lightest:#FFFFFF;
         border-radius: 50px 0px 0px 50px;
         text-align:center;
         font-size:30px;
-        box-shadow: 2px 2px 3px #999;
         z-index:1030;
     }
     
     .whatsapp-logo {
-        margin-top:20px;
+        margin-top:6px;
+        width:30px;
+        height:30px;
     }
 
-    .logo-nav-small {
+    .logo-nav-big {
+        display:none;
+    }
+
+    .navbarNavDropdown { 
+        display:none;
+    }
+    
+    .mobile-menu-dropdown {
         display:none;
     }
 }
@@ -466,7 +493,6 @@ $terciary-lightest:#FFFFFF;
     }
 
     ul#who-are-we-nav {
-        margin-top:37px;
         li {
             button {
                 text-align: center;
@@ -531,8 +557,8 @@ $terciary-lightest:#FFFFFF;
 
     .float{
         position:fixed;
-        width:105px;
-        height:89px;
+        width:70px;
+        height:55px;
         bottom:40px;
         right:0px;
         background-color:#303030;
@@ -540,15 +566,24 @@ $terciary-lightest:#FFFFFF;
         border-radius: 50px 0px 0px 50px;
         text-align:center;
         font-size:30px;
-        box-shadow: 2px 2px 3px #999;
         z-index:1030;
     }
     
     .whatsapp-logo {
-        margin-top:20px;
+        margin-top:6px;
+        width:30px;
+        height:30px;
     }
 
-    .logo-nav-small {
+    .logo-nav-big {
+        display:none;
+    }
+
+    .navbarNavDropdown { 
+        display:none;
+    }
+    
+    .mobile-menu-dropdown {
         display:none;
     }
 }
@@ -593,7 +628,6 @@ $terciary-lightest:#FFFFFF;
     }
 
     ul#who-are-we-nav {
-        margin-top:37px;
         li {
             button {
                 text-align: center;
@@ -658,8 +692,8 @@ $terciary-lightest:#FFFFFF;
 
     .float{
         position:fixed;
-        width:105px;
-        height:89px;
+        width:70px;
+        height:55px;
         bottom:40px;
         right:0px;
         background-color:#303030;
@@ -667,12 +701,13 @@ $terciary-lightest:#FFFFFF;
         border-radius: 50px 0px 0px 50px;
         text-align:center;
         font-size:30px;
-        box-shadow: 2px 2px 3px #999;
         z-index:1030;
     }
     
     .whatsapp-logo {
-        margin-top:20px;
+        margin-top:6px;
+        width:30px;
+        height:30px;
     }
 
     #navbarNavDropdown li:not(:last-child):after {
@@ -681,6 +716,18 @@ $terciary-lightest:#FFFFFF;
     }
 
     .logo-nav-small {
+        display:none;
+    }
+
+    .slick-next, .slick-prev {
+        padding-top:10px;
+    }
+
+    #navbarNavDropdown-non-xl { 
+        display:none !important;
+    }
+    
+    .mobile-menu-dropdown-non-xl {
         display:none;
     }
 }
@@ -713,8 +760,6 @@ body {
 
 .top-header {
     background-size: cover;
-    width: 100vw; 
-    min-height: 100vh;
     background-color: $primary;
 }
 
@@ -733,8 +778,18 @@ body {
     }
 }
 
+.contact-form-title {
+    font-size: 20px !important;
+}
+
+.founder-name {
+    text-align: left;
+    font-size: 45px;
+}
+
 .small-logo {
-    padding-top:53px;
+    margin-top:53px;
+    width:260px;
 }
 
 .languages {
@@ -748,6 +803,11 @@ body {
 
 .large-logo {
     padding-top: 153px;
+}
+
+.logo-nav-big {
+    width:160px;
+    height:52px;
 }
 
 .logo-motto {
@@ -804,6 +864,28 @@ body {
             }
         }
     }
+    #navbarNavDropdown-non-xl {
+        ul {
+            margin-bottom: 0;
+            padding-inline-start:0px;
+            li {
+                display: inline;
+                list-style-type: none;
+                a {
+                    text-align: center;
+                    font: normal normal 500 17px/20px Montserrat;
+                    color: #FFFFFF;
+                    text-transform: uppercase;
+                }
+                a:hover {
+                    text-decoration: none;
+                }
+                .dropdown-menu {
+                    background: $secundary;
+                }
+            }
+        }
+    }
 }
 
 .social-network-nav {
@@ -822,12 +904,6 @@ body {
 
 #myTabContent {
     margin-top:88px;
-}
-
-#founder-name {
-    font: normal normal bold 70px/86px Montserrat;
-    color: #303030;
-    text-transform: uppercase;
 }
 
 .founder-title {
@@ -860,6 +936,10 @@ body {
     }
 }
 
+.navbar-toggler {
+    font-size:2rem;
+}
+
 .service {
     display:flex;
     flex-direction: column;
@@ -883,8 +963,8 @@ body {
     font: normal normal 500 18px/22px Montserrat;
     color: #FFFFFF;
     text-transform: uppercase;
-    margin-bottom: 24px;
-    margin-top: 24px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .service-icons {
@@ -893,7 +973,7 @@ body {
 }
 
 .title-holder {
-    padding-top: 92px;
+    padding-top: 80px;
 }
 
 .team-row {
@@ -1035,7 +1115,7 @@ body {
     color: $primary;
     .contact-info {
         text-align: center;
-        font: normal normal 600 22px/30px Montserrat;
+        font: normal normal 600 20px/30px Montserrat;
         letter-spacing: 0px;
         color: #FFFFFF;
         text-transform: uppercase;
@@ -1157,7 +1237,6 @@ body {
                 display: inline-block;
                 background: $secundary;
                 color: $terciary-lightest;
-                width:149px;
                 text-transform: uppercase;
                 font-size:15px;
                 font-weight: 600;
@@ -1166,7 +1245,12 @@ body {
 
     }
     .terms-conditions {
-        font: normal normal 600 14px/18px Montserrat;
+        font: normal normal 600 12px/18px Montserrat;
+    }
+
+    .terms {
+        text-align: left;
+        padding:0;
     }
 
     input[type=checkbox]{
@@ -1230,8 +1314,8 @@ body {
 }
 
 .material-scrolltop.reveal {
-    width:55px;
-    height:55px;
+    width:45px;
+    height:45px;
 }
 
 .slick-slide {
@@ -1273,4 +1357,8 @@ main {
         height: 334px;
         max-width: 534px;
     }
+}
+
+#wrapper-footer {
+    padding:0;
 }
