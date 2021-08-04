@@ -250,100 +250,100 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<h2>Serviços</h2>
 			</div>
 			<div class="row row-cols-5 service-icons mt-5">
-				<div class="service">
+				<div class="service col mb-4 mb-sm-0">
 					<div class="service-symbol-frame" data-title="Representação" data-text="Estamos sempre à procura das melhores oportunidades de carreira para ti. Gerimos todos os aspectos relacionados com a tua atividade profissional, tratando de toda a negociação de contratos, transferências e apoio no teu dia-a-dia.">
-						<div class="service-symbol-border">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/rep.svg" alt="rep">
+						<div class="service-symbol-border active">
+							<img class="m-0 m-lg-3" src="<?php echo get_template_directory_uri(); ?>/img/rep.svg" alt="rep">
 						</div>
 						<div class="service-symbol-text">
 							Representação
 						</div>
 					</div>
 				</div>
-				<div class="service">
+				<div class="service col mb-4 mb-sm-0">
 					<div class="service-symbol-frame" data-title="Intermediação" data-text="Somos o teu intermediário, salvaguardando os teus interesses em todos os momentos. Adicionalmente, trabalhamos com agentes, clubes ou sociedades desportivas que pretendam recorrer aos nossos serviços para a conclusão de negócios.">
 						<div class="service-symbol-border">	
-							<img src="<?php echo get_template_directory_uri(); ?>/img/intermed.svg" alt="intermed">
+							<img class="m-0 m-lg-3" src="<?php echo get_template_directory_uri(); ?>/img/intermed.svg" alt="intermed">
 						</div>
 						<div class="service-symbol-text">
 							Intermediação
 						</div>
 					</div>	
 				</div>
-				<div class="service">
+				<div class="service col mb-4 mb-sm-0">
 					<div class="service-symbol-frame" data-title="Marcas" data-text="Estamos próximos de grandes marcas do mercado, o que nos permite encontrar e negociar boas oportunidades de parcerias para ti e dar-te visibilidade.">
 						<div class="service-symbol-border">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/brand.svg" alt="brands">
+							<img class="m-0 m-lg-3" src="<?php echo get_template_directory_uri(); ?>/img/brand.svg" alt="brands">
 						</div>
 						<div class="service-symbol-text">
 							Marcas
 						</div>
 					</div>	
 				</div>
-				<div class="service">
+				<div class="service col mb-4 mb-sm-0">
 					<div class="service-symbol-frame" data-title="Assessoria de Comunicação" data-text="A tua imagem é a nossa imagem. Trabalhamos contigo de forma a promover a tua imagem e a boa utilização de todas as tuas plataformas de social media. Preparamos-te, também, para momentos de maior exposição e relacionamento com a comunicação social, como entrevistas, eventos, campanhas, palestras, etc.">
 						<div class="service-symbol-border">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/comm.svg" alt="comm">
+							<img class="m-0 m-lg-3" src="<?php echo get_template_directory_uri(); ?>/img/comm.svg" alt="comm">
 						</div>			
 						<div class="service-symbol-text">
 							Assessoria de Comunicação
 						</div>
 					</div>
 				</div>
-				<div class="service">
+				<div class="service col mb-4 mb-sm-0">
 					<div class="service-symbol-frame" data-title="Assessoria Jurídica" data-text="Para te representarmos da melhor forma, somos acompanhados e assessorados por juristas e advogados especializados em matérias laborais e desportivas que nos ajudam a desenvolver a nossa actividade, de forma a serem salvaguardados todos os teus interesses - legais e desportivos.">
 						<div class="service-symbol-border">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/juri.svg" alt="juri">
+							<img class="m-0 m-lg-3" src="<?php echo get_template_directory_uri(); ?>/img/juri.svg" alt="juri">
 						</div>
 						<div class="service-symbol-text">
 							Assessoria Jurídica
 						</div>
 					</div>	
 				</div>
-				<div class="service">
+				<div class="service col">
 					<div class="service-symbol-frame" data-title="Análise de Rendimento" data-text="Como um bom <b>TEAMMATE</b>, acompanhamos-te em todos os jogos. Analisamos o teu rendimento em cada partida, tendo sempre em mente o teu crescimento táctico e técnico. Todas as semanas reunimo-nos contigo para que possas melhorar a tua performance jogo após jogo.">
 						<div class="service-symbol-border">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/performance.svg" alt="performance">
+							<img class="m-0 m-lg-3" src="<?php echo get_template_directory_uri(); ?>/img/performance.svg" alt="performance">
 						</div>
 						<div class="service-symbol-text">
 							Análise de Rendimento
 						</div>	
 					</div>
 				</div>
-				<div class="service">
+				<div class="service col">
 					<div class="service-symbol-frame" data-title="Psicologia do Desporto & Performance" data-text="Como manter a concentração durante os 90 minutos? Como lidar com os adversários? Para estares ao mais alto nível, uma boa preparação técnica e tática não chega. Existem outras disciplinas que contribuem para a tua evolução enquanto atleta. A Psicologia é uma delas. É essencial preparares a tua mente, com um treino mental personalizado tendo em conta a tua posição em campo e os teus objetivos.">
 						<div class="service-symbol-border">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/mental.svg" alt="psico">
+							<img class="m-0 m-lg-3" src="<?php echo get_template_directory_uri(); ?>/img/mental.svg" alt="psico">
 						</div>
 						<div class="service-symbol-text">
 							Psicologia do Desporto & Performance
 						</div>
 					</div>
 				</div>
-				<div class="service">
+				<div class="service col">
 					<div class="service-symbol-frame" data-title="Nutrição" data-text="A alimentação é o teu treino invisível. Ela ajuda-te a chegar à tua máxima capacidade de desenvolvimento físico e é essencial na tua recuperação, evitando lesões e garantindo o teu rápido regresso às quatro linhas (o chamado ‘return to play’). Nesse sentido, elaboramos um plano nutricional à medida dos teus objetivos.">
 						<div class="service-symbol-border">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/nutri.svg" alt="nutri">
+							<img class="m-0 m-lg-3" src="<?php echo get_template_directory_uri(); ?>/img/nutri.svg" alt="nutri">
 						</div>
 						<div class="service-symbol-text">
 							Nutrição
 						</div>	
 					</div>
 				</div>
-				<div class="service">
+				<div class="service col">
 					<div class="service-symbol-frame" data-title="Personal Trainer" data-text="Se precisares de treinos individuais e personalizados, nós tratamos disso. Fazemos um acompanhamento próximo e monitorizamos a tua performance física, tendo sempre em conta as tuas necessidades e objetivos.">
 						<div class="service-symbol-border">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/pt.svg" alt="pt">
+							<img class="m-0 m-lg-3" src="<?php echo get_template_directory_uri(); ?>/img/pt.svg" alt="pt">
 						</div>						
 						<div class="service-symbol-text">
 							Personal Trainer
 						</div>
 					</div>
 				</div>
-				<div class="service">
+				<div class="service col">
 					<div class="service-symbol-frame" data-title="Eventos Desportivos" data-text="Também somos o <b>TEAMMATE</b> das equipas de futebol profissional e das seleções nacionais. Organizamos pré-temporadas, torneios, jogos amigáveis e estágios, trabalhando lado a lado com os melhores hotéis e infra-estruturas desportivas, em qualquer parte do mundo.">
 						<div class="service-symbol-border">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/event.svg" alt="events">
+							<img class="m-0 m-lg-3" src="<?php echo get_template_directory_uri(); ?>/img/event.svg" alt="events">
 						</div>
 						<div class="service-symbol-text">
 							Eventos Desportivos
@@ -476,7 +476,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<p class="player-stats">Pé Direito</p>
 									
 									<div class="player-card-info-footer mt-4">
-										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal" data-media="https://www.youtube.com/embed/KZpFmOmx9QE?version=3&enablejsapi=1">
+										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal" data-media="https://www.youtube.com/embed/wvbsT5XWLBM">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
 										</button>
 										<div class="social-media-player mx-2">
@@ -507,7 +507,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									</div>
 									<div class="col"></div>
 									<div class="col">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/teammates/glasgow.png" alt="club-logo">
+										<img style="width:60px; height:60px;"  src="<?php echo get_template_directory_uri(); ?>/img/teammates/glasgow.png" alt="club-logo">
 									</div>
 								</div>
 							</div>
@@ -564,7 +564,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<p class="player-stats">53 KG</p>
 									<p class="player-stats">Pé Esquerdo</p>
 									<div class="player-card-info-footer mt-4">
-										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal">
+										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal" data-media="https://www.youtube.com/embed/LZ82HRibYY4">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
 										</button>
 
@@ -609,7 +609,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<p class="player-stats">65 KG</p>
 									<p class="player-stats">Pé Direito</p>
 									<div class="player-card-info-footer mt-4">
-										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal">
+										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal" data-media="https://player.vimeo.com/video/514735122">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
 										</button>
 
@@ -654,7 +654,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<p class="player-stats">Pé Direito</p>
 									<div class="player-card-info-footer mt-4">
 
-										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal">
+										<button class="play-button low-opacity-fixed" type="button">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
 										</button>
 										<div class="social-media-player mx-2">
@@ -700,7 +700,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<p class="player-stats">Pé Direito</p>
 
 									<div class="player-card-info-footer mt-4">
-										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal">
+										<button class="play-button low-opacity-fixed" type="button">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
 										</button>
 										<div class="social-media-player mx-2">
@@ -745,7 +745,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<p class="player-stats">Pe Direito</p>
 
 									<div class="player-card-info-footer mt-4">
-										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal">
+										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal" data-media="https://www.youtube.com/embed/oP6q_KcG5p8">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
 										</button>
 
@@ -791,7 +791,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<p class="player-stats">Pé Direito</p>
 
 									<div class="player-card-info-footer mt-4">
-										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal">
+										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal" data-media="https://www.youtube.com/embed/ccQIHD-GxTs">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
 										</button>
 
@@ -836,7 +836,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<p class="player-stats">Pé Direito</p>
 
 									<div class="player-card-info-footer mt-4">
-										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal">
+										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal" data-media="https://www.youtube.com/embed/I238dfmoVGg">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
 										</button>
 										<div class="social-media-player mx-2">
@@ -880,7 +880,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<p class="player-stats">Pé Esquerdo</p>
 
 									<div class="player-card-info-footer mt-4">
-										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal">
+										<button class="play-button low-opacity-fixed" type="button">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
 										</button>
 										<div class="social-media-player mx-2">
@@ -924,7 +924,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<p class="player-stats">Pé Esquerdo</p>
 
 									<div class="player-card-info-footer mt-4">
-										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal">
+										<button class="play-button low-opacity-fixed" type="button">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
 										</button> 
 										<div class="social-media-player mx-2">
@@ -968,7 +968,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<p class="player-stats">Pé Direito</p>
 
 									<div class="player-card-info-footer mt-4">
-										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal">
+										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal" data-media="https://player.vimeo.com/video/470757408">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
 										</button>
 										<div class="social-media-player mx-2">
@@ -1012,7 +1012,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<p class="player-stats">Pé Direito</p>
 
 									<div class="player-card-info-footer mt-4">
-										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal">
+										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal" data-media="https://player.vimeo.com/video/511599132">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
 										</button>
 										<div class="social-media-player mx-2">
@@ -1055,7 +1055,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<p class="player-stats">52 KG</p>
 									<p class="player-stats">Pé Direito</p>
 									<div class="player-card-info-footer mt-4">
-										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal">
+										<button class="play-button low-opacity-fixed" type="button">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
 										</button>
 
@@ -1100,7 +1100,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<p class="player-stats">Pé Esquerdo</p>
 									
 									<div class="player-card-info-footer mt-4">
-										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal">
+										<button class="play-button low-opacity-fixed" type="button">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
 										</button>
 										<div class="social-media-player mx-2">
@@ -1144,7 +1144,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<p class="player-stats">Pé Direito</p>
 
 									<div class="player-card-info-footer mt-4">
-										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal">
+										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal" data-media="https://player.vimeo.com/video/410340728">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
 										</button>
 										<div class="social-media-player mx-2">
@@ -1188,7 +1188,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<p class="player-stats">Pe Direito</p>
 
 									<div class="player-card-info-footer mt-4">
-										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal">
+										<button class="play-button low-opacity-fixed" type="button">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
 										</button>
 										<div class="social-media-player mx-2">
@@ -1232,7 +1232,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<p class="player-stats">Pé Direito</p>
 
 									<div class="player-card-info-footer mt-4">
-										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal">
+										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal" data-media="https://player.vimeo.com/video/505225211">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
 										</button>
 										<div class="social-media-player mx-2">
@@ -1277,7 +1277,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<p class="player-stats">Pé Direito</p>
 
 									<div class="player-card-info-footer mt-4">
-										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal">
+										<button class="play-button low-opacity-fixed" type="button">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
 										</button>
 										<div class="social-media-player mx-2">
@@ -1307,7 +1307,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									</div>
 									<div class="col"></div>
 									<div class="col">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/teammates/aland.png" alt="club-logo">
+										<img style="width:50;height:60px;" src="<?php echo get_template_directory_uri(); ?>/img/teammates/aland.png" alt="club-logo">
 									</div>
 								</div>
 							</div>
@@ -1320,7 +1320,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<p class="player-stats">50 KG</p>
 									<p class="player-stats">Pé Direito</p>
 									<div class="player-card-info-footer mt-4">
-										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal">
+										<button class="play-button low-opacity-fixed" type="button">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
 										</button>
 										<div class="social-media-player mx-2">
@@ -1364,7 +1364,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<p class="player-stats">Pé Direito</p>
 
 									<div class="player-card-info-footer mt-4">
-										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal">
+										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal" data-media="https://www.youtube.com/embed/yLcxQa35dow">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
 										</button>
 										<div class="social-media-player mx-2">
@@ -1408,7 +1408,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<p class="player-stats">&nbsp;</p>
 									
 									<div class="player-card-info-footer mt-4">
-										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal">
+										<button class="play-button low-opacity-fixed" type="button">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
 										</button>
 										<div class="social-media-player mx-2">

@@ -2,6 +2,13 @@
 
 jQuery(function($) {
 
+    if (!$('.players-nav-buttons[data-position="all"]').is(':visible')) {
+        $('button.players-nav-buttons[data-position="gk"]').addClass('active');
+
+        $('.card.player').hide();
+        $('.card.player.gk').show();
+    }
+
     $('.card.player:not(.placeholder)').hover(function() {
         $(this).children('.card-player-photo').addClass('invisible');
         $(this).children('.card-player-info').removeClass('invisible');
@@ -13,6 +20,8 @@ jQuery(function($) {
     $('.service-symbol-border').hover(function() {
         $('#services-info-text').html($(this).parent('.service-symbol-frame').attr('data-text'));
         $('#services-info-title').html($(this).parent('.service-symbol-frame').attr('data-title'));
+        $('.service-symbol-border').removeClass('active');
+        $(this).addClass('active');
     }, function() {
     });
 
@@ -67,6 +76,8 @@ jQuery(function($) {
             // instead of a settings object
         ]
     });
+
+    // $('#main').slick();
 
     $('#navbarNavDropdown li').on('click', function(e) {
         $('#navbarNavDropdown').collapse('hide');

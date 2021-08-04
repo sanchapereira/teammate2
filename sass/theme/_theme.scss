@@ -180,6 +180,14 @@ $terciary-lightest:#FFFFFF;
     .mobile-menu-dropdown {
         display:none;
     }
+
+    .service-symbol-border.active {
+        border: 2px solid $secundary;
+    }
+
+    .players-nav-buttons[data-position="all"] {
+        display:none;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -322,6 +330,10 @@ $terciary-lightest:#FFFFFF;
     .mobile-menu-dropdown {
         display:none;
     }
+
+    .service-symbol-border.active  {
+        border: 2px solid $secundary;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) { 
@@ -456,6 +468,10 @@ $terciary-lightest:#FFFFFF;
     .mobile-menu-dropdown {
         display:none;
     }
+
+    .service-symbol-border.active {
+        border: 2px solid $secundary;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) { 
@@ -585,6 +601,10 @@ $terciary-lightest:#FFFFFF;
     
     .mobile-menu-dropdown {
         display:none;
+    }
+
+    .service-symbol-border.active  {
+        border: 2px solid $terciary-lightest;
     }
 }
 
@@ -730,6 +750,10 @@ $terciary-lightest:#FFFFFF;
     .mobile-menu-dropdown-non-xl {
         display:none;
     }
+
+    .service-symbol-border.active {
+        border: 2px solid $terciary-lightest;
+    }
 }
 
 
@@ -738,6 +762,10 @@ $terciary-lightest:#FFFFFF;
 body {
     font-family:'Montserrat';
 }
+
+// .site {
+//     overflow-x: hidden;
+// }
 
 .logo-nav-small {
     width:60px;
@@ -947,12 +975,8 @@ body {
 
 .service-symbol-border {
     border: 2px solid $primary;
-    border-radius: 82px;
+    border-radius: 50%;
     display: inline-block;
-}
-
-.service-symbol-border:hover {
-    border: 2px solid $terciary-lightest;
 }
 
 .service-symbol-frame {
@@ -1027,6 +1051,8 @@ body {
 }
 
 .player {
+    border:0;
+    border-radius: 0;
     max-width: 18rem;
     display:inline-flex;
     .player-card {
@@ -1078,6 +1104,18 @@ body {
             font-size:18px;
             text-transform: uppercase;
         }
+    }
+    .card-player-photo {
+        .card-img-top {
+            border-radius: 0;
+        }
+    }
+}
+
+.player-card-info-footer {
+    .low-opacity-fixed {
+        opacity: 0.3;
+        cursor:default;
     }
 }
 
@@ -1349,16 +1387,18 @@ body {
     }
 }
 
-main {
+#main {
     .card {
         display:inline-block;
         border:0;
         border-radius:0;
-        height: 334px;
-        max-width: 534px;
     }
 }
 
 #wrapper-footer {
     padding:0;
+}
+
+.post-news {
+    max-width: 260px;
 }
