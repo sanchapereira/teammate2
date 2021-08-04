@@ -86,7 +86,7 @@ $terciary-lightest:#FFFFFF;
                 border-left: none;
                 border-right: none;
                 border-bottom: none;
-                padding: 8px 0px 4px;
+                padding: 8px 0px 0px;
                 background: none;
             }
             button.active {
@@ -115,7 +115,7 @@ $terciary-lightest:#FFFFFF;
                 border-left: none;
                 border-right: none;
                 border-bottom: none;
-                padding: 8px 0px 4px;
+                padding: 8px 0px 0px;
                 background: none;
             }
             button.active {
@@ -135,6 +135,12 @@ $terciary-lightest:#FFFFFF;
         text-align: center;
         font: normal normal 600 16px/27px Montserrat;
         color: #FFFFFF;
+    }
+
+    .founder-text {
+        text-align: left;
+        font: normal normal normal 16px/24px Montserrat;
+        color: #303030;
     }
 
     .material-scrolltop {
@@ -262,7 +268,7 @@ $terciary-lightest:#FFFFFF;
                 border-left: none;
                 border-right: none;
                 border-bottom: none;
-                padding: 8px 0px 4px;
+                padding: 8px 0px 0px;
                 background: none;
             }
             button.active {
@@ -291,7 +297,7 @@ $terciary-lightest:#FFFFFF;
                 border-left: none;
                 border-right: none;
                 border-bottom: none;
-                padding: 8px 0px 4px;
+                padding: 8px 0px 0px;
                 background: none;
             }
             button.active {
@@ -309,8 +315,14 @@ $terciary-lightest:#FFFFFF;
 
     .services-info {
         text-align: center;
-        font: normal normal 600 22px/27px Montserrat;
+        font: normal normal 600 16px/27px Montserrat;
         color: #FFFFFF;
+    }
+
+    .founder-text {
+        text-align: left;
+        font: normal normal normal 16px/24px Montserrat;
+        color: #303030;
     }
 
     .slider {
@@ -469,8 +481,14 @@ $terciary-lightest:#FFFFFF;
 
     .services-info {
         text-align: center;
-        font: normal normal 600 22px/27px Montserrat;
+        font: normal normal 600 18px/27px Montserrat;
         color: #FFFFFF;
+    }
+
+    .founder-text {
+        text-align: left;
+        font: normal normal normal 18px/24px Montserrat;
+        color: #303030;
     }
 
     .whatsapp-container{
@@ -621,8 +639,14 @@ $terciary-lightest:#FFFFFF;
 
     .services-info {
         text-align: center;
-        font: normal normal 600 22px/27px Montserrat;
+        font: normal normal 600 20px/27px Montserrat;
         color: #FFFFFF;
+    }
+
+    .founder-text {
+        text-align: left;
+        font: normal normal normal 20px/24px Montserrat;
+        color: #303030;
     }
 
     .whatsapp-container{
@@ -778,8 +802,14 @@ $terciary-lightest:#FFFFFF;
 
     .services-info {
         text-align: center;
-        font: normal normal 600 22px/27px Montserrat;
+        font: normal normal 600 20px/27px Montserrat;
         color: #FFFFFF;
+    }
+
+    .founder-text {
+        text-align: left;
+        font: normal normal normal 20px/24px Montserrat;
+        color: #303030;
     }
 
     .whatsapp-container{
@@ -1023,12 +1053,6 @@ body {
     font: normal normal bold 35px/43px Montserrat;
     color: #303030;
     text-transform: uppercase;
-}
-
-.founder-text {
-    text-align: left;
-    font: normal normal normal 20px/24px Montserrat;
-    color: #303030;
 }
 
 #index-wrapper {
