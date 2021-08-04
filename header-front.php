@@ -22,13 +22,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div id="targetElement"></div>
 	<div class="top-header">
 		<div class="row">
-			<div class="col-4"></div>
+			<div class="col-3 col-sm-4"></div>
 
-			<div class="col-4 text-center mt-1">
+			<div class="col-6 col-sm-4 text-center mt-1">
 				<img src="<?php echo get_template_directory_uri(); ?>/img/small-logo.png" alt="small-logo" class="small-logo">
 			</div>
 
-			<div class="col-4 text-right mt-4">
+			<div class="col-6 col-sm-4 text-right mt-4">
 				<div id="header-social-network" class="social-network">
 					<span class="languages">PT/EN</span>
 					<a href="https://www.facebook.com/Teammate-Football-Management-103659131852598" target="_blank">
