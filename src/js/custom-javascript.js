@@ -1,5 +1,4 @@
 // Add your JS customizations here
-
 jQuery(function($) {
 
     if (!$('.players-nav-buttons[data-position="all"]').is(':visible')) {

@@ -144,7 +144,7 @@ $terciary-lightest:#FFFFFF;
         max-width: 400px;
     }
 
-    .float{
+    .whatsapp-container{
         position:fixed;
         width:70px;
         height:45px;
@@ -299,7 +299,7 @@ $terciary-lightest:#FFFFFF;
         max-width: 500px;
     }
 
-    .float{
+    .whatsapp-container{
         position:fixed;
         width:70px;
         height:55px;
@@ -437,7 +437,7 @@ $terciary-lightest:#FFFFFF;
         color: #FFFFFF;
     }
 
-    .float{
+    .whatsapp-container{
         position:fixed;
         width:70px;
         height:55px;
@@ -571,7 +571,7 @@ $terciary-lightest:#FFFFFF;
         color: #FFFFFF;
     }
 
-    .float{
+    .whatsapp-container{
         position:fixed;
         width:70px;
         height:55px;
@@ -710,7 +710,7 @@ $terciary-lightest:#FFFFFF;
         color: #FFFFFF;
     }
 
-    .float{
+    .whatsapp-container{
         position:fixed;
         width:70px;
         height:55px;
@@ -761,11 +761,8 @@ $terciary-lightest:#FFFFFF;
 
 body {
     font-family:'Montserrat';
+    overflow-x: hidden;
 }
-
-// .site {
-//     overflow-x: hidden;
-// }
 
 .logo-nav-small {
     width:60px;
