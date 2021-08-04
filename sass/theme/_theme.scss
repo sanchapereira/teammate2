@@ -188,6 +188,24 @@ $terciary-lightest:#FFFFFF;
     .players-nav-buttons[data-position="all"] {
         display:none;
     }
+
+    .founder-name {
+        text-align: left;
+        font-size: 24px;
+    }
+
+    .contact-form-title {
+        font-size: 16px !important;
+    }
+
+    #wrapper-footer {
+        h5 {
+            color:$terciary-lightest;
+            font-weight: 600;
+            font-size: 16px;
+        }
+    }
+    
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -334,6 +352,24 @@ $terciary-lightest:#FFFFFF;
     .service-symbol-border.active  {
         border: 2px solid $secundary;
     }
+
+    .founder-name {
+        text-align: left;
+        font-size: 25px;
+    }
+
+    .contact-form-title {
+        font-size: 16px !important;
+    }
+
+    #wrapper-footer {
+        h5 {
+            color:$terciary-lightest;
+            font-weight: 600;
+            font-size: 16px;
+        }
+    }
+    
 }
 
 @media (min-width: 768px) and (max-width: 991px) { 
@@ -472,6 +508,24 @@ $terciary-lightest:#FFFFFF;
     .service-symbol-border.active {
         border: 2px solid $secundary;
     }
+
+    .founder-name {
+        text-align: left;
+        font-size: 30px;
+    }
+
+    .contact-form-title {
+        font-size: 18px !important;
+    }
+
+    #wrapper-footer {
+        h5 {
+            color:$terciary-lightest;
+            font-weight: 600;
+            font-size: 18px;
+        }
+    }
+    
 }
 
 @media (min-width: 992px) and (max-width: 1199px) { 
@@ -606,6 +660,24 @@ $terciary-lightest:#FFFFFF;
     .service-symbol-border.active  {
         border: 2px solid $terciary-lightest;
     }
+
+    .founder-name {
+        text-align: left;
+        font-size: 40px;
+    }
+
+    .contact-form-title {
+        font-size: 20px !important;
+    }
+
+    #wrapper-footer {
+        h5 {
+            color:$terciary-lightest;
+            font-weight: 600;
+            font-size: 20px;
+        }
+    }
+    
 }
 
 // Medium devices (tablets, 768px and up) { ... }
@@ -754,6 +826,24 @@ $terciary-lightest:#FFFFFF;
     .service-symbol-border.active {
         border: 2px solid $terciary-lightest;
     }
+
+    .founder-name {
+        text-align: left;
+        font-size: 45px;
+    }
+
+    .contact-form-title {
+        font-size: 20px !important;
+    }
+
+    #wrapper-footer {
+        h5 {
+            color:$terciary-lightest;
+            font-weight: 600;
+            font-size: 20px;
+        }
+    }
+    
 }
 
 
@@ -808,15 +898,6 @@ body {
             opacity:1;
         } 
     }
-}
-
-.contact-form-title {
-    font-size: 20px !important;
-}
-
-.founder-name {
-    text-align: left;
-    font-size: 45px;
 }
 
 .small-logo {
@@ -1190,11 +1271,6 @@ body {
             }
         }
 
-    }
-    h5 {
-        color:$terciary-lightest;
-        font-weight: 600;
-        font-size: 25px;
     }
 }
 
