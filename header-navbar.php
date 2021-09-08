@@ -51,16 +51,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<div class="social-network-nav">
 				<a href="https://www.facebook.com/Teammate-Football-Management-103659131852598" target="_blank">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/menu_face.png" alt="face-logo">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/facebook_branco.svg" alt="face-logo">
 				</a>
 				<a href="https://www.instagram.com/teammatefootball" target="_blank">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/menu_insta.png" alt="insta-logo">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/instagram_branco.svg" alt="insta-logo">
 				</a>
 				<a href="https://www.linkedin.com/company/teammatefootball" target="_blank">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/menu_linkedin.png" alt="linkedin-logo">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/linkedin_branco.svg" alt="linkedin-logo">
 				</a>
-				<a href="https://twitter.com/teammatefootbal" target="_blank">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/menu_twiter.png" alt="twitter-logo">
+				<a href="https://www.twitter.com/teammatefootbal" target="_blank">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/twitter_branco.svg" alt="twitter-logo">
+				</a>
+				<a href="https://www.youtube.com/channel/UCwl8cBq60RMRXM9-drjAPhw" target="_blank">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/youtube_branco.svg" alt="youtube-logo">
 				</a>
 			</div>
 

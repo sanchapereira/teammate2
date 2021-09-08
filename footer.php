@@ -29,7 +29,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div>
 		<h5 class="contact-form-title text-center pt-4 pb-2">The Team you will never want to leave</h5>
 		<div class="contact-form-holder">
-			<?php echo do_shortcode('[contact-form-7 id="14" title="Contact form 1"]'); ?>
+			<?php echo do_shortcode('[contact-form-7 id="4" title="Contact form 1"]'); ?>
 		</div>
 	</div>
 
