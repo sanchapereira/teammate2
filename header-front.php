@@ -25,7 +25,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col-3 col-sm-4"></div>
 
 			<div class="col-6 col-sm-4 text-center mt-4">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/small-logo.png" alt="small-logo" class="small-logo">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/LogoTM_Branco.png" alt="small-logo" class="small-logo">
 			</div>
 
 			<div class="col-6 col-sm-4 text-right mt-4">
@@ -80,7 +80,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="row">
 
 			<div class="col"></div>
-			<div class="col-xl-9 col-lg-12 text-center mt-lg-3 mt-sm-5 mt-3 mb-6">
+			<div class="col-xl-9 col-lg-12 text-center mt-lg-0 mt-sm-5 mt-3 mb-6">
 				<img class="background-logo" src="<?php echo get_template_directory_uri(); ?>/img/Home.png" alt="background-logo">
 			</div>
 			<div class="col"></div>

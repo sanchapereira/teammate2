@@ -21,7 +21,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<nav id="main-nav" class="navbar navbar-expand-xl navbar-dark" aria-labelledby="main-nav-label">
 			<a href="#">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/logo-nav.png" alt="logo-nav-big" class="logo-nav-big">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/LogoTM_DouradoBranco.png" alt="logo-nav-big" class="logo-nav-big">
 				<img src="<?php echo get_template_directory_uri(); ?>/img/teste.png" alt="logo-nav-small" class="logo-nav-small">
 			</a>
 			<div class="collapse navbar-collapse"></div>
