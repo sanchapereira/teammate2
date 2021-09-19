@@ -1167,7 +1167,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 												<img src="<?php echo get_template_directory_uri(); ?>/img/instagram_dourado.svg" alt="insta-logo">
 											</a>
 											<a href="https://www.linkedin.com/in/francisca-cardoso-5a7367107">
-												<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin_dourado.svg" alt="linkedin-logo">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/linkedin_dourado.svg" alt="linkedin-logo">
 											</a>
 											<a href="https://twitter.com/Chicacardoso9" target="_blank">
 												<img src="<?php echo get_template_directory_uri(); ?>/img/twitter_dourado.svg" alt="twitter-logo">
@@ -1184,6 +1184,46 @@ $container = get_theme_mod( 'understrap_container_type' );
 								<img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/teammates/FranciscaCardoso.png" alt="Card image cap">
 								<div class="card-body player-card">
 									<p class="player-name">Francisca Cardoso</p>
+									<p class="player-position">Avançada</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="card player m-3 fw all">
+							<div class="card-player-info invisible">
+								<div class="card-body player-card-info pt-6" style="background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.70) 0%), url('<?php echo get_template_directory_uri(); ?>/img/teammates/JoanaDantas_Hover.png')">
+									<p class="player-name">Joana Dantas</p>
+									<p class="player-position">Avançada</p>
+									<p class="player-stats">15.03.2003</p>
+									<p class="player-stats">160 CM</p>
+									<p class="player-stats">50 KG</p>
+									<p class="player-stats">Pé Direito</p>
+
+									<div class="player-card-info-footer mt-4">
+										<button class="play-button low-opacity-fixed" type="button" data-toggle="modal" data-target="#highlightsModal" data-media="https://player.vimeo.com/video/505225211">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
+										</button>
+										<div class="social-media-player mx-2">
+											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/facebook_dourado.svg" alt="face-logo">
+											<a href="https://www.instagram.com/joana_dantas70" target="_blank">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/instagram_dourado.svg" alt="insta-logo">
+											</a>
+											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/linkedin_dourado.svg" alt="linkedin-logo">
+											<a href="https://twitter.com/JoanaDantas70" target="_blank">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/twitter_dourado.svg" alt="twitter-logo">
+											</a>
+										</div>											
+										<a href="<?php echo get_template_directory_uri(); ?>/cvs/CV_JoanaDantas.pdf" target="_blank">
+											<img class="cv-icon" src="<?php echo get_template_directory_uri(); ?>/img/cv.svg" alt="download">
+										</a>
+									</div>
+								</div>
+							</div>
+							
+							<div class="card-player-photo">
+								<img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/teammates/JoanaDantas.png" alt="Card image cap">
+								<div class="card-body player-card">
+									<p class="player-name">Joana Dantas</p>
 									<p class="player-position">Avançada</p>
 								</div>
 							</div>
@@ -1436,6 +1476,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</div>
 						<div class="outer-wrapper">
 							<div class="slider-image-container">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/partners/ACRILSPORTS.PNG" alt="acril-sports">			
+							</div>
+						</div>
+						<div class="outer-wrapper">
+							<div class="slider-image-container">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/partners/NEWBALANCE.png" alt="nb">					
 							</div>
 						</div>
@@ -1467,11 +1512,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="outer-wrapper">
 							<div class="slider-image-container">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/partners/PROSCOUT.PNG" alt="proscout">			
-							</div>
-						</div>
-						<div class="outer-wrapper">
-							<div class="slider-image-container">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/partners/ACRILSPORTS.PNG" alt="acril-sports">			
 							</div>
 						</div>
 					</div>
