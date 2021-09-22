@@ -30,7 +30,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<div class="col-6 col-sm-4 text-right mt-4">
 				<div id="header-social-network" class="social-network">
-					<span class="languages">PT/EN</span>	
+					<span class="languages">
+						<a href="<?php echo site_url(); ?>?lang=pt">PT</a>/<a href="<?php echo site_url(); ?>?lang=en">EN</a>/<a href="<?php echo site_url(); ?>?lang=es">ES</a>
+					</span>	
 					<a href="https://www.facebook.com/Teammate-Football-Management-103659131852598" target="_blank">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/facebook_branco.svg" alt="face-logo">
 					</a>
