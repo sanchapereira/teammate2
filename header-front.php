@@ -30,7 +30,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<div class="col-6 col-sm-4 text-right mt-4">
 				<div id="header-social-network" class="social-network">
-					<span class="languages">PT/EN</span>
+					<span class="languages">PT/EN</span>	
 					<a href="https://www.facebook.com/Teammate-Football-Management-103659131852598" target="_blank">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/facebook_branco.svg" alt="face-logo">
 					</a>
@@ -55,22 +55,22 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="menu-main">
 					<ul id="main-menu" class="text-center">
 						<li class="menu-item">
-							<a href="#who-are-we">Quem Somos</a>
+							<a href="#who-are-we"><?php pll_e( 'quem-somos' ); ?></a>
 						</li>
 						<li class="menu-item">
-							<a href="#services">Serviços</a>
+							<a href="#services"><?php pll_e( 'servicos' ); ?></a>
 						</li>
 						<li class="menu-item">
 							<a href="#players">Teammates</a>
 						</li>
 						<li class="menu-item">
-							<a href="#news">Notícias</a>
+							<a href="#news"><?php pll_e( 'noticias' ); ?></a>
 						</li>
 						<li class="menu-item">
-							<a href="#partners">Parceiros</a>
+							<a href="#partners"><?php pll_e( 'parceiros' ); ?></a>
 						</li>
 						<li class="menu-item">
-							<a href="#wrapper-footer">Contactos</a>
+							<a href="#wrapper-footer"><?php pll_e( 'contactos' ); ?></a>
 						</li>
 					</ul>
 				</div>

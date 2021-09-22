@@ -29,22 +29,22 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div id="navbarNavDropdown" class="collapse navbar-collapse">
 				<ul id="menu-navbar" class="navbar-nav text-center">
 					<li class="menu-item">
-						<a href="#who-are-we">Quem Somos</a>
+						<a href="#who-are-we"><?php pll_e( 'quem-somos' ); ?></a>
 					</li>
 					<li class="menu-item">
-						<a href="#services">Serviços</a>
+						<a href="#services"><?php pll_e( 'servicos' ); ?></a>
 					</li>
 					<li class="menu-item">
 						<a href="#players">Teammates</a>
 					</li>
 					<li class="menu-item">
-						<a href="#news">Notícias</a>
+						<a href="#news"><?php pll_e( 'noticias' ); ?></a>
 					</li>
 					<li class="menu-item">
-						<a href="#partners">Parceiros</a>
+						<a href="#partners"><?php pll_e( 'parceiros' ); ?></a>
 					</li>
 					<li class="menu-item">
-						<a href="#wrapper-footer">Contactos</a>
+						<a href="#wrapper-footer"><?php pll_e( 'contactos' ); ?></a>
 					</li>
 				</ul>
 			</div>
@@ -84,22 +84,22 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div id="navbarNavDropdown-non-xl" class="collapse navbar-collapse">
 				<ul id="menu-navbar" class="navbar-nav text-center">
 					<li class="menu-item">
-						<a href="#who-are-we">Quem Somos</a>
+						<a href="#who-are-we"><?php pll_e( 'quem-somos' ); ?></a>
 					</li>
 					<li class="menu-item">
-						<a href="#services">Serviços</a>
+						<a href="#services"><?php pll_e( 'servicos' ); ?></a>
 					</li>
 					<li class="menu-item">
 						<a href="#players">Teammates</a>
 					</li>
 					<li class="menu-item">
-						<a href="#news">Notícias</a>
+						<a href="#news"><?php pll_e( 'noticias' ); ?></a>
 					</li>
 					<li class="menu-item">
-						<a href="#partners">Parceiros</a>
+						<a href="#partners"><?php pll_e( 'parceiros' ); ?></a>
 					</li>
 					<li class="menu-item">
-						<a href="#wrapper-footer">Contactos</a>
+						<a href="#wrapper-footer"><?php pll_e( 'contactos' ); ?></a>
 					</li>
 				</ul>
 			</div>

@@ -19,13 +19,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<div class="footer-text">
 		<div class="title-holder">
-			<h2>Contactos</h2>
+			<h2><?php pll_e( 'contactos' ); ?></h2>
 		</div>
 
 		<div class="contact-info text-center">
 			<p>+351 914 423 660</p>
 			<p class="lowercase">info@teammatefootball.pt</p>
-			<p>Lisboa, Portugal</p>
+			<p><?php pll_e( 'contactos-lisb' ); ?>, Portugal</p>
 		</div>
 		<h5 class="contact-form-title text-center pt-4 pb-2">The Team you will never want to leave</h5>
 		<div class="contact-form-holder">
