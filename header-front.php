@@ -82,8 +82,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="row">
 
 			<div class="col"></div>
-			<div class="col-xl-9 col-lg-12 text-center mt-lg-0 mt-sm-5 mt-3 mb-6">
+			<div class="col-xl-9 col-lg-12 text-center mt-lg-0 mt-sm-5 mt-3">
 				<img class="background-logo" src="<?php echo get_template_directory_uri(); ?>/img/Home.png" alt="background-logo">
+			</div>
+			<div class="col"></div>
+		</div>
+		<div class="row">
+			<div class="col"></div>
+			<div class="col-xl-9 col-lg-12 text-center mt-lg-0 mt-sm-5 mt-3 mb-6">
+				<span class="languages-small">
+					<a class="lang-pt" href="<?php echo site_url(); ?>?lang=pt">PT</a>/<a class="lang-en" href="<?php echo site_url(); ?>?lang=en">EN</a>/<a class="lang-es" href="<?php echo site_url(); ?>?lang=es">ES</a>
+				</span>				
 			</div>
 			<div class="col"></div>
 		</div>

@@ -50,6 +50,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 
 			<div class="social-network-nav">
+					<span class="languages">
+						<a class="lang-pt" href="<?php echo site_url(); ?>?lang=pt">PT</a>/<a class="lang-en" href="<?php echo site_url(); ?>?lang=en">EN</a>/<a class="lang-es" href="<?php echo site_url(); ?>?lang=es">ES</a>
+					</span>	
 				<a href="https://www.facebook.com/Teammate-Football-Management-103659131852598" target="_blank">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/facebook_branco.svg" alt="face-logo">
 				</a>

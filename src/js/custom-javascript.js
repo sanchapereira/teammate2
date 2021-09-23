@@ -81,6 +81,23 @@ jQuery(function($) {
     $('#navbarNavDropdown li').on('click', function(e) {
         $('#navbarNavDropdown').collapse('hide');
     });
+
+    function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    };
+
+    alert(getUrlParameter('lang') == 'en');
+
+    if (getUrlParameter('lang') == 'en') {
+        $('.lang-en').addClass('highlighted-lang');
+    } else if (getUrlParameter('lang') == 'es') {
+        $('.lang-en').addClass('highlighted-lang');
+    } else {
+        $('.lang-pt').addClass('highlighted-lang');
+    }
 });
 
 //   document.addEventListener( 'wpcf7invalid', function( event ) {

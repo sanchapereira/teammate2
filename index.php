@@ -1087,6 +1087,46 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 						<div class="card player m-3 med all">
 							<div class="card-player-info invisible">
+								<div class="card-body player-card-info pt-6" style="background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.70) 0%), url('<?php echo get_template_directory_uri(); ?>/img/teammates/Jaleca_Hover.png')">
+									<p class="player-name">Mariana Jaleca</p>
+									<p class="player-position"><?php pll_e( 'team-mo' ); ?></p>
+									<p class="player-stats">08.10.1997</p>
+									<p class="player-stats">163 CM</p>
+									<p class="player-stats">50 KG</p>
+									<p class="player-stats"><?php pll_e( 'team-right-foot' ); ?></p>
+									<div class="player-card-info-footer mt-4">
+										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal" data-media="https://www.youtube.com/embed/ak4-N8-jy0E">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
+										</button>
+										<div class="social-media-player mx-2">
+											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/facebook_dourado.svg" alt="face-logo">
+											<a href="https://www.instagram.com/jaleca_oficial" target="_blank">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/instagram_dourado.svg" alt="insta-logo">
+											</a>
+											<a href="http://www.linkedin.com/in/mariana-pereira-jaleca-9a6465186" target="_blank">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/linkedin_dourado.svg" alt="linkedin-logo">
+											</a>						
+											<a href="https://twitter.com/marianajka" target="_blank">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/twitter_dourado.svg" alt="twitter-logo">
+											</a>
+										</div>										
+										<a href="<?php echo get_template_directory_uri(); ?>/cvs/CV_MarianaJaleca.pdf" target="_blank">
+											<img class="cv-icon" src="<?php echo get_template_directory_uri(); ?>/img/cv.svg" alt="download">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="card-player-photo">
+								<img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/teammates/MarianaJaleca.png" alt="Card image cap">
+								<div class="card-body player-card">
+									<p class="player-name">Mariana Jaleca</p>
+									<p class="player-position"><?php pll_e( 'team-med' ); ?></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="card player m-3 med all">
+							<div class="card-player-info invisible">
 								<div class="card-body player-card-info pt-6" style="background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.70) 0%), url('<?php echo get_template_directory_uri(); ?>/img/teammates/VeraCid_Hover.png')">
 									<p class="player-name">Vera Cid</p>
 									<p class="player-position"><?php pll_e( 'team-mc' ); ?></p>
@@ -1128,7 +1168,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="card-player-info invisible">
 								<div class="card-body player-card-info pt-6" style="background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.70) 0%), url('<?php echo get_template_directory_uri(); ?>/img/teammates/FranciscaCardoso_Hover.png')">
 									<p class="player-name">Francisca Cardoso</p>
-									<p class="player-position"><?php pll_e( 'team-fw' ); ?></p>
+									<p class="player-position"><?php pll_e( 'team-st' ); ?></p>
 									<p class="player-stats">13.12.1997</p>
 									<p class="player-stats">174 CM</p>
 									<p class="player-stats">56 KG</p>
@@ -1242,46 +1282,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 								<img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/teammates/MariaFerreira.png" alt="Card image cap">
 								<div class="card-body player-card">
 									<p class="player-name">Maria Ferreira</p>
-									<p class="player-position"><?php pll_e( 'team-fw' ); ?></p>
-								</div>
-							</div>
-						</div>
-
-						<div class="card player m-3 fw all">
-							<div class="card-player-info invisible">
-								<div class="card-body player-card-info pt-6" style="background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.70) 0%), url('<?php echo get_template_directory_uri(); ?>/img/teammates/Jaleca_Hover.png')">
-									<p class="player-name">Mariana Jaleca</p>
-									<p class="player-position"><?php pll_e( 'team-fw' ); ?></p>
-									<p class="player-stats">08.10.1997</p>
-									<p class="player-stats">163 CM</p>
-									<p class="player-stats">50 KG</p>
-									<p class="player-stats"><?php pll_e( 'team-right-foot' ); ?></p>
-									<div class="player-card-info-footer mt-4">
-										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal" data-media="https://www.youtube.com/embed/ak4-N8-jy0E">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/play.png" alt="play button">
-										</button>
-										<div class="social-media-player mx-2">
-											<img class="low-opacity-fixed" src="<?php echo get_template_directory_uri(); ?>/img/facebook_dourado.svg" alt="face-logo">
-											<a href="https://www.instagram.com/jaleca_oficial" target="_blank">
-												<img src="<?php echo get_template_directory_uri(); ?>/img/instagram_dourado.svg" alt="insta-logo">
-											</a>
-											<a href="http://www.linkedin.com/in/mariana-pereira-jaleca-9a6465186" target="_blank">
-												<img src="<?php echo get_template_directory_uri(); ?>/img/linkedin_dourado.svg" alt="linkedin-logo">
-											</a>						
-											<a href="https://twitter.com/marianajka" target="_blank">
-												<img src="<?php echo get_template_directory_uri(); ?>/img/twitter_dourado.svg" alt="twitter-logo">
-											</a>
-										</div>										
-										<a href="<?php echo get_template_directory_uri(); ?>/cvs/CV_MarianaJaleca.pdf" target="_blank">
-											<img class="cv-icon" src="<?php echo get_template_directory_uri(); ?>/img/cv.svg" alt="download">
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="card-player-photo">
-								<img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/teammates/MarianaJaleca.png" alt="Card image cap">
-								<div class="card-body player-card">
-									<p class="player-name">Mariana Jaleca</p>
 									<p class="player-position"><?php pll_e( 'team-fw' ); ?></p>
 								</div>
 							</div>

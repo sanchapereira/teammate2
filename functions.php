@@ -115,6 +115,7 @@ pll_register_string( 'custom-string', 'team-mc', 'test', false );
 pll_register_string( 'custom-string', 'team-mo', 'test', false );
 pll_register_string( 'custom-string', 'team-fws', 'test', false );
 pll_register_string( 'custom-string', 'team-fw', 'test', false );
+pll_register_string( 'custom-string', 'team-st', 'test', false );
 pll_register_string( 'custom-string', 'team-ee', 'test', false );
 pll_register_string( 'custom-string', 'team-coas', 'test', false );
 pll_register_string( 'custom-string', 'team-coa', 'test', false );
@@ -136,3 +137,4 @@ pll_register_string( 'custom-string', 'contactos-message', 'test', false );
 pll_register_string( 'custom-string', 'contactos-send', 'test', false );
 
 pll_register_string( 'custom-string', 'subscribe', 'test', false );
+pll_register_string( 'custom-string', 'terms', 'test', false );
