@@ -7148,20 +7148,34 @@ jQuery(function ($) {
 
   if (getUrlParameter('lang') == 'en') {
     $('.lang-en').addClass('highlighted-lang');
+    $('.subscribe').text('Subscribe our Newsletter');
+    $('input[name="your-name"]').attr('placeholder', 'name');
+    $('input[name="your-email"]').attr('placeholder', 'email');
+    $('input[name="your-phone"]').attr('placeholder', 'telephone');
+    $('input[name="your-subject"]').attr('placeholder', 'subject');
+    $('textarea[name="your-message"]').attr('placeholder', 'message');
+    $('.terms-conditions').html('I ACCEPT THE <u>TERMS AND CONDITIONS</u>');
+    $('input[type="submit"]').attr('value', 'Send');
   } else if (getUrlParameter('lang') == 'es') {
     $('.lang-es').addClass('highlighted-lang');
+    $('.subscribe').text('¡Suscríbete a nuestra newsletter!');
+    $('input[name="your-name"]').attr('placeholder', 'nombre');
+    $('input[name="your-email"]').attr('placeholder', 'correo electrónico');
+    $('input[name="your-phone"]').attr('placeholder', 'phone');
+    $('input[name="your-subject"]').attr('placeholder', 'tema');
+    $('textarea[name="your-message"]').attr('placeholder', 'mensaje');
+    $('input[name="EMAIL"]').attr('placeholder', 'CORREO ELECTRÓNICO');
+    $('.terms-conditions').html('ACEPTO LOS <u>TÉRMINOS Y CONDICIONES</u>');
+    $('input[type="submit"]').attr('value', 'Enviar');
   } else {
     $('.lang-pt').addClass('highlighted-lang');
+    $('.subscribe').text('Subscreve a Newsletter');
+    $('input[name="your-name"]').attr('placeholder', 'nome');
+    $('input[name="your-email"]').attr('placeholder', 'email');
+    $('input[name="your-phone"]').attr('placeholder', 'telefone');
+    $('input[name="your-subject"]').attr('placeholder', 'assunto');
+    $('textarea[name="your-message"]').attr('placeholder', 'mensagem');
+    $('.terms-conditions').html('ACEITO OS <u>TERMOS E CONDIÇÕES</u>');
+    $('input[type="submit"]').attr('value', 'Enviar');
   }
-}); //   document.addEventListener( 'wpcf7invalid', function( event ) {
-//     alert('yo');
-// }, false );
-// document.addEventListener( 'wpcf7spam', function( event ) {
-//     alert('yo');
-// }, false );
-// document.addEventListener( 'wpcf7mailfailed', function( event ) {
-//     alert('yo');
-// }, false );
-// document.addEventListener( 'wpcf7mailsent', function( event ) {
-//     alert('yo');
-// }, false );
+});
