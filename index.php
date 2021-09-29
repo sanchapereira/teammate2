@@ -1091,8 +1091,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<p class="player-name">Mariana Jaleca</p>
 									<p class="player-position"><?php pll_e( 'team-mo' ); ?></p>
 									<p class="player-stats">08.10.1997</p>
-									<p class="player-stats">163 CM</p>
-									<p class="player-stats">50 KG</p>
+									<p class="player-stats">166 CM</p>
+									<p class="player-stats">55 KG</p>
 									<p class="player-stats"><?php pll_e( 'team-right-foot' ); ?></p>
 									<div class="player-card-info-footer mt-4">
 										<button class="play-button" type="button" data-toggle="modal" data-target="#highlightsModal" data-media="https://www.youtube.com/embed/ak4-N8-jy0E">
@@ -1171,7 +1171,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<p class="player-position"><?php pll_e( 'team-st' ); ?></p>
 									<p class="player-stats">13.12.1997</p>
 									<p class="player-stats">174 CM</p>
-									<p class="player-stats">56 KG</p>
+									<p class="player-stats">63 KG</p>
 									<p class="player-stats"><?php pll_e( 'team-right-foot' ); ?></p>
 
 									<div class="player-card-info-footer mt-4">
@@ -1490,7 +1490,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</div>
 						<div class="outer-wrapper">
 							<div class="slider-image-container">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/partners/PROSCOUT.PNG" alt="proscout">			
+								<img src="<?php echo get_template_directory_uri(); ?>/img/partners/PROSCOUT.png" alt="proscout">			
 							</div>
 						</div>
 					</div>

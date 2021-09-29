@@ -7145,12 +7145,11 @@ jQuery(function ($) {
   }
 
   ;
-  alert(getUrlParameter('lang') == 'en');
 
   if (getUrlParameter('lang') == 'en') {
     $('.lang-en').addClass('highlighted-lang');
   } else if (getUrlParameter('lang') == 'es') {
-    $('.lang-en').addClass('highlighted-lang');
+    $('.lang-es').addClass('highlighted-lang');
   } else {
     $('.lang-pt').addClass('highlighted-lang');
   }

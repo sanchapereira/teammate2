@@ -215,6 +215,10 @@ $terciary-lightest:#FFFFFF;
     .languages {
         display:none;
     }
+
+    .languages-nav {
+        display:none;
+    }
     
     .languages-small {
         vertical-align: middle;
@@ -971,6 +975,21 @@ body {
 }
 
 .languages {
+    padding-right: 10px;
+    vertical-align: middle;
+    font: normal normal 500 17px/20px Montserrat;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    .highlighted-lang {
+        color: $secundary-light;
+    }
+}
+
+.languages-nav {
     padding-right: 10px;
     vertical-align: middle;
     font: normal normal 500 17px/20px Montserrat;
