@@ -779,7 +779,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<p class="player-name">Sofia Silva</p>
 									<p class="player-position"><?php pll_e( 'team-dc' ); ?></p>
 									<p class="player-stats">07.02.2002</p>
-									<p class="player-stats">169 CM</p>
+									<p class="player-stats">170 CM</p>
 									<p class="player-stats">63 KG</p>
 									<p class="player-stats"><?php pll_e( 'team-right-foot' ); ?></p>
 
