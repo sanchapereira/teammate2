@@ -1383,7 +1383,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div>
 	</div> <!-- #players -->
 
-	<div id="news" class="page-section">
+	<div id="news" class="page-section" style="background:url('<?php echo get_template_directory_uri(); ?>/img/logo-news.png') no-repeat; background-color:#303030; background-position: -809px -480px; background-size: cover;">
 		<div class="container-fluid">
 			<div class="title-holder">
 				<h2><?php pll_e( 'noticias' ); ?></h2>
@@ -1392,27 +1392,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="row mt-4">
 				<div class="col"></div>
 				<div class="col-lg-8 text-center">
-					<h2><?php pll_e( 'soon' ); ?></h2>
-					<main class="site-main" id="main">
-						<?php
-						// if ( have_posts() ) {
-						// 	// Start the Loop.
-						// 	while ( have_posts() ) {
-						// 		the_post();
-
-						// 		/*
-						// 		* Include the Post-Format-specific template for the content.
-						// 		* If you want to override this in a child theme, then include a file
-						// 		* called content-___.php (where ___ is the Post Format name) and that will be used instead.
-						// 		*/
-						// 		get_template_part( 'loop-templates/content', get_post_format() );
-						// 	}
-						// } else {
-						// 	get_template_part( 'loop-templates/content', 'none' );
-						// }
-						?>
-
-					</main>
+					<?php echo do_shortcode('[instagram-feed]'); ?>
 				</div>
 				<div class="col"></div>
 			</div>
@@ -1491,6 +1471,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="outer-wrapper">
 							<div class="slider-image-container">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/partners/PROSCOUT.png" alt="proscout">			
+							</div>
+						</div>
+						<div class="outer-wrapper">
+							<div class="slider-image-container">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/partners/FE.png" alt="fe">			
+							</div>
+						</div>
+						<div class="outer-wrapper">
+							<div class="slider-image-container">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/partners/TLM.png" alt="tlm">			
 							</div>
 						</div>
 					</div>

@@ -1585,3 +1585,14 @@ body {
     display: inline-block; 
     margin: 0 20px 0;
 }
+
+.sbi_load_btn {
+    border: none !important;
+    border-radius: 22px !important;
+    display: inline-block !important;
+    background: $primary !important;
+    color: $terciary-lightest !important;
+    text-transform: uppercase !important;
+    font-size:15px !important;
+    font-weight: 600 !important;
+}

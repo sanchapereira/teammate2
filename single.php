@@ -20,6 +20,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 </div>
 
 <div class="post-category text-center">
+	<button class="button-back">Voltar</button>
 	<img class="mr-1" src="<?php echo get_template_directory_uri(); ?>/img/news/transfers-big.png" alt="insta-logo">
 	<h5 class="ml-1"><?php echo get_the_category( )[0]->cat_name; ?></h5>
 </div>
