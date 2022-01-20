@@ -29,5 +29,11 @@
 	"support": {
 		"issues": "https://github.com/understrap/understrap/issues",
 		"source": "https://github.com/understrap/understrap"
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true,
+			"composer/installers": true
+		}
 	}
 }
